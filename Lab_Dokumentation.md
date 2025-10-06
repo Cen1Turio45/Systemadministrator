@@ -47,6 +47,7 @@ Option 2 | DHCP deaktivieren| IP-Adresse auf 192.168.0.1 setzen | kein Gateway |
 
 Dabei wählen wir bei der Firewall die Option 2 Set interface IP-Address aus und gehen die Einstellungen wie oben beschrieben durch.
 
+
 ### Firewall Web-Interface
 
 Option 3 | Option 3 um Passwort zu setzen und dann admin + Passwort
@@ -66,10 +67,38 @@ Unter System | Routing | Gateways schauen das wir nur ein Interface haben
 
 Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE ausschalten | Remotedesktop aktivieren | Zeit anpassen | Neustart
 
-Über Windows Feature | Active Directory-Domänendienste installieren (in dem LAB wird über Gateway 10.71.41.254 DC01 installieren) | herunterfahren
+Über Windows Feature | Active Directory-Domänendienste installieren mit Domain Name: Plab.de (in dem LAB wird über Gateway 10.71.41.254 DC01 installieren) | herunterfahren
 
 PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abändern.
-In Etherneteinstellungen IP: auf 192.168.02 | 255.255.255.0 | Gateway:192.168.0.1| DNS:192.168.0.2 setzen 
+In Etherneteinstellungen IP: auf 192.168.02 | 255.255.255.0 | Gateway:192.168.0.1 | DNS:192.168.0.2 setzen 
+
+DHCP auf DC01 installieren und dort Plab_Scope einstellen
+
+Von 192.168.0.1 – 255
+
+Ausschluss .1 und .2
+
+Gateway auf 192.168.0.1 und DNS auf .2 setzen
+
+### PLABDM01 Konfiguration:
+
+PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abändern.
+
+Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE ausschalten | Remotedesktop aktivieren | Zeit anpassen | Neustart
+
+In Etherneteinstellungen IP: auf 192.168.03 | 255.255.255.0 | Gateway:192.168.0.1 | DNS:192.168.0.2 setzen 
+
+Domain Plab.de beitreten
+
+### PLABWIN11:
+
+PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abändern.
+
+Standardinstallation | IP automatisch | Domain beitreten
+
+
+
+
 
 
 
