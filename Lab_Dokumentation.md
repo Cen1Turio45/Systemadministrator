@@ -26,7 +26,7 @@ deaktivieren Secure boot und starten die virtuelle Maschine.
 
 Dann Standard Einstellungen durchgehen
 
-<img src="images/Aufbau.png" alt="Lab Screenshot" width="600">
+<img src="images/Aufbau.png" alt="Lab Screenshot" width="400">
 
 
 
