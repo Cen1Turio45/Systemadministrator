@@ -53,6 +53,8 @@ Option 3 | Option 3 um Passwort zu setzen und dann admin + Passwort
 
 Firewall kann unter https://192.168.0.1 geöffnet werden + einloggen
 
+<img src="images/FirewallRules.png" alt="Lab Screenshot" width="400">
+
 ### PLABDC01 Konfiguration:
 
 Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE ausschalten | Remotedesktop aktivieren | Zeit anpassen | Neustart
@@ -60,7 +62,7 @@ Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE 
 Über Windows Feature | Active Directory-Domänendienste installieren (in dem LAB wird über Gateway 10.71.41.254 DC01 installieren) | herunterfahren
 
 PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abändern.
-In Etherneteinstellungen IP: auf 192.168.02 | 255.255.255.0 | Gateway:192.168.0.1| DNS:192.168.0.2 setzen | 
+In Etherneteinstellungen IP: auf 192.168.02 | 255.255.255.0 | Gateway:192.168.0.1| DNS:192.168.0.2 setzen 
 
 
 
