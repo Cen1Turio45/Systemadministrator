@@ -103,6 +103,10 @@ PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abänd
 Standardinstallation | IP automatisch | Domain beitreten
 
 
+## Abschluss:
+
+Das LAB wurde erfolgreich abgeschlossen, alle Geräte haben IPS im neuen Netzwerk (LAN) und wir haben einen DHCP Server erfolgreich installiert.
+
 
 
 
