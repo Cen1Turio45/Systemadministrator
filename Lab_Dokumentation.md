@@ -41,3 +41,27 @@ Option 2 | deaktivieren DHCP | Legen Firewall WAN IP auf 10.71.31.10 | Gateway a
 
 Dabei wählen wir bei der Firewall die Option 2 Set interface IP-Address aus und gehen die Einstellungen wie oben beschrieben durch.
 
+### LAN Interface Konfiguration:
+
+Option 2 | DHCP deaktivieren| IP-Adresse auf 192.168.0.1 setzen | kein Gateway | DHCP auf LAN deaktivieren
+
+Dabei wählen wir bei der Firewall die Option 2 Set interface IP-Address aus und gehen die Einstellungen wie oben beschrieben durch.
+
+### Firewall Web-Interface
+
+Option 3 | Option 3 um Passwort zu setzen und dann admin + Passwort
+
+Firewall kann unter https://192.168.0.1 geöffnet werden + einloggen
+
+
+
+
+
+
+
+
+
+
+
+
+
