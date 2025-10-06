@@ -91,7 +91,7 @@ PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abänd
 
 Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE ausschalten | Remotedesktop aktivieren | Zeit anpassen | Neustart
 
-In Etherneteinstellungen IP: auf 192.168.03 | 255.255.255.0 | Gateway:192.168.0.1 | DNS:192.168.0.2 setzen 
+In Etherneteinstellungen IP: auf 192.168.04 | 255.255.255.0 | Gateway:192.168.0.1 | DNS:192.168.0.2 setzen 
 
 Domain Plab.de beitreten
 
