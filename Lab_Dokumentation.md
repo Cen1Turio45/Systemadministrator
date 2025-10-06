@@ -35,4 +35,9 @@ Danach konfigurieren wir unser eigenes LAN mit pfSense IP-Adresse 192.168.0.1, s
 statischer IP-Addresse 192.168.0.3 von PLABDM01 und dann wird später ber DHCP für PLABWIN10 eine IP Adresse per DHCP hinzugefügt.
 (Später im LAB über DHCP)
 
+### WAN Interface Konfiguration:
+
+Option 2 | deaktivieren DHCP | Legen Firewall WAN IP auf 10.71.31.10 | Gateway auf 10.71.31.254
+
+Dabei wählen wir bei der Firewall die Option 2 Set interface IP-Address aus und gehen die Einstellungen wie oben beschrieben durch.
 
