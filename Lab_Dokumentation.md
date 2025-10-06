@@ -2,7 +2,7 @@
 
 <img src="images/Lab.png" alt="Lab Screenshot" width="600">
 
-Kurze Beschreibung:
+### Kurze Beschreibung:
 
 Es soll eine echte Arbeitsumgebung geschaffen werden, dafür starten wir erstmal mit der Konfiguration der Firewall PFSENSE als virtuelle Maschine
 auf einem Windows Server 2025 über HYPER-V
