@@ -55,6 +55,13 @@ Firewall kann unter https://192.168.0.1 geöffnet werden + einloggen
 
 <img src="images/FirewallRules.png" alt="Lab Screenshot" width="400">
 
+Da Bild sehr schlecht ist Firewall | Rules | Lan | Add
+
+Action: Pass | Interface: Lan | Address Family IPv4 | Protocol: any | Source: LAN net: 192.168.0.0/24| Destination: any | Save
+
+Unter System | Routing | Gateways schauen das wir nur ein Interface haben
+
+
 ### PLABDC01 Konfiguration:
 
 Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE ausschalten | Remotedesktop aktivieren | Zeit anpassen | Neustart
