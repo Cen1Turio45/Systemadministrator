@@ -28,5 +28,11 @@ Dann Standard Einstellungen durchgehen
 
 <img src="images/Aufbau.png" alt="Lab Screenshot" width="400">
 
+Hier sieht man einmal wie unserer Aufbau im LAB sein sollte Gateway 10.71.31.254 von unserer Testumgebung, unsere pfSense WAN IP-Addresse
+mit 10.71.31.10.
+
+Danach konfigurieren wir unser eigenes LAN mit pfSense IP-Adresse 192.168.0.1, statischer IP-Addresse PLABDC01 mit 192.168.0.2, 
+statischer IP-Addresse 192.168.0.3 von PLABDM01 und dann wird später ber DHCP für PLABWIN10 eine IP Adresse per DHCP hinzugefügt.
+(Später im LAB über DHCP)
 
 
