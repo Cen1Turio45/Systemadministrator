@@ -2,6 +2,7 @@
 
 <img src="images/Lab.png" alt="Lab Screenshot" width="600">
 
+
 ### Kurze Beschreibung:
 
 Es soll eine echte Arbeitsumgebung geschaffen werden, dafür starten wir erstmal mit der Konfiguration der Firewall PFSENSE als virtuelle Maschine
@@ -12,6 +13,7 @@ Als zweites erstellen wir über Hyper-V einen virtuellen Windows Server 2025 nam
 Als drittes erstellen wir über Hyper-V einen zweiten virtuellen Windows Server 2025 PLABDM01 und treten mit diesem unserer Domain von DC01 bei.
 
 Als viertes erstellen wir über Hyper-V einen Windows 11 Client und treten mit diesem auch der Domain von DC01 bei.
+
 
 ## Firewall Konfiguration:
 
@@ -35,11 +37,13 @@ Danach konfigurieren wir unser eigenes LAN mit pfSense IP-Adresse 192.168.0.1, s
 statischer IP-Addresse 192.168.0.3 von PLABDM01 und dann wird später ber DHCP für PLABWIN10 eine IP Adresse per DHCP hinzugefügt.
 (Später im LAB über DHCP)
 
+
 ### WAN Interface Konfiguration:
 
 Option 2 | deaktivieren DHCP | Legen Firewall WAN IP auf 10.71.31.10 | Gateway auf 10.71.31.254
 
 Dabei wählen wir bei der Firewall die Option 2 Set interface IP-Address aus und gehen die Einstellungen wie oben beschrieben durch.
+
 
 ### LAN Interface Konfiguration:
 
@@ -80,6 +84,7 @@ Ausschluss .1 und .2
 
 Gateway auf 192.168.0.1 und DNS auf .2 setzen
 
+
 ### PLABDM01 Konfiguration:
 
 PLABDC01 Settings | Netzwerkadapter auf virtuellen Switch LAN (davor WAN) abändern.
@@ -89,6 +94,7 @@ Standardinstallation Windows Server 2025 | Windows Updates | Namen ändern | IE 
 In Etherneteinstellungen IP: auf 192.168.03 | 255.255.255.0 | Gateway:192.168.0.1 | DNS:192.168.0.2 setzen 
 
 Domain Plab.de beitreten
+
 
 ### PLABWIN11:
 
