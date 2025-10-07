@@ -1,6 +1,6 @@
 # Systemadministrator
 
-In diesen LABS will ich praktisch zeigen, dass ich in den Umgang mit Windows Server 2025 behresche:
+In diesen LABS will ich praktisch zeigen, dass ich in Basic-Fähigkeiten für eine Junior-Systemadministrationsposition beherrsche.
 
 1. LAB = Konfiguration einer Firewall + Basic Konfigurationen
 
