@@ -8,6 +8,6 @@ In diesen LABS will ich praktisch zeigen, dass ich in Basic-Fähigkeiten für ei
 
 3. LAB = Neues Netzwerk (HR) hinzugefügt und Firewall NAT und Rules in Windows Server 2025 Enviroment erstellen
 
-4. LAB = Ausprobieren von Tools: Ping, Tracert, Netstat, ...
+
 
 
