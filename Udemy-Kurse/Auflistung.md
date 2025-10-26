@@ -22,6 +22,8 @@ CompTIA Network+ N10-009 Full Course, Labs, Course Notes (Instructort: Andrew Ra
 
 CompTIA Network+ V9 (N10-009) 9 SIMULATIONS (Instructor: Dean Cyber)
 
+=> Bestanden am 25.10.2025 (Siehe Zertifikate)
+
 <br></br>
 
 ## Systemadministrator Basic Course (Udemy, 2025):
