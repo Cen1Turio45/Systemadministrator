@@ -1,4 +1,4 @@
-Projektbeschreibung: Foundation – Netzwerkaufbau mit pfSense & Hyper-V
+# Projektbeschreibung: Foundation – Netzwerkaufbau mit pfSense & Hyper-V
 
 <br></br>
 
@@ -8,14 +8,14 @@ Das Netzwerk besteht aus drei getrennten Bereichen: einem externen WAN-Netz, ein
 
 <br></br>
 
-Netzwerkstruktur:
+## Netzwerkstruktur:
 In Hyper-V werden drei virtuelle Netzwerke eingerichtet:
 Ein External Switch für das WAN (IP-Bereich 10.71.31.0/24), ein Internal Switch für das LAN (192.168.0.0/24) sowie ein Private Switch für die DMZ (192.168.1.0/24).
 Diese bilden die Basis für die spätere Verbindung der virtuellen Maschinen mit unterschiedlichen Sicherheitszonen.
 
 <br></br>
 
-Installation und Konfiguration der pfSense-Firewall:
+## Installation und Konfiguration der pfSense-Firewall:
 Die pfSense-ISO wird heruntergeladen und bei Bedarf mit 7-ZIP entpackt. Anschließend wird in Hyper-V eine neue virtuelle Maschine erstellt. Dabei ist besonders darauf zu achten, dass der Secure-Boot-Modus deaktiviert wird, da pfSense diesen nicht unterstützt.
 Die virtuelle Maschine erhält vier virtuelle Prozessoren und mindestens 4 GB Arbeitsspeicher. Es werden drei virtuelle Netzwerkkarten hinzugefügt – jeweils für WAN, LAN und DMZ.
 Nach der Standardinstallation wird die pfSense-Firewall mit folgenden Parametern konfiguriert:
@@ -25,7 +25,7 @@ Das Webinterface wird aktiviert, um die spätere Verwaltung über den Browser zu
 
 <br></br>
 
-Erstellung der Testserver:
+## Erstellung der Testserver:
 Für die Überprüfung der Netzwerkverbindungen und Firewall-Regeln werden drei virtuelle Windows Server 2025-Maschinen angelegt:
 •	DC01 im WAN-Netz (10.71.31.x) als zukünftiger Domain Controller und Verwaltungsserver.
 •	LAN-Server im internen Netz (192.168.0.x) für interne Tests.
@@ -34,34 +34,34 @@ Ziel ist es, die Kommunikation zwischen allen Netzen sicherzustellen und den Int
 
 <br></br>
 
-Konfiguration des DC01:
+## Konfiguration des DC01:
 Der virtuelle Server DC01 wird mit einer 150-GB-Festplatte erstellt und erhält folgende Grundkonfiguration:
 Der Computername wird auf DC01 geändert, Remote Desktop aktiviert, die Zeitzone angepasst, eine statische IP-Adresse vergeben und die Internet Explorer-Sicherheitsfunktionen deaktiviert. Anschließend werden alle Windows-Updates installiert.
 Nach Abschluss der Grundinstallation wird ein Checkpoint in Hyper-V erstellt, um jederzeit zu einem funktionierenden Zustand zurückkehren zu können.
 
 <br></br>
 
-Zusätzliche Festplatte und Datenträgerverwaltung:
+## Zusätzliche Festplatte und Datenträgerverwaltung:
 Für DC01 wird über die Hyper-V-Einstellungen eine zweite virtuelle Festplatte hinzugefügt. Diese wird im Datenträger-Manager initialisiert und formatiert.
 Ein häufiger Fehler besteht darin, anstelle einer neuen Festplatte den Speicherort der bestehenden Disk zu verändern, was zur Beschädigung der virtuellen Maschine führen kann.
 Deshalb sollte unmittelbar nach der Update-Installation ein Checkpoint angelegt werden, um Systemfehler vermeiden zu können.
 
 <br></br>
 
-Htsupport-Ordner und Installationsdateien:
+## Htsupport-Ordner und Installationsdateien:
 Auf dem physischen Hostsystem wird ein USB-Stick mit dem Ordner „htsupport“ eingesteckt. Dieser wird als Netzwerkfreigabe eingerichtet, damit die virtuellen Maschinen darauf zugreifen können.
 Die Installationsdateien werden anschließend auf das Laufwerk C der jeweiligen virtuellen Maschine kopiert, in einen neu erstellten Ordner „C:\htsupport“. Von dort aus erfolgt später die Installation der Netman-Software.
 
 <br></br>
 
-Einrichtung des Domain Controllers und Installation von Netman:
+## Einrichtung des Domain Controllers und Installation von Netman:
 Nach der Vorbereitung wird ein neuer Checkpoint erstellt. Anschließend beginnt die Installation des Domain Controllers.
 Aus rechtlichen Gründen darf dieser Teil der Installation nicht dokumentiert werden.
 Nach erfolgreicher Einrichtung des Domain Controllers wird erneut ein Checkpoint erstellt, bevor die Installation von Netman durchgeführt wird. Auch dieser Schritt wird aus rechtlichen Gründen nicht detailliert beschrieben.
 
 <br></br>
 
-Empfehlung und Best Practices:
+## Empfehlung und Best Practices:
 Nach jedem größeren Arbeitsschritt sollte ein Checkpoint erstellt werden. Vor Änderungen an Netzwerken oder Datenträgern sind grundsätzlich Sicherungskopien anzulegen.
 Der Secure-Boot-Modus muss bei der pfSense-VM deaktiviert bleiben.
 Das Exportieren und Importieren von virtuellen Maschinen ist ausschließlich in Testumgebungen zulässig und darf in Produktivsystemen nicht angewendet werden, da dies nicht offiziell von Microsoft unterstützt wird.
@@ -69,4 +69,4 @@ Firewall-Regeln sollten schrittweise erstellt und anhand von Log-Dateien sowie P
 
 <br></br>
 
-Ergebnisse:
+## Ergebnisse:
