@@ -58,6 +58,8 @@
 
 ## 5. Delete the orphaned DC from Active Directory
 
+<img width="861" height="493" alt="image" src="https://github.com/user-attachments/assets/232bcabb-53f6-4dc6-b922-41c1f615111b" />
+
 1. „Active Directory Users and Computers“ öffnen.
 
 2. Zur OU „Domain Controllers“ navigieren.
