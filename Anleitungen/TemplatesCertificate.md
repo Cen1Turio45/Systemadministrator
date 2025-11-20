@@ -4,6 +4,8 @@
 
 ## Creating a Certificate Template
 
+<img width="905" height="518" alt="image" src="https://github.com/user-attachments/assets/b35b24fe-bc7c-40f3-a1ce-c66f3b5457b4" />
+
 1. Ein Certificate Authority (CA) Server stellt Zertifikate aus.
 
 2. Zertifikate basieren nicht direkt auf freien Einstellungen, sondern immer auf Zertifikatvorlagen (Templates).
@@ -47,6 +49,8 @@
 
 ## Allgemeine Eigenschaften anpassen
 
+<img width="905" height="518" alt="image" src="https://github.com/user-attachments/assets/a158080d-3f97-46ce-802a-964791a58ceb" />
+
 1. Die neue Vorlage öffnet sich im Eigenschaftenfenster.
 
 2. Einen eindeutigen Vorlagennamen vergeben.
@@ -63,6 +67,8 @@
 
 ## Subject Name konfigurieren
 
+<img width="523" height="552" alt="image" src="https://github.com/user-attachments/assets/9b100100-627c-4aa7-a290-b3cf098a59a4" />
+
 1. Tab Subject Name öffnen.
 
 2. Einstellung „Build from this Active Directory Information“ auswählen.
@@ -76,6 +82,8 @@
 <br></br>
 
 ## Sicherheitseinstellungen definieren
+
+<img width="496" height="688" alt="image" src="https://github.com/user-attachments/assets/7de992f7-9114-4b04-a394-ae5669e3af9c" />
 
 1. Tab Security öffnen.
 
