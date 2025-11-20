@@ -12,6 +12,8 @@
 
 ## Erforderliche Angaben bereitstellen
 
+<img width="719" height="421" alt="image" src="https://github.com/user-attachments/assets/020f4f37-5d59-47fe-8a30-5b503348188b" />
+
 1. Validity Period
 
    Zertifikatslaufzeit auswählen (meist 1 Jahr).
