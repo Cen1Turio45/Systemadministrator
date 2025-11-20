@@ -1,5 +1,8 @@
 # Quick Server Rollouts mit Sysprep
 
+<img width="828" height="366" alt="image" src="https://github.com/user-attachments/assets/92d12fb6-70fe-4ab6-8dd7-caeefaac262c" />
+
+
 <br></br>
 
 ## 1. Installation des Windows Server 2025 auf dem Master-Server
