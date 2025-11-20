@@ -1,5 +1,9 @@
 # Demoting a Server (Domain Controller)
 
+<img width="861" height="493" alt="image" src="https://github.com/user-attachments/assets/232bcabb-53f6-4dc6-b922-41c1f615111b" />
+
+<img width="901" height="537" alt="image" src="https://github.com/user-attachments/assets/a27305d2-2962-4ec2-a969-7aa009eabc78" />
+
 <br></br>
 
 ## 1. Demoting the old server while it is still online
@@ -58,8 +62,6 @@
 
 ## 5. Delete the orphaned DC from Active Directory
 
-<img width="861" height="493" alt="image" src="https://github.com/user-attachments/assets/232bcabb-53f6-4dc6-b922-41c1f615111b" />
-
 1. „Active Directory Users and Computers“ öffnen.
 
 2. Zur OU „Domain Controllers“ navigieren.
@@ -77,8 +79,6 @@
    Löschvorgang bestätigen.
 
 ## 6. Clean up Sites and Services and DNS
-
-<img width="901" height="537" alt="image" src="https://github.com/user-attachments/assets/a27305d2-2962-4ec2-a969-7aa009eabc78" />
 
 1. Abschließend erneut „Active Directory Sites and Services“ öffnen.
 
