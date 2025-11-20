@@ -4,6 +4,8 @@
 
 ## MMC vorbereiten und Snap-in hinzufügen
 
+<img width="699" height="386" alt="image" src="https://github.com/user-attachments/assets/76930547-9ea0-4863-a023-341fd22b9d56" />
+
 1. Auf einem Client-Computer MMC öffnen (mmc.exe).
 
 2. Über File → Add/Remove Snap-in das Snap-in Certificates hinzufügen.
@@ -34,6 +36,8 @@
 
 ## Neues Zertifikat vom CA-Server anfordern
 
+<img width="893" height="584" alt="image" src="https://github.com/user-attachments/assets/768625b9-d999-473e-8921-7d8aef6235aa" />
+
 1. Rechtsklick auf Personal.
 
 2. All Tasks → Request New Certificate… auswählen.
@@ -61,6 +65,8 @@
 <br></br> 
 
 ## Zertifikatserstellung und Abschluss
+
+<img width="910" height="532" alt="image" src="https://github.com/user-attachments/assets/6bc06046-031a-4e4b-b467-562afefac1fb" />
 
 1. Der CA-Server verarbeitet die Anfrage und stellt ein neues Zertifikat für den Computer aus.
 
