@@ -62,9 +62,9 @@ Nach Ausführung fährt der Server vollständig herunter und darf nicht erneut g
 
 3. Virtuelle Server (Hyper-V):
 
-Die VHDX-Datei des Servers kopieren.
+   Die VHDX-Datei des Servers kopieren.
 
-Die Datei sinnvoll benennen, z. B. „WS2025_Master_withUpdates.vhdx“.
+   Die Datei sinnvoll benennen, z. B. „WS2025_Master_withUpdates.vhdx“.
 
 4. Das Master-Image an einem zentralen, sicheren Speicherort ablegen.
 
@@ -82,11 +82,11 @@ Die Datei sinnvoll benennen, z. B. „WS2025_Master_withUpdates.vhdx“.
 
 4. Beim ersten Start erfolgt:
 
-Der Windows-OOBE-Setup-Assistent
+   Der Windows-OOBE-Setup-Assistent
 
-Eine automatische Generierung einer neuen SID
+   Eine automatische Generierung einer neuen SID
 
-Zuweisung eines zufälligen Hostnamens
+   Zuweisung eines zufälligen Hostnamens
 
 5. Den Server nach dem Setup in den gewünschten Hostnamen umbenennen.
 
