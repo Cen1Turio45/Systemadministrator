@@ -5,4 +5,6 @@
 
 <br></br>
 
-Einstellungen | Windows-Updates | erweiterte Einstellungen | Receive updates for other Microsoft products aktivieren | Notify me when a restart is required to finish updating aktivieren.
+Einstellungen | Windows-Updates | erweiterte Einstellungen | Receive updates for other Microsoft products aktivieren.
+
+Einstellungen | Windows-Updates | erweiterte Einstellungen | Notify me when a restart is required to finish updating aktivieren.
