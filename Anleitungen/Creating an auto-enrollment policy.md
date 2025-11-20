@@ -94,12 +94,3 @@ Computer Configuration | Policies | Windows Settings | Public Key Policies  Cert
 
 <br></br>
 
-## Zusammenfassung der Funktionsweise
-
-1. Sobald ein Template veröffentlicht wurde und Auto-Enrollment im GPO aktiv ist, fordert jeder Domain-Computer automatisch Zertifikate an – basierend auf den Berechtigungen im Template.
-
-2. Wenn das Zertifikat kurz vor dem Ablauf steht, erneuert die Policy es selbstständig.
-
-3. Dies automatisiert den gesamten Zertifikatslebenszyklus und reduziert den administrativen Aufwand erheblich.
-
-<br></br>
