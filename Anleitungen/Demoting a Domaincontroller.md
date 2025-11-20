@@ -76,6 +76,8 @@
 
 ## 6. Clean up Sites and Services and DNS
 
+<img width="901" height="537" alt="image" src="https://github.com/user-attachments/assets/a27305d2-2962-4ec2-a969-7aa009eabc78" />
+
 1. Abschließend erneut „Active Directory Sites and Services“ öffnen.
 
 2. Sicherstellen, dass keine weiteren Referenzen auf den alten DC vorhanden sind.
