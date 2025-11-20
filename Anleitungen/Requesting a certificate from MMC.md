@@ -16,7 +16,7 @@
 
    Computer account
 
-verwaltet werden sollen.
+   verwaltet werden sollen.
 
 4. Da das Zertifikat vom Computer verwendet wird, Computer account auswählen.
 
