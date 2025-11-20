@@ -4,6 +4,8 @@
 
 ## Ziel der Auto-Enrollment Policy
 
+<img width="790" height="337" alt="image" src="https://github.com/user-attachments/assets/2570a1c6-1586-44e4-afc0-3c05ad9f383b" />
+
 1. Der CA-Server ist eingerichtet und kann Zertifikate ausstellen.
 
 2. Viele Computer im Netzwerk benötigen jedoch automatisch ein Zertifikat.
@@ -28,6 +30,8 @@
 
 ## GPO für Auto-Enrollment erstellen
 
+<img width="713" height="423" alt="image" src="https://github.com/user-attachments/assets/af409861-237f-48f6-a83d-8f983acdb8f8" />
+
 1. Auf einem Domain Controller Group Policy Management öffnen.
 
 2. Ein neues GPO erstellen, z. B. „Enable Certificate Auto-Enrollment“.
@@ -37,6 +41,8 @@
 <br></br>
 
 ## Einstellungen der Auto-Enrollment Policy konfigurieren
+
+<img width="832" height="592" alt="image" src="https://github.com/user-attachments/assets/00b0add0-739e-452f-a6b9-aa1a9bb2370a" />
 
 Navigieren zu:
 
