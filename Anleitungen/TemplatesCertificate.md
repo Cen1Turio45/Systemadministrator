@@ -1,7 +1,3 @@
-# Templates Certificate
-
-<br></br>
-
 # Creating a Certificate Template
 
 <img width="905" height="518" alt="image" src="https://github.com/user-attachments/assets/b35b24fe-bc7c-40f3-a1ce-c66f3b5457b4" />
