@@ -42,9 +42,15 @@
 2. CA-Dienst neu starten
 
    In der Certification Authority-Konsole den CA-Namen rechtsklicken.
+
    All Tasks → Stop Service auswählen.
+
    Nach ein bis zwei Sekunden erneut den CA-Namen rechtsklicken.
+
    All Tasks → Start Service auswählen.
+
    Danach erneut versuchen, die neue Vorlage unter
+
    Certificate Templates → New → Certificate Template to Issue zu veröffentlichen.
+
    Die Vorlage sollte nun in der Liste erscheinen.
