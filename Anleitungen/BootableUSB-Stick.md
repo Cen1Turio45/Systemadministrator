@@ -37,11 +37,7 @@ robocopy $source $destination /COPYALL /Z /E /SEC /R:3 /W:3
 <br></br>
 
 ## USB-Stick bootfähig machen:
-usbDriveNumber = (Get-WmiObject -Class Win32_DiskDrive |
-
-Where-Object {$_.InterfaceType -eq "USB" -and $_.DeviceID -like "*$usbDriveLetter"}).Index |
-
-bootsect /nt60 $usbDriveLetter | Out-Null
+usbDriveNumber = (Get-WmiObject -Class Win32_DiskDrive | Where-Object {$_.InterfaceType -eq "USB" -and $_.DeviceID -like "*$usbDriveLetter"}).Index bootsect /nt60 $usbDriveLetter | Out-Null
 
 <br></br>
 
