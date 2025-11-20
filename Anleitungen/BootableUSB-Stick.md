@@ -24,3 +24,26 @@ Format-Volume -DriveLetter $usbDriveLetter -FileSystem NTFS -NewFileSystemLabel 
 
 <br></br>
 
+## ISO-Laufwerk auswählen:
+$isoMountPointDriveLetter = Read-Host "Enter ISO mount point drive letter (Ex: F)"
+
+<br></br>
+
+## Dateien vom ISO auf den USB-Stick kopieren:
+$source = "$($isoMountPointDriveLetter):"
+$destination = "$($usbDriveLetter):"
+robocopy $source $destination /COPYALL /Z /E /SEC /R:3 /W:3
+
+<br></br>
+
+## USB-Stick bootfähig machen:
+$usbDriveNumber = (Get-WmiObject -Class Win32_DiskDrive | Where-Object {$_.InterfaceType -eq "USB" -and $_.DeviceID -like "*$usbDriveLetter"}).Index
+bootsect /nt60 $usbDriveLetter | Out-Null
+
+<br></br>
+
+## Abschlussmeldung:
+Write-Host "Copy operation complete" 
+Start-Sleep -Seconds 2
+
+<br></br>
