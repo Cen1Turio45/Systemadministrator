@@ -26,5 +26,5 @@ In diesen LABS will ich praktisch zeigen, dass ich in Basic-Fähigkeiten für ei
 
 6. LAB = Foundation Netzwerkaufbau mit pfSense und Hyper-V
 
-   In diesem Lab, hab ich die Konfiguration der Firewall endgültig verstanden wie man eine Firewall konfiguriert und kann dies ab jetzt auch ohne Probleme wiederholen.
+   In diesem Lab, hab ich die Konfiguration der Firewall endgültig verstanden und kann dies ab jetzt auch ohne Probleme wiederholen.
 
