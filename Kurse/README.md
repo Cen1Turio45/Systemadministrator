@@ -1,5 +1,7 @@
 # Kurse
 
-Dieser Bereich ist für Kursnotizen, Lernpfade und ausgewählte Lernnachweise vorgesehen.
+Dieser Bereich sammelt Kursnotizen, Lernpfade und relevante Lernnachweise.
 
-Ziel ist, nur Inhalte aufzunehmen, die fachlich relevant sind und einen nachvollziehbaren Lernfortschritt zeigen.
+## Ziel
+
+Nicht jeder Kurs muss hier vollständig dokumentiert werden. Wichtig sind vor allem Inhalte, die einen fachlichen Fortschritt zeigen oder später als Nachschlagewerk nützlich sind.

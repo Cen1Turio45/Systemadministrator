@@ -1,6 +1,5 @@
 # Obtaining a public authority SSL certificate
 
-<br></br>
 
 ## Vorbereitung
 
@@ -8,7 +7,6 @@
 
 2. Im Beispiel wird ein Windows Server 2025 Webserver mit IIS 10 verwendet.
 
-<br></br>
 
 ## Ziel
 
@@ -16,9 +14,8 @@
 
 2. Der Prozess besteht aus drei Schritten:
 
-   Certificate Reqüst (CSR) erstellen
+   Certificate Request (CSR) erstellen
 
    CSR bei der Public CA einreichen
 
    Zertifikat auf dem Server installieren
-

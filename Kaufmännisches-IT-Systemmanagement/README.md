@@ -1,13 +1,18 @@
 # Kaufmännisches IT-Systemmanagement
 
-Dieser Bereich sammelt kaufmännische IT-Themen, die meine technische Arbeit sinnvoll ergänzen.
+Dieser Bereich ergänzt die technische Dokumentation um kaufmännische IT-Themen. Gerade in kleineren und mittelständischen IT-Teams ist diese Kombination wertvoll: technische Aufgaben umsetzen und gleichzeitig Angebote, Rechnungen, Kosten und Kundenprozesse verstehen.
 
-Schwerpunkte:
+## Schwerpunkte
 
 - Angebote und Angebotsverständnis
 - Rechnungen und Abrechnungsvorgänge
 - Kundenkommunikation
-- IT-Prozesse zwischen Technik, Kunde und Verwaltung
-- Wirtschaftliche Betrachtung von IT-Lösungen, Lizenzen und laufenden Kosten
+- Prozesse zwischen Technik, Kunde und Verwaltung
+- Wirtschaftliche Bewertung von IT-Lösungen, Lizenzen und laufenden Kosten
 
-Gerade in kleineren und mittelständischen IT-Teams ist diese Kombination wertvoll: technische Aufgaben sauber umsetzen und gleichzeitig kaufmännische Zusammenhänge verstehen.
+## Geplante Inhalte
+
+- Beispielstruktur für ein IT-Angebot
+- Checkliste für Rechnungsprüfung
+- Ablauf von Anfrage, Angebot, Umsetzung und Abrechnung
+- Notizen zu Orgamax und kaufmännischen IT-Prozessen

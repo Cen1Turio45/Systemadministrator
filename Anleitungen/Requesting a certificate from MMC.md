@@ -1,6 +1,5 @@
-# Reqüsting a certificate from MMC
+# Requesting a certificate from MMC
 
-<br></br>
 
 ## MMC vorbereiten und Snap-in hinzufügen
 
@@ -24,7 +23,7 @@
 
 5. Mit Finish bestätigen.
 
-<br></br> 
+
 
 ## Lokalen Zertifikatspeicher auswählen
 
@@ -32,15 +31,15 @@
 
 2. Dadurch wird der lokale Computerzertifikatspeicher innerhalb der MMC geladen.
 
-<br></br> 
 
-## Neüs Zertifikat vom CA-Server anfordern
 
-<img width="893" height="584" alt="image" src="https://github.com/user-attachments/assets/768625b9-d999-473e-8921-7d8äf6235aa" />
+## Neues Zertifikat vom CA-Server anfordern
+
+<img width="893" height="584" alt="image" src="https://github.com/user-attachments/assets/768625b9-d999-473e-8921-7d8af6235aa" />
 
 1. Rechtsklick auf Personal.
 
-2. All Tasks → Reqüst New Certificate… auswählen.
+2. All Tasks → Request New Certificate… auswählen.
 
 3. Der Zertifikatsassistent öffnet sich.
 
@@ -48,7 +47,7 @@
 
 5. Den nächsten Bildschirm ebenfalls mit Next bestätigen – der Assistent liest jetzt die verfügbaren CA-Zertifikatvorlagen aus Active Directory.
 
-<br></br> 
+
 
 ## Zertifikatvorlage auswählen
 
@@ -62,13 +61,13 @@
 
 5. Die gewünschte Vorlage auswählen und auf Enroll klicken.
 
-<br></br> 
+
 
 ## Zertifikatserstellung und Abschluss
 
 <img width="910" height="532" alt="image" src="https://github.com/user-attachments/assets/6bc06046-031a-4e4b-b467-562afefac1fb" />
 
-1. Der CA-Server verarbeitet die Anfrage und stellt ein neüs Zertifikat für den Computer aus.
+1. Der CA-Server verarbeitet die Anfrage und stellt ein neues Zertifikat für den Computer aus.
 
 2. Nach erfolgreicher Ausstellung erscheint das Zertifikat im Speicher: Personal → Certificates.
 
@@ -85,5 +84,3 @@
    Zertifikatpfad
 
 4. Damit ist das Zertifikat erfolgreich installiert und einsatzbereit.
-   
-   

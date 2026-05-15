@@ -1,11 +1,15 @@
 # Netzwerk
 
-Dieser Bereich ist für Netzwerkgrundlagen, Praxisdokumentationen und Hersteller- oder Konfigurationsnotizen vorgesehen.
+Dieser Bereich sammelt Netzwerkgrundlagen, Lab-Dokumentationen und Konfigurationsnotizen.
 
-Mögliche Themen:
+## Themen
 
 - LANCOM
 - VLANs
 - Routing und Switching
-- Firewall-Grundlagen
-- Netzwerkdiagnose
+- pfSense und Firewall-Regeln
+- NAT, DNS, DHCP und Netzwerkdiagnose
+
+## Ziel
+
+Die Inhalte sollen zeigen, wie Netzwerke geplant, aufgebaut, dokumentiert und bei Fehlern systematisch analysiert werden.

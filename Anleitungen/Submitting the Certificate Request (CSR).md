@@ -2,15 +2,13 @@
 
 <img width="719" height="421" alt="image" src="https://github.com/user-attachments/assets/020f4f37-5d59-47fe-8a30-5b503348188b" />
 
-<br></br>
 
 ## Public CA Website aufrufen
 
 1. Auf der Website der gewählten Public CA anmelden (z. B. GoDaddy, DigiCert, Verisign).
 
-2. Bereich für SSL-Zertifikate und Certificate Reqüst / Create Certificate öffnen.
+2. Bereich für SSL-Zertifikate und Certificate Request / Create Certificate öffnen.
 
-<br></br>
 
 ## Erforderliche Angaben bereitstellen
 
@@ -40,7 +38,6 @@
 
 4. Validierungs-E-Mail öffnen → Link anklicken oder Code eingeben.
 
-<br></br>
 
 ## CSR
 

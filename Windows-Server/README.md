@@ -1,11 +1,15 @@
 # Windows Server
 
-Dieser Bereich ist für Dokumentationen, Labs und Praxisnotizen rund um Windows Server vorgesehen.
+Dieser Bereich sammelt Dokumentationen und Praxisnotizen rund um Windows Server.
 
-Mögliche Themen:
+## Themen
 
 - Active Directory
 - Gruppenrichtlinien
 - DNS und DHCP
 - Rollen und Features
 - Serververwaltung und Troubleshooting
+
+## Ziel
+
+Hier sollen später technische Anleitungen, Lab-Ergebnisse und kurze Checklisten entstehen, die typische Aufgaben eines Junior-Systemadministrators nachvollziehbar zeigen.

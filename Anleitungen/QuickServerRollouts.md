@@ -1,9 +1,8 @@
 # Quick Server Rollouts mit Sysprep
 
-<img width="828" height="366" alt="image" src="https://github.com/user-attachments/assets/92d12fb6-70fe-4ab6-8dd7-cäefaac262c" />
+<img width="828" height="366" alt="image" src="https://github.com/user-attachments/assets/92d12fb6-70fe-4ab6-8dd7-caefaac262c" />
 
 
-<br></br>
 
 ## 1. Installation des Windows Server 2025 auf dem Master-Server
 
@@ -15,7 +14,6 @@
 
 4. Der Server dient als Grundlage für das spätere Master-Image.
 
-<br></br>
 
 ## 2. Konfigurationen und Updates auf dem Master-Server durchführen
 
@@ -31,21 +29,18 @@
 
 6. Optional: Nach Abschluss aller Anpassungen Tests durchführen, um sicherzustellen, dass das System fehlerfrei funktioniert.
 
-<br></br>
 
 ## 3. Sysprep vorbereiten und ausführen
 
-<br></br>
 
 ### 3.1 Wichtige Sysprep-Parameter
 
-/generalize: Entfernt eindeutige Systeminformationen (z. B. SID), damit neü Server individülle Identitäten erhalten.
+/generalize: Entfernt eindeutige Systeminformationen (z. B. SID), damit neue Server individuelle Identitäten erhalten.
 
 /oobe: Aktiviert den Windows-Ersteinrichtungsprozess beim ersten Start des neuen Systems.
 
 /shutdown: Fährt das System nach Abschluss herunter und verhindert einen Neustart.
 
-<br></br>
 
 ### 3.2 Sysprep-Befehl
 
@@ -55,7 +50,6 @@ sysprep.exe /generalize /oobe /shutdown
 
 Nach Ausführung fährt der Server vollständig herunter und darf nicht erneut gestartet werden, bevor das Image erstellt wurde.
 
-<br></br>
 
 ## 4. Master-Image des Servers erstellen
 
@@ -73,9 +67,9 @@ Nach Ausführung fährt der Server vollständig herunter und darf nicht erneut g
 
 5. Das Master-Image selbst darf nicht gebootet werden, da dies die Sysprep-Vorbereitung entfernen würde.
 
-6. Neü Server werden ausschließlich durch Kopien dieses Images erstellt.
+6. Neue Server werden ausschließlich durch Kopien dieses Images erstellt.
 
-## 5. Neü Server aus dem Master-Image bereitstellen
+## 5. Neue Server aus dem Master-Image bereitstellen
 
 1. Für jeden neuen Server eine Kopie des Master-Images erstellen.
 

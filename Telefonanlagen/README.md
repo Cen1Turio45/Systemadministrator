@@ -1,10 +1,15 @@
 # Telefonanlagen
 
-Dieser Bereich ist für Dokumentationen und Notizen rund um Telefonanlagen und VoIP vorgesehen.
+Dieser Bereich ist für Dokumentationen rund um Telefonanlagen und VoIP vorgesehen.
 
-Mögliche Themen:
+## Themen
 
 - Einrichtung und Administration
 - Benutzer, Nebenstellen und Rufgruppen
 - SIP, VoIP und Provider-Anbindung
-- Fehleranalyse und Dokumentation
+- Fehleranalyse
+- Dokumentation von Änderungen
+
+## Ziel
+
+Hier sollen später praxisnahe Notizen entstehen, die Einrichtung, Betrieb und Fehleranalyse von Telefonanlagen nachvollziehbar machen.

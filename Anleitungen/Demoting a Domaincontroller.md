@@ -1,6 +1,5 @@
 # Demoting a Server (Domain Controller)
 
-<br></br>
 
 ## 1. Demoting the old server while it is still online
 
@@ -24,7 +23,6 @@
 
 10. Der Server wird heruntergestuft, aus AD entfernt und anschließend neu gestartet. Danach ist es ein normaler Windows-Server.
 
-<br></br>
 
 ## 2. Cleaning up Active Directory Sites and Services
 
@@ -36,17 +34,15 @@
 
 4. Bestätigen, um die alte Serverreferenz vollständig zu entfernen.
 
-<br></br>
 
 ## 3. Demoting when the old server is gone
 
 1. Der Server kann nicht mehr über den Server Manager bereinigt werden
 
-2. Alle AD-Verweise müssen daher manüll entfernt werden.
+2. Alle AD-Verweise müssen daher manuell entfernt werden.
 
-3. Zürst sicherstellen, dass alle FSMO-Rollen bereits auf einen funktionierenden DC übertragen wurden.
+3. Zuerst sicherstellen, dass alle FSMO-Rollen bereits auf einen funktionierenden DC übertragen wurden.
 
-<br></br>
 
 ## 4. Move FSMO roles (falls notwendig)
 
@@ -54,7 +50,6 @@
 
 2. Der alte DC muss hierfür nicht online sein.
 
-<br></br>
 
 ## 5. Delete the orphaned DC from Active Directory
 
@@ -85,7 +80,7 @@
 2. Sicherstellen, dass keine weiteren Referenzen auf den alten DC vorhanden sind.
 
 3. Zusätzlich DNS bereinigen:
-   
+
    DNS Manager öffnen.
 
    Unter den Forward Lookup Zones alle SRV-Records prüfen.
@@ -93,7 +88,3 @@
    Veraltete Einträge zum alten DC entfernen.
 
 4. Dies verhindert spätere DNS-Probleme oder Verzögerungen.
-   
-
-
-   

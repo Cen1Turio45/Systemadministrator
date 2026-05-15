@@ -8,11 +8,10 @@
 
 3. Diese Templates definieren alle Eigenschaften, die später im Zertifikat enthalten sind.
 
-4. Neü Zertifikate werden generiert, indem der CA-Server die ausgewählte Vorlage „nach Rezept“ nutzt.
+4. Neue Zertifikate werden generiert, indem der CA-Server die ausgewählte Vorlage „nach Rezept“ nutzt.
 
 5. Obwohl Windows einige Standardvorlagen bereitstellt, ist es empfehlenswert, eigene Templates zu erstellen, um volle Kontrolle über alle Konfigurationen zu haben.
 
-<br></br>
 
 ## Zertifikatvorlagen-Konsole öffnen
 
@@ -28,7 +27,6 @@
 
 6. „Manage“ auswählen, um die vollständige Template-Konsole zu öffnen.
 
-<br></br>
 
 ## Basisvorlage auswählen und duplizieren
 
@@ -39,15 +37,14 @@
 
 3. Rechtsklick auf die ausgewählte Standardvorlage.
 
-4. „Duplicate Template“ auswählen, um eine neü Vorlage darauf basierend zu erstellen.
+4. „Duplicate Template“ auswählen, um eine neue Vorlage darauf basierend zu erstellen.
 
-<br></br>
 
 ## Allgemeine Eigenschaften anpassen
 
 <img width="905" height="518" alt="image" src="https://github.com/user-attachments/assets/a158080d-3f97-46ce-802a-964791a58ceb" />
 
-1. Die neü Vorlage öffnet sich im Eigenschaftenfenster.
+1. Die neue Vorlage öffnet sich im Eigenschaftenfenster.
 
 2. Einen eindeutigen Vorlagennamen vergeben.
 
@@ -55,11 +52,10 @@
 
 4. Die gewünschte Gültigkeitsdauer einstellen (Beispiel aus dem Screenshot: 2 Jahre).
 
-5. Die Erneürungsfrist konfigurieren (Beispiel: 6 Wochen).
+5. Die Erneuerungsfrist konfigurieren (Beispiel: 6 Wochen).
 
 6. Optional: „Publish certificate in Active Directory“ aktivieren.
 
-<br></br>
 
 ## Subject Name konfigurieren
 
@@ -75,11 +71,10 @@
 
 5. Optionale zusätzliche Attribute (E-Mail, UPN, SPN) nach Bedarf aktivieren oder deaktivieren.
 
-<br></br>
 
 ## Sicherheitseinstellungen definieren
 
-<img width="496" height="688" alt="image" src="https://github.com/user-attachments/assets/7de992f7-9114-4b04-a394-ä5669e3af9c" />
+<img width="496" height="688" alt="image" src="https://github.com/user-attachments/assets/7de992f7-9114-4b04-a394-a5669e3af9c" />
 
 1. Tab Security öffnen.
 
@@ -91,11 +86,10 @@
    Berechtigungen:
    Read: aktiviert
    Enroll: aktiviert
-   (optional) Autönroll je nach Anforderung
+   (optional) Autoenroll je nach Anforderung
 
 4. Ziel: Nur autorisierte Computer sollen Zertifikate auf Basis dieser Vorlage anfordern können.
 
-<br></br>
 
 ## Vorlage speichern
 
@@ -103,7 +97,6 @@
 
 2. Mit „OK“ bestätigen.
 
-3. Die neü Vorlage erscheint nun in der Liste der verfügbaren Templates auf dem CA-Server.
+3. Die neue Vorlage erscheint nun in der Liste der verfügbaren Templates auf dem CA-Server.
 
 4. Diese Vorlage steht ab sofort für zukünftige Zertifikatsanforderungen zur Verfügung.
-

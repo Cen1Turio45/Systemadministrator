@@ -1,10 +1,15 @@
 # Security
 
-Dieser Bereich ist für IT-Sicherheit, Härtung, Analyse und sicherheitsrelevante Dokumentationen vorgesehen.
+Dieser Bereich sammelt sicherheitsrelevante Dokumentationen und Notizen.
 
-Mögliche Themen:
+## Themen
 
-- Grundschutz und Härtung
+- Systemhärtung
 - Backup- und Wiederherstellungskonzepte
 - Patch- und Updateprozesse
+- Zertifikate und PKI
 - Log-Auswertung und Angriffserkennung
+
+## Ziel
+
+Security-Themen sollen hier praxisnah dokumentiert werden: verständlich, nachvollziehbar und mit Bezug zum administrativen Alltag.

@@ -1,18 +1,36 @@
 # Lucas Wessner - Systemadministration und IT-Systemmanagement
 
-Dieses Repository dient als strukturierte Sammlung meiner praktischen IT-Projekte, technischen Dokumentationen und Lernnachweise im Bereich Systemadministration, Cloud, Automatisierung und IT-Systemmanagement.
+Dieses Repository bündelt meine praktischen IT-Projekte, Labs, Anleitungen und Lernnachweise. Es soll schnell zeigen, womit ich praktisch gearbeitet habe und wie ich technische Themen dokumentiere.
 
-Mein Schwerpunkt liegt auf praxisnaher IT-Administration: Windows-Umgebungen, Client-Rollouts, Softwareverteilung, Fehleranalyse, Azure-Automatisierung und nachvollziehbarer technischer Dokumentation. Durch meine Ausbildung zum Kaufmann für IT-Systemmanagement bringe ich zusätzlich kaufmännisches Verständnis mit, zum Beispiel für Kundenkommunikation, Angebote, Rechnungen, Abrechnungsvorgänge und die wirtschaftliche Bewertung von IT-Lösungen.
+Mein Profil verbindet zwei Bereiche: Systemadministration und kaufmännisches IT-Systemmanagement. Dadurch kann ich technische Aufgaben umsetzen, sauber dokumentieren und gleichzeitig Kosten, Rechnungen, Angebote und Kundenprozesse nachvollziehen.
+
+## Schwerpunkte
+
+| Bereich | Inhalt |
+| --- | --- |
+| [Azure](Azure) | Kostenmonitoring, Reporting, Backup und Automatisierung |
+| [Windows Server](Windows-Server) | Active Directory, DNS, DHCP, GPOs und Serverbetrieb |
+| [Netzwerk](Netzwerk) | pfSense, Hyper-V-Netze, Routing, NAT und Firewall-Regeln |
+| [Labs](Labs) | Praktische Testumgebungen und dokumentierte Übungen |
+| [Anleitungen](Anleitungen) | Schritt-für-Schritt-Dokumentationen für administrative Aufgaben |
+| [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Angebote, Rechnungen, Abrechnung, Kundenkommunikation und Prozesse |
+| [Security](Security) | Härtung, Backup, Updateprozesse und sicherheitsrelevante Themen |
+| [Monitoring](Monitoring) | Überwachung, Reporting und Auswertung technischer Betriebsdaten |
+| [Linux](Linux) | Linux-Grundlagen und administrative Notizen |
+| [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen, Rufgruppen und Fehleranalyse |
+| [Kurse](Kurse) | Lernpfade und Kursnotizen |
+| [Zertifikate](Zertifikate) | Zertifikate und Nachweise |
+| [Archiv](Archiv) | Inhalte, die nicht aktiv im Portfolio stehen |
 
 ## Profil
 
 - Kaufmann für IT-Systemmanagement mit praktischer Erfahrung in Systemadministration und IT-Service
 - Erfahrung mit Windows-Clientumgebungen, Rollouts, Softwareverteilung und Troubleshooting
 - Praxisprojekte mit Azure Functions, Azure Cost Management, Azure Storage, PowerShell und GitHub
-- Technisches und kaufmännisches Verständnis in einer Rolle: IT umsetzen, dokumentieren, betreuen und wirtschaftlich einordnen
-- Interesse an sauberer Dokumentation, Automatisierung, Monitoring und strukturierten Betriebsprozessen
+- Technisches und kaufmännisches Verständnis in einer Rolle
+- Interesse an Automatisierung, Monitoring, sauberer Dokumentation und strukturierten Betriebsprozessen
 
-## Berufliche Schwerpunkte
+## Praktische Erfahrung
 
 ### Systemadministration
 
@@ -24,45 +42,29 @@ Mein Schwerpunkt liegt auf praxisnaher IT-Administration: Windows-Umgebungen, Cl
 
 ### Cloud und Automatisierung
 
-- Entwicklung eines automatisierten Azure-Kostenmonitorings
-- Auswertung von Azure-Kosten nach Services, Ressourcengruppen, Kategorien und Kostenentwicklung
+- Automatisiertes Azure-Kostenmonitoring auf Subscription-Ebene
+- Strukturierte Auswertung nach Services, Ressourcengruppen, Kategorien und Kostenentwicklung
 - Automatisierter Versand von Kostenreports per E-Mail
-- Entwicklung einer Backup-Lösung zur Sicherung lokaler Dateien in Azure Blob Storage
+- Backup-Lösung zur Sicherung lokaler Dateien in Azure Blob Storage
 - Automatisierung mit PowerShell, Azure CLI, Azure Functions und Windows Task Scheduler
 
 ### Kaufmännisches IT-Systemmanagement
 
-Neben der technischen Arbeit bringe ich einen kaufmännischen Hintergrund aus dem IT-Systemmanagement mit. Das ist besonders wertvoll in IT-Teams, weil technische Lösungen nicht nur funktionieren, sondern auch nachvollziehbar, wirtschaftlich und sauber abrechenbar sein müssen.
-
-Relevante kaufmännische Aufgaben und Stärken:
-
-- Bearbeitung kaufmännischer Vorgänge mit Orgamax
 - Verständnis für Angebote, Rechnungen, Abrechnung und Kundenprozesse
+- Bearbeitung kaufmännischer Vorgänge mit Orgamax
 - Schnittstelle zwischen Technik, Kunde und kaufmännischer Verwaltung
-- Unterstützung bei administrativen Aufgaben, wenn im technischen Betrieb gerade weniger akute Themen anliegen
 - Wirtschaftliches Denken bei IT-Lösungen, Lizenzen, Services und laufenden Kosten
 
-## Projekte
+## Ausgewählte Projekte
 
 ### Azure Cost Monitoring
 
-Automatisierte Lösung zur monatlichen Auswertung von Azure-Kosten auf Subscription-Ebene.
+Automatisierte Lösung zur monatlichen Auswertung von Azure-Kosten.
 
-Inhalte:
-
-- Auswertung von Kosten nach Services, Ressourcengruppen und Kategorien
-- Erkennung von auffälligen Kostenentwicklungen, Trends und Ausreißern
+- Auswertung nach Services, Ressourcengruppen und Kategorien
+- Erkennung auffälliger Kostenentwicklungen
 - Automatisierter E-Mail-Versand von Kostenreports
-- Validierung von Konfigurationswerten, API-Antworten und Datumslogik
-
-Technologien:
-
-- Azure Functions
-- JavaScript / Node.js
-- Azure Cost Management API
-- Managed Identity
-- Azure Communication Services
-- GitHub
+- Validierung von Konfiguration, API-Antworten und Datumslogik
 
 Pfad: [Azure/azure-cost-monitoring](Azure/azure-cost-monitoring)
 
@@ -70,79 +72,28 @@ Pfad: [Azure/azure-cost-monitoring](Azure/azure-cost-monitoring)
 
 Automatisierte Backup-Lösung zur Sicherung lokaler Dateien in Azure Blob Storage.
 
-Inhalte:
-
 - Upload lokaler Dateien nach Azure Blob Storage
 - Automatisierung mit PowerShell und Azure CLI
-- Nutzung von Versionierung, Soft Delete und Statusdateien
+- Versionierung, Soft Delete und Statusdateien
 - Regelmäßige Ausführung über den Windows Task Scheduler
-- Vorbereitung von Benachrichtigungen für Backup-Status und Fehlerfälle
-
-Technologien:
-
-- PowerShell
-- Azure CLI
-- Azure Blob Storage
-- Windows Task Scheduler
-- GitHub
 
 Pfad: [Azure/azures-storage](Azure/azures-storage)
 
-## Repository-Struktur
-
-```text
-Systemadministrator/
-├─ Anleitungen/
-├─ Archiv/
-├─ Azure/
-│  ├─ azure-cost-monitoring/
-│  └─ azures-storage/
-├─ Kaufmännisches-IT-Systemmanagement/
-│  ├─ Angebote/
-│  ├─ Rechnungen/
-│  ├─ Kundenkommunikation/
-│  └─ Prozesse/
-├─ Kurse/
-├─ Labs/
-├─ Linux/
-├─ Monitoring/
-├─ Netzwerk/
-├─ Security/
-├─ Telefonanlagen/
-├─ Windows-Server/
-└─ Zertifikate/
-```
-
 ## Kenntnisse
 
-- Windows Server
-- Windows 10 / 11
-- Active Directory
-- Gruppenrichtlinien
-- DNS und DHCP
-- Netzwerkgrundlagen
-- MDT, OPSI und FileWave
-- Client-Rollouts und Softwareverteilung
-- Troubleshooting
-- Azure Functions
-- Azure Storage
-- Azure Cost Management
-- Azure Budgets
-- Managed Identity
-- Azure Communication Services
-- PowerShell
-- JavaScript / Node.js Grundlagen
-- Azure CLI
-- Git und GitHub
-- Windows Task Scheduler
+- Windows Server, Windows 10 / 11
+- Active Directory, Gruppenrichtlinien, DNS, DHCP
+- MDT, OPSI, FileWave, Client-Rollouts und Softwareverteilung
+- Azure Functions, Azure Storage, Azure Cost Management, Azure Budgets
+- Managed Identity, Azure Communication Services
+- PowerShell, Azure CLI, JavaScript / Node.js Grundlagen
+- Git, GitHub und Windows Task Scheduler
 - Kaufmännische IT-Prozesse, Rechnungen und Abrechnung
 
-## Zertifikate und Kurse
+## Zertifikate
 
 - CompTIA Network+ bestanden
 
-## Ziel dieses Repositories
+## Ziel
 
-Das Repository soll einen schnellen und professionellen Einblick in meine praktische Arbeit geben. Es zeigt technische Projekte, dokumentierte Lernfortschritte und meine Fähigkeit, IT-Themen strukturiert, nachvollziehbar und praxisnah aufzubereiten.
-
-Besonders wichtig ist mir die Verbindung aus Technik und kaufmännischem Denken: Systeme administrieren, Probleme lösen, Kosten verstehen, Prozesse dokumentieren und bei Bedarf auch kaufmännische Aufgaben wie Rechnungen oder Abrechnungsvorgänge unterstützen.
+Das Repository soll einen professionellen Einblick in meine praktische Arbeit geben. Im Vordergrund stehen nachvollziehbare Dokumentation, technische Umsetzung und die Verbindung aus IT-Betrieb und kaufmännischem Denken.

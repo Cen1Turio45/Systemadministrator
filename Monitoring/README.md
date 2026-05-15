@@ -1,10 +1,15 @@
 # Monitoring
 
-Dieser Bereich ist für Monitoring, Reporting und strukturierte Auswertung technischer Betriebsdaten vorgesehen.
+Dieser Bereich sammelt Themen zur Überwachung und Auswertung technischer Betriebsdaten.
 
-Mögliche Themen:
+## Themen
 
 - System- und Serviceüberwachung
 - Kosten- und Ressourcenmonitoring
 - Benachrichtigungen
-- Fehleranalyse und Reportings
+- Fehleranalyse
+- Reports und Dashboards
+
+## Ziel
+
+Monitoring soll nicht nur Zustände anzeigen, sondern Probleme früh sichtbar machen und Entscheidungen nachvollziehbar unterstützen.

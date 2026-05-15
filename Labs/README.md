@@ -1,30 +1,26 @@
-# Systemadministrator
+# Labs
 
-In diesen LABS will ich praktisch zeigen, dass ich in Basic-Fähigkeiten für eine Junior-Systemadministrationsposition beherrsche.
+Dieser Bereich enthält praktische Übungen aus einer virtuellen Windows-Server- und Netzwerkumgebung. Die Labs zeigen den Aufbau, die Konfiguration und die Fehleranalyse typischer Administrationsaufgaben.
 
-1. LAB = Konfiguration einer Firewall + Basic Konfigurationen Windows Server 2025 Enviroment
+## Übersicht
 
-   Dieses LAB war besonderst anspruchsvoll, da ich die pfSense Firewall davor noch nie benutzt habe und mein Ziel in diesem LAB war die Firewallregeln
+| Lab | Thema | Schwerpunkt |
+| --- | --- | --- |
+| [Lab 1](1.Windowstesumgebung+Firewall.md) | Grundumgebung mit pfSense, Windows Server und Domain | Firewall, Hyper-V, AD DS, DHCP |
+| [Lab 2](2.InstallationDNSServer.md) | Zweiter DNS-Server | DNS-Rolle, Zonentransfer, DHCP-Optionen |
+| [Lab 3](3.NeuesNetzwerkhinzufügen.md) | Zusätzliches HR-Netzwerk | Virtuelle Switches, pfSense-Interfaces, NAT und Regeln |
+| [Lab 4](4.GPOWin11Erstanmeldung.md) | Windows-11-Erstanmeldung per GPO optimieren | Gruppenrichtlinien und OOBE-Einstellungen |
+| [Lab 5](5.SplunkForwarder.md) | Splunk-Grundlage | Monitoring und Webinterface |
+| [Foundation](Foundation%20%E2%80%93%20Netzwerkaufbau%20mit%20pfSense%20&%20Hyper-V.md) | Netzwerkaufbau mit pfSense und Hyper-V | WAN, LAN, DMZ und Best Practices |
 
-   zu verstehen, weswegen ich alle Standardeinstellungen gelöscht und solange an meinerFirewall herumprobiert habe, bis diese funktioniert hat.
+## Lernziele
 
-2. LAB = DNS Mananger einfache Aufgaben (spätere LABS werden anspruchsvoller)
+- Aufbau isolierter Testumgebungen mit Hyper-V
+- Konfiguration von pfSense als zentrale Firewall
+- Einrichtung von Windows Server, Active Directory, DNS und DHCP
+- Dokumentation von Netzwerken, Firewall-Regeln und administrativen Arbeitsschritten
+- Schrittweises Testen und Absichern von Änderungen
 
-   War ziemlich einfach
+## Hinweis
 
-3. LAB = Neüs Netzwerk (HR) hinzugefügt und Firewall NAT und Rules in Windows Server 2025 Enviroment erstellen
-
-   Dieses LAB war wieder ziemlich anspruchsvoll, da ich zu diesem Zeitpunkt die Firewallregeln immer noch nicht komplett verstanden habe und
-
-   dann mit viel ausprobieren, diese irgendwann zum laufen gebracht habe.
-
-4. LAB = Erstellen einer GPO zur Windows 11 optimierten Erstanmeldung auf Domain Controller
-
-   auch relativ einfach
-   
-5. Lab
-
-6. LAB = Foundation Netzwerkaufbau mit pfSense und Hyper-V
-
-   In diesem Lab, hab ich die Konfiguration der Firewall endgültig verstanden und kann dies ab jetzt auch ohne Probleme wiederholen.
-
+Die Labs sind Lern- und Testumgebungen. Zugangsdaten, IP-Adressen und Namen dienen nur der Nachvollziehbarkeit innerhalb dieser Umgebung.

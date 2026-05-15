@@ -1,48 +1,67 @@
-# Bootable USB-Stick with PowerShell erstellen
+# Bootfähigen USB-Stick mit PowerShell erstellen
 
-<br></br>
+## Ziel
 
-## 1. ISO-Datei einbinden:
-ISO-Datei herunterladen und über Rechtsklick Bereistellen auswählen.
+Ein Windows-Server-Installationsmedium soll per PowerShell auf einen USB-Stick kopiert werden.
 
-Laufwerksbuchstaben des eingebundenen ISO-Laufwerks notieren.
+## Voraussetzungen
 
-<br></br>
+- Windows-ISO ist vorhanden
+- USB-Stick ist angeschlossen
+- PowerShell wird als Administrator gestartet
+- Laufwerksbuchstaben von ISO und USB-Stick sind bekannt
 
-## 2. USB-Stick anschließen:
-USB-Stick einstecken und den zugewiesenen Laufwerksbuchstaben notieren.
+## 1. ISO-Datei einbinden
 
-<br></br>
+1. ISO-Datei herunterladen.
+2. Rechtsklick auf die ISO-Datei.
+3. `Bereitstellen` auswählen.
+4. Laufwerksbuchstaben des eingebundenen ISO-Laufwerks notieren.
 
-## 3. PowerShell starten und USB-Laufwerk auswählen:
+## 2. USB-Stick auswählen
+
+```powershell
 $usbDriveLetter = Read-Host "Enter USB drive letter (Ex: E)"
+```
 
-<br></br>
+## 3. USB-Stick formatieren
 
-## 4. USB-Stick formatieren:
-Format-Volume -DriveLetter $usbDriveLetter -FileSystem NTFS -NewFileSystemLabel "WinServerUSB" -Confirm:$false | Out-Null
+```powershell
+Format-Volume `
+  -DriveLetter $usbDriveLetter `
+  -FileSystem NTFS `
+  -NewFileSystemLabel "WinServerUSB" `
+  -Confirm:$false | Out-Null
+```
 
-<br></br>
+## 4. ISO-Laufwerk auswählen
 
-## ISO-Laufwerk auswählen:
+```powershell
 $isoMountPointDriveLetter = Read-Host "Enter ISO mount point drive letter (Ex: F)"
+```
 
-<br></br>
+## 5. Dateien kopieren
 
-## Dateien vom ISO auf den USB-Stick kopieren:
+```powershell
 $source = "$($isoMountPointDriveLetter):"
 $destination = "$($usbDriveLetter):"
+
 robocopy $source $destination /COPYALL /Z /E /SEC /R:3 /W:3
+```
 
-<br></br>
+## 6. USB-Stick bootfähig machen
 
-## USB-Stick bootfähig machen:
-usbDriveNumber = (Get-WmiObject -Class Win32_DiskDrive | Where-Object {$_.InterfaceType -eq "USB" -and $_.DeviceID -like "*$usbDriveLetter"}).Index bootsect /nt60 $usbDriveLetter | Out-Null
+```powershell
+bootsect /nt60 "$($usbDriveLetter):" | Out-Null
+```
 
-<br></br>
+## 7. Abschlussmeldung
 
-## Abschlussmeldung:
-Write-Host "Copy operation complete" 
+```powershell
+Write-Host "Copy operation complete"
 Start-Sleep -Seconds 2
+```
 
-<br></br>
+## Hinweis
+
+Vor dem Formatieren immer prüfen, dass wirklich der USB-Stick ausgewählt wurde. Der Formatierungsbefehl löscht die vorhandenen Daten auf dem angegebenen Laufwerk.

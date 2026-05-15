@@ -1,6 +1,5 @@
-# Creating a Certificate Signing Reqüst (CSR)
+# Creating a Certificate Signing Request (CSR)
 
-<br></br>
 
 ## IIS öffnen und Zertifikatsverwaltung aufrufen
 
@@ -12,13 +11,11 @@
 
 3. In der mittleren Ansicht Server Certificates doppelklicken.
 
-<br></br>
 
 ## CSR-Assistent starten
 
-1. Auf der rechten Seite im Bereich Actions auf Create Certificate Reqüst… klicken.
+1. Auf der rechten Seite im Bereich Actions auf Create Certificate Request… klicken.
 
-<br></br>
 
 ## Distinguished Name Properties ausfüllen
 
@@ -38,7 +35,6 @@
 
    Country/region: Ländercode (z. B. US, DE, CH)
 
-<br></br>
 
 ## Kryptografie-Einstellungen setzen
 
@@ -48,7 +44,6 @@
 
 2. Bit length: auf 2048 oder höher setzen (empfohlener Mindestwert).
 
-<br></br>
 
 ## CSR-Datei speichern
 
@@ -57,6 +52,3 @@
 2. CSR wird als .txt oder .req gespeichert und enthält den öffentlichen Schlüssel.
 
 3. Die Datei wird später bei der Public CA eingereicht.
-
-<br></br>
-   
