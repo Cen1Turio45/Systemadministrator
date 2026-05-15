@@ -1,6 +1,6 @@
 # Lucas Wessner - Systemadministration und IT-Systemmanagement
 
-Dieses Repository bündelt meine praktischen IT-Projekte, Labs, Anleitungen und Lernnachweise. Es soll schnell zeigen, womit ich praktisch gearbeitet habe und wie ich technische Themen dokumentiere.
+Dieses Repository bündelt meine praktischen IT-Projekte, Administrationsdokumentationen und Lernnachweise. Es soll schnell zeigen, womit ich praktisch gearbeitet habe und wie ich technische Themen dokumentiere.
 
 Mein Profil verbindet zwei Bereiche: Systemadministration und kaufmännisches IT-Systemmanagement. Dadurch kann ich technische Aufgaben umsetzen, sauber dokumentieren und gleichzeitig Kosten, Rechnungen, Angebote und Kundenprozesse nachvollziehen.
 
@@ -11,18 +11,14 @@ Mein Profil verbindet zwei Bereiche: Systemadministration und kaufmännisches IT
 | [Azure](Azure) | Kostenmonitoring, Reporting, Backup und Automatisierung |
 | [IT-Support](IT-Support) | Ticketbearbeitung, Troubleshooting, Onboarding und Softwareverteilung |
 | [Windows Server](Windows-Server) | Active Directory, DNS, DHCP, GPOs und Serverbetrieb |
-| [Netzwerk](Netzwerk) | pfSense, Hyper-V-Netze, Routing, NAT und Firewall-Regeln |
+| [Netzwerk](Netzwerk) | pfSense, Hyper-V-Netze, Routing, NAT, Firewall-Regeln und Netzwerk-Labs |
 | [Microsoft 365](Microsoft-365) | Admin Center, Benutzer, Gruppen, Service Health und Collaboration-Dienste |
-| [Labs](Labs) | Praktische Testumgebungen und dokumentierte Übungen |
-| [Anleitungen](Anleitungen) | Schritt-für-Schritt-Dokumentationen für administrative Aufgaben |
 | [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Angebote, Rechnungen, Abrechnung, Kundenkommunikation und Prozesse |
 | [Security](Security) | Härtung, Backup, Updateprozesse und sicherheitsrelevante Themen |
 | [Monitoring](Monitoring) | Überwachung, Reporting und Auswertung technischer Betriebsdaten |
 | [Linux](Linux) | Linux-Grundlagen und administrative Notizen |
 | [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen, Rufgruppen und Fehleranalyse |
-| [Kurse](Kurse) | Lernpfade und Kursnotizen |
 | [Zertifikate](Zertifikate) | Zertifikate und Nachweise |
-| [Archiv](Archiv) | Inhalte, die nicht aktiv im Portfolio stehen |
 
 ## Profil
 
