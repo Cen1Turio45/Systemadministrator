@@ -92,6 +92,8 @@ Pfad: [Azure/azures-storage](Azure/azures-storage)
 
 ```text
 Systemadministrator/
+├─ Anleitungen/
+├─ Archiv/
 ├─ Azure/
 │  ├─ azure-cost-monitoring/
 │  └─ azures-storage/
@@ -100,10 +102,15 @@ Systemadministrator/
 │  ├─ Rechnungen/
 │  ├─ Kundenkommunikation/
 │  └─ Prozesse/
-└─ _Auswertung/
-   ├─ Anleitungen/
-   ├─ Zertifikate/
-   └─ Labs/
+├─ Kurse/
+├─ Labs/
+├─ Linux/
+├─ Monitoring/
+├─ Netzwerk/
+├─ Security/
+├─ Telefonanlagen/
+├─ Windows-Server/
+└─ Zertifikate/
 ```
 
 ## Kenntnisse
