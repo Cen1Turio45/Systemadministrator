@@ -2,7 +2,7 @@
 
 Dieses Projekt baut eine kleine, praxisnahe Backup- und Restore-Basis in Azure auf.
 
-Die ausführliche Projektplanung liegt in [PROJECT_PLAN.md](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\PROJECT_PLAN.md).
+Die ausführliche Projektplanung liegt in [PROJECT_PLAN.md](PROJECT_PLAN.md).
 
 ## Projektziel
 
@@ -41,14 +41,14 @@ Bereits umgesetzt und getestet:
 
 ## Projektdateien
 
-- [main.bicep](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\main.bicep)
-- [lifecycle-policy.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\lifecycle-policy.json)
-- [next-steps.md](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\next-steps.md)
-- [backup-to-azure.ps1](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-to-azure.ps1)
-- [backup-settings.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-settings.json)
-- [register-backup-task.ps1](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\register-backup-task.ps1)
-- [AUTOMATION.md](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\AUTOMATION.md)
-- [function-app](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\function-app)
+- [main.bicep](main.bicep)
+- [lifecycle-policy.json](lifecycle-policy.json)
+- [next-steps.md](next-steps.md)
+- [backup-to-azure.ps1](backup-to-azure.ps1)
+- [backup-settings.json](backup-settings.json)
+- [register-backup-task.ps1](register-backup-task.ps1)
+- [AUTOMATION.md](AUTOMATION.md)
+- [function-app](function-app)
 
 ## Nächster sinnvoller Ausbau
 

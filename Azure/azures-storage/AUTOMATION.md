@@ -2,9 +2,9 @@
 
 Dieses Setup erstellt ein kleines vollautomatisiertes Backup für ausgewählte Dateien.
 
-## Qülle
+## Quelle
 
-- [Test](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\Test)
+- [Test](Test)
 
 ## Ziel
 
@@ -15,9 +15,9 @@ Dieses Setup erstellt ein kleines vollautomatisiertes Backup für ausgewählte D
 
 ## Projektdateien
 
-- [backup-settings.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-settings.json)
-- [backup-to-azure.ps1](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-to-azure.ps1)
-- [register-backup-task.ps1](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\register-backup-task.ps1)
+- [backup-settings.json](backup-settings.json)
+- [backup-to-azure.ps1](backup-to-azure.ps1)
+- [register-backup-task.ps1](register-backup-task.ps1)
 
 ## Authentifizierungswege
 
@@ -30,7 +30,7 @@ Es gibt drei mögliche Modi:
 - `servicePrincipal`
   Gut für tägliche automatische Läufe ohne SAS und ohne interaktiven Login
 
-Den Modus stellst du in [backup-settings.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-settings.json) über `authMode` ein.
+Den Modus stellst du in [backup-settings.json](backup-settings.json) über `authMode` ein.
 
 ## Empfohlener Azure-Weg ohne SAS: Service Principal
 
@@ -72,7 +72,7 @@ $env:AZURE_STORAGE_SAS_TOKEN = "<DEIN_SAS_TOKEN>"
 
 ## Azure-CLI-Modus
 
-Wenn `az login` bei dir sauber funktioniert, stelle in [backup-settings.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-settings.json) ein:
+Wenn `az login` bei dir sauber funktioniert, stelle in [backup-settings.json](backup-settings.json) ein:
 
 ```json
 "authMode": "azcli"
@@ -115,7 +115,7 @@ Die Logs landen unter:
 
 ## Nächster Ausbau
 
-- mehrere Qüllordner
+- mehrere Quellordner
 - Upload in mehrere Container
 - tägliche Status-Mail
 - Fehlerpfad mit Benachrichtigung
@@ -124,7 +124,7 @@ Die Logs landen unter:
 
 Die Function App liegt unter:
 
-- [function-app](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\function-app)
+- [function-app](function-app)
 
 Sie enthält:
 
