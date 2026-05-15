@@ -12,7 +12,7 @@ In diesen LABS will ich praktisch zeigen, dass ich in Basic-Fähigkeiten für ei
 
    War ziemlich einfach
 
-3. LAB = Neues Netzwerk (HR) hinzugefügt und Firewall NAT und Rules in Windows Server 2025 Enviroment erstellen
+3. LAB = Neüs Netzwerk (HR) hinzugefügt und Firewall NAT und Rules in Windows Server 2025 Enviroment erstellen
 
    Dieses LAB war wieder ziemlich anspruchsvoll, da ich zu diesem Zeitpunkt die Firewallregeln immer noch nicht komplett verstanden habe und
 

@@ -1,4 +1,4 @@
-# Requesting a certificate from MMC
+# Reqüsting a certificate from MMC
 
 <br></br>
 
@@ -34,13 +34,13 @@
 
 <br></br> 
 
-## Neues Zertifikat vom CA-Server anfordern
+## Neüs Zertifikat vom CA-Server anfordern
 
-<img width="893" height="584" alt="image" src="https://github.com/user-attachments/assets/768625b9-d999-473e-8921-7d8aef6235aa" />
+<img width="893" height="584" alt="image" src="https://github.com/user-attachments/assets/768625b9-d999-473e-8921-7d8äf6235aa" />
 
 1. Rechtsklick auf Personal.
 
-2. All Tasks → Request New Certificate… auswählen.
+2. All Tasks → Reqüst New Certificate… auswählen.
 
 3. Der Zertifikatsassistent öffnet sich.
 
@@ -68,7 +68,7 @@
 
 <img width="910" height="532" alt="image" src="https://github.com/user-attachments/assets/6bc06046-031a-4e4b-b467-562afefac1fb" />
 
-1. Der CA-Server verarbeitet die Anfrage und stellt ein neues Zertifikat für den Computer aus.
+1. Der CA-Server verarbeitet die Anfrage und stellt ein neüs Zertifikat für den Computer aus.
 
 2. Nach erfolgreicher Ausstellung erscheint das Zertifikat im Speicher: Personal → Certificates.
 

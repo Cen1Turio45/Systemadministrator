@@ -1,8 +1,8 @@
 # Automated Upload To Azure Blob Storage
 
-Dieses Setup erstellt ein kleines vollautomatisiertes Backup fuer ausgewaehlte Dateien.
+Dieses Setup erstellt ein kleines vollautomatisiertes Backup für ausgewählte Dateien.
 
-## Quelle
+## Qülle
 
 - [Test](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\Test)
 
@@ -21,16 +21,16 @@ Dieses Setup erstellt ein kleines vollautomatisiertes Backup fuer ausgewaehlte D
 
 ## Authentifizierungswege
 
-Es gibt drei moegliche Modi:
+Es gibt drei mögliche Modi:
 
 - `sas`
-  Gut fuer einen schnellen, stabilen Start
+  Gut für einen schnellen, stabilen Start
 - `azcli`
   Gut, wenn du die Azure CLI sauber mit deinem Konto nutzen willst
 - `servicePrincipal`
-  Gut fuer taegliche automatische Laeufe ohne SAS und ohne interaktiven Login
+  Gut für tägliche automatische Läufe ohne SAS und ohne interaktiven Login
 
-Den Modus stellst du in [backup-settings.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-settings.json) ueber `authMode` ein.
+Den Modus stellst du in [backup-settings.json](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\backup-settings.json) über `authMode` ein.
 
 ## Empfohlener Azure-Weg ohne SAS: Service Principal
 
@@ -50,7 +50,7 @@ Danach testest du:
 .\backup-to-azure.ps1
 ```
 
-Der Login erfolgt dann ueber die Azure CLI automatisch per Service Principal.
+Der Login erfolgt dann über die Azure CLI automatisch per Service Principal.
 
 ## Alternative: SAS
 
@@ -61,7 +61,7 @@ Erstelle im Container `documents` einen `SAS`-Link mit mindestens:
 - `Create`
 - optional `List`
 
-Lege das Token dann als Benutzervariable `AZURE_STORAGE_SAS_TOKEN` an oder uebergib es direkt an das Skript.
+Lege das Token dann als Benutzervariable `AZURE_STORAGE_SAS_TOKEN` an oder übergib es direkt an das Skript.
 
 ## Lokaler Test
 
@@ -103,7 +103,7 @@ Optional mit anderer Uhrzeit:
 
 - täglicher Upload aller Dateien aus dem Testordner
 - Ablage der Backup-Dateien unter `documents/backup-files/`
-- Unterordner werden mit uebernommen
+- Unterordner werden mit übernommen
 - Logdateien werden lokal gespeichert
 - ein Scheduler kann automatisch eingerichtet werden
 
@@ -115,7 +115,7 @@ Die Logs landen unter:
 
 ## Nächster Ausbau
 
-- mehrere Quellordner
+- mehrere Qüllordner
 - Upload in mehrere Container
 - tägliche Status-Mail
 - Fehlerpfad mit Benachrichtigung
@@ -126,8 +126,8 @@ Die Function App liegt unter:
 
 - [function-app](C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\function-app)
 
-Sie enthaelt:
+Sie enthält:
 
-- Blob Trigger fuer `status/backup-status.json`
-- Timer Trigger fuer die 72-Stunden-Warnung
-- SMTP-basierten E-Mail-Versand ueber App Settings
+- Blob Trigger für `status/backup-status.json`
+- Timer Trigger für die 72-Stunden-Warnung
+- SMTP-basierten E-Mail-Versand über App Settings

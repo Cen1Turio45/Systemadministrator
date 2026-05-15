@@ -42,9 +42,9 @@
 
 1. Der Server kann nicht mehr über den Server Manager bereinigt werden
 
-2. Alle AD-Verweise müssen daher manuell entfernt werden.
+2. Alle AD-Verweise müssen daher manüll entfernt werden.
 
-3. Zuerst sicherstellen, dass alle FSMO-Rollen bereits auf einen funktionierenden DC übertragen wurden.
+3. Zürst sicherstellen, dass alle FSMO-Rollen bereits auf einen funktionierenden DC übertragen wurden.
 
 <br></br>
 

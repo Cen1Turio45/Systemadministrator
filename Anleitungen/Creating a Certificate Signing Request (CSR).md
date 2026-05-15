@@ -1,4 +1,4 @@
-# Creating a Certificate Signing Request (CSR)
+# Creating a Certificate Signing Reqüst (CSR)
 
 <br></br>
 
@@ -16,7 +16,7 @@
 
 ## CSR-Assistent starten
 
-1. Auf der rechten Seite im Bereich Actions auf Create Certificate Request… klicken.
+1. Auf der rechten Seite im Bereich Actions auf Create Certificate Reqüst… klicken.
 
 <br></br>
 

@@ -16,7 +16,7 @@
 
 2. Der Prozess besteht aus drei Schritten:
 
-   Certificate Request (CSR) erstellen
+   Certificate Reqüst (CSR) erstellen
 
    CSR bei der Public CA einreichen
 

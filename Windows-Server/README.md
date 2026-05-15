@@ -1,8 +1,8 @@
 # Windows Server
 
-Dieser Bereich ist fuer Dokumentationen, Labs und Praxisnotizen rund um Windows Server vorgesehen.
+Dieser Bereich ist für Dokumentationen, Labs und Praxisnotizen rund um Windows Server vorgesehen.
 
-Moegliche Themen:
+Mögliche Themen:
 
 - Active Directory
 - Gruppenrichtlinien

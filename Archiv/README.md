@@ -1,5 +1,5 @@
 # Archiv
 
-Dieser Bereich ist fuer Inhalte vorgesehen, die nicht geloescht werden sollen, aber aktuell nicht aktiv im Portfolio stehen.
+Dieser Bereich ist für Inhalte vorgesehen, die nicht gelöscht werden sollen, aber aktuell nicht aktiv im Portfolio stehen.
 
-Das Archiv sollte bewusst klein gehalten werden, damit das Repository uebersichtlich bleibt.
+Das Archiv sollte bewusst klein gehalten werden, damit das Repository übersichtlich bleibt.

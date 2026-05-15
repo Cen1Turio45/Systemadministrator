@@ -2,7 +2,7 @@
 
 Dieses Projekt dokumentiert meinen Einstieg in die Kostenoptimierung und Automatisierung in Azure. Ziel war es, Azure-Kosten frühzeitig sichtbar zu machen, Grenzwerte zu definieren und monatlich automatisiert einen Kostenbericht per E-Mail zu verschicken.
 
-Dabei habe ich nicht nur mit Azure Cost Management gearbeitet, sondern auch mit Budgets, Arbeitsmappen, Azure Functions, Managed Identities und Azure Communication Services. Ein grosser Teil des Projekts bestand ausserdem aus Troubleshooting, weil viele Probleme nicht direkt im Code lagen, sondern in der Konfiguration und im Zusammenspiel mehrerer Azure-Ressourcen.
+Dabei habe ich nicht nur mit Azure Cost Management gearbeitet, sondern auch mit Budgets, Arbeitsmappen, Azure Functions, Managed Identities und Azure Communication Services. Ein grosser Teil des Projekts bestand außerdem aus Troubleshooting, weil viele Probleme nicht direkt im Code lagen, sondern in der Konfiguration und im Zusammenspiel mehrerer Azure-Ressourcen.
 
 ## Projektziel
 
@@ -11,30 +11,30 @@ Das Hauptziel des Projekts war es, eine einfache, aber sinnvolle Kostenkontrolle
 - Budgets und Warnungen in Azure Cost Management definieren
 - Kostenentwicklungen schneller sichtbar machen
 - eine monatliche automatische E-Mail mit den wichtigsten Kostenwerten verschicken
-- technische Azure-Daten in eine Form bringen, die auch fuer nicht-technische Empfaenger verstaendlich ist
+- technische Azure-Daten in eine Form bringen, die auch für nicht-technische Empfänger verständlich ist
 
 ## Was in Azure umgesetzt wurde
 
 ### 1. Budgets und Benachrichtigungen
 
-In Azure Cost Management koennen Budgets nicht nur fuer das komplette Abonnement erstellt werden, sondern auch gezielter gefiltert werden, zum Beispiel auf:
+In Azure Cost Management können Budgets nicht nur für das komplette Abonnement erstellt werden, sondern auch gezielter gefiltert werden, zum Beispiel auf:
 
 - Ressourcengruppen
 - Services
 - Regionen
 - Tags
 
-Das ist wichtig, weil eine Budgetwarnung nicht automatisch fuer alles gelten muss, was in Azure passiert. Je nach Ziel kann man bewusst entscheiden, ob man ein gesamtes Abonnement ueberwachen will oder nur ein einzelnes Projekt. Für ein konkretes Projekt ist eine Eingrenzung auf eine Ressourcengruppe oder ein klar abgegrenztes Kostenobjekt meistens sinnvoller.
+Das ist wichtig, weil eine Budgetwarnung nicht automatisch für alles gelten muss, was in Azure passiert. Je nach Ziel kann man bewusst entscheiden, ob man ein gesamtes Abonnement überwachen will oder nur ein einzelnes Projekt. Für ein konkretes Projekt ist eine Eingrenzung auf eine Ressourcengruppe oder ein klar abgegrenztes Kostenobjekt meistens sinnvoller.
 
 ### 2. Kostenanalyse und Visualisierung
 
 Der einfachste Einstieg in die Kostenanalyse ist über die Azure-Suche mit dem Begriff `Kostenanalyse`. Dort kann man direkt filtern, gruppieren und die Kostenentwicklung zeitlich auswerten.
 
-Für eine übersichtlichere Darstellung sind ausserdem Arbeitsmappen hilfreich. Mit ihnen lassen sich eigene Ansichten aufbauen, zum Beispiel:
+Für eine übersichtlichere Darstellung sind außerdem Arbeitsmappen hilfreich. Mit ihnen lassen sich eigene Ansichten aufbaün, zum Beispiel:
 
 - Kosten nach Service
 - Kosten nach Ressourcengruppe
-- Kostenentwicklung ueber Tage, Wochen oder Monate
+- Kostenentwicklung über Tage, Wochen oder Monate
 - Vergleich einzelner Workloads
 
 Wenn man eine komplette technische Übersicht über alle Ressourcen braucht, ist der Ressourcen-Manager hilfreich. Dort sieht man schnell, welche Ressourcen wirklich existieren und wo potenzielle Kostentreiber liegen.
@@ -48,8 +48,8 @@ Ein zentraler Teil des Projekts war eine Azure Function, die automatisch Kostend
 Azure Functions sind für dieses Szenario sinnvoll, weil sie:
 
 - serverlos laufen
-- nur bei Ausfuehrung Ressourcen verbrauchen
-- sich gut fuer wiederkehrende Berichte eignen
+- nur bei Ausführung Ressourcen verbrauchen
+- sich gut für wiederkehrende Berichte eignen
 - sich mit Managed Identity sicher an Azure-Dienste anbinden lassen
 
 ### Flex Consumption vs. Windows Consumption
@@ -62,7 +62,7 @@ Flex Consumption ist die modernere und von Microsoft aktiv unterstützte Variant
 
 Der Nachteil ist, dass die Einrichtung am Anfang aufwendiger ist. Man braucht eine lokale Entwicklungsumgebung mit Visual Studio Code, Azure Functions Core Tools, einer funktionierenden Projektstruktur und einem sauberen Deployment-Prozess.
 
-Trotzdem ist Flex Consumption langfristig die bessere Wahl, weil man damit professioneller arbeitet und nicht auf spontane Portal-Aenderungen angewiesen ist.
+Trotzdem ist Flex Consumption langfristig die bessere Wahl, weil man damit professioneller arbeitet und nicht auf spontane Portal-Änderungen angewiesen ist.
 
 #### Windows Consumption
 
@@ -70,20 +70,20 @@ Windows Consumption wirkt auf den ersten Blick einfacher, weil man dort den Code
 
 ### Mein Fazit zur Auswahl
 
-Für erste Tests kann Windows Consumption einfacher wirken. Wenn man aber professioneller und reproduzierbarer arbeiten möchte, ist Flex Consumption klar die bessere Loesung.
+Für erste Tests kann Windows Consumption einfacher wirken. Wenn man aber professioneller und reproduzierbarer arbeiten möchte, ist Flex Consumption klar die bessere Lösung.
 
 ## Wie der automatische Kostenbericht funktioniert
 
 Die Werte in der E-Mail werden direkt im Code der Function App erzeugt. Dort passiert Folgendes:
 
-- Abruf der Kostendaten ueber die Azure Cost Management API
+- Abruf der Kostendaten über die Azure Cost Management API
 - Gruppierung nach Service und Ressourcengruppe
-- Zuordnung technischer Services zu besser verstaendlichen Kategorien
+- Zuordnung technischer Services zu besser verständlichen Kategorien
 - Berechnung von Trends und Schwellenwerten
 - Erstellung eines HTML- und Text-Berichts
 - Versand per Azure Communication Services Email
 
-Das bedeutet auch: Wenn ich den Inhalt der E-Mail anpassen moechte, muss ich die Function selbst anpassen. Genau dort werden die Werte erzeugt, gefiltert und dargestellt.
+Das bedeutet auch: Wenn ich den Inhalt der E-Mail anpassen möchte, muss ich die Function selbst anpassen. Genau dort werden die Werte erzeugt, gefiltert und dargestellt.
 
 ## Die größten Probleme im Projekt
 
@@ -114,7 +114,7 @@ wirklich korrekt war.
 Ein wichtiger Lernpunkt war, dass Communication Services und Email Communication Services nicht dasselbe sind.
 
 - Die Domain wird im Email Communication Service bereitgestellt
-- Der Versand selbst wird über die Communication Services Ressource angesteuert
+- Der Versand selbst wird über die Communication Services Ressource angesteürt
 - Beide müssen korrekt miteinander verbunden sein
 
 Wenn diese Zuordnung nicht passt, entstehen Fehler wie:
@@ -129,7 +129,7 @@ Ein weiterer technischer Punkt war die Aktivierung von Ressourcenanbietern auf A
 
 Das ist ein Punkt, den man leicht übersieht, der aber gerade bei neuen Services sehr wichtig ist.
 
-### 4. Identitaet und Rollen
+### 4. Identität und Rollen
 
 Die Function App musste eine verwaltete Identität erhalten, damit sie sicher auf Azure-Dienste zugreifen kann. Zusätzlich musste die passende Rolle vergeben werden, in meinem Fall insbesondere:
 
@@ -171,7 +171,7 @@ Das Projekt war ein sehr guter Einstieg in praxisnahes Cloud Engineering, weil e
 - Budgets und Warnungen
 - serverlose Automatisierung
 - APIs
-- Rollen und Identitaeten
+- Rollen und Identitäten
 - E-Mail-Kommunikation
 - Deployment
 - Troubleshooting

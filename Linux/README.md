@@ -1,8 +1,8 @@
 # Linux
 
-Dieser Bereich ist fuer Linux-Grundlagen, Serverdienste, Shell-Kommandos und administrative Notizen vorgesehen.
+Dieser Bereich ist für Linux-Grundlagen, Serverdienste, Shell-Kommandos und administrative Notizen vorgesehen.
 
-Moegliche Themen:
+Mögliche Themen:
 
 - Benutzer- und Rechteverwaltung
 - Dienste und Logs

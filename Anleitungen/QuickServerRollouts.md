@@ -1,6 +1,6 @@
 # Quick Server Rollouts mit Sysprep
 
-<img width="828" height="366" alt="image" src="https://github.com/user-attachments/assets/92d12fb6-70fe-4ab6-8dd7-caeefaac262c" />
+<img width="828" height="366" alt="image" src="https://github.com/user-attachments/assets/92d12fb6-70fe-4ab6-8dd7-cäefaac262c" />
 
 
 <br></br>
@@ -39,7 +39,7 @@
 
 ### 3.1 Wichtige Sysprep-Parameter
 
-/generalize: Entfernt eindeutige Systeminformationen (z. B. SID), damit neue Server individuelle Identitäten erhalten.
+/generalize: Entfernt eindeutige Systeminformationen (z. B. SID), damit neü Server individülle Identitäten erhalten.
 
 /oobe: Aktiviert den Windows-Ersteinrichtungsprozess beim ersten Start des neuen Systems.
 
@@ -73,9 +73,9 @@ Nach Ausführung fährt der Server vollständig herunter und darf nicht erneut g
 
 5. Das Master-Image selbst darf nicht gebootet werden, da dies die Sysprep-Vorbereitung entfernen würde.
 
-6. Neue Server werden ausschließlich durch Kopien dieses Images erstellt.
+6. Neü Server werden ausschließlich durch Kopien dieses Images erstellt.
 
-## 5. Neue Server aus dem Master-Image bereitstellen
+## 5. Neü Server aus dem Master-Image bereitstellen
 
 1. Für jeden neuen Server eine Kopie des Master-Images erstellen.
 

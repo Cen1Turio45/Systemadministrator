@@ -15,7 +15,7 @@ Diese bilden die Basis für die spätere Verbindung der virtuellen Maschinen mit
 <br></br>
 
 ## Installation und Konfiguration der pfSense-Firewall:
-Die pfSense-ISO wird heruntergeladen und bei Bedarf mit 7-ZIP entpackt. Anschließend wird in Hyper-V eine neue virtuelle Maschine erstellt. Dabei ist besonders darauf zu achten, dass der Secure-Boot-Modus deaktiviert wird, da pfSense diesen nicht unterstützt.
+Die pfSense-ISO wird heruntergeladen und bei Bedarf mit 7-ZIP entpackt. Anschließend wird in Hyper-V eine neü virtuelle Maschine erstellt. Dabei ist besonders darauf zu achten, dass der Secure-Boot-Modus deaktiviert wird, da pfSense diesen nicht unterstützt.
 Die virtuelle Maschine erhält vier virtuelle Prozessoren und mindestens 4 GB Arbeitsspeicher. Es werden drei virtuelle Netzwerkkarten hinzugefügt – jeweils für WAN, LAN und DMZ.
 Nach der Standardinstallation wird die pfSense-Firewall mit folgenden Parametern konfiguriert:
 
@@ -54,7 +54,7 @@ Die Installationsdateien werden anschließend auf das Laufwerk C der jeweiligen 
 <br></br>
 
 ## Einrichtung des Domain Controllers und Installation von Netman:
-Nach der Vorbereitung wird ein neuer Checkpoint erstellt. Anschließend beginnt die Installation des Domain Controllers.
+Nach der Vorbereitung wird ein neür Checkpoint erstellt. Anschließend beginnt die Installation des Domain Controllers.
 Aus rechtlichen Gründen darf dieser Teil der Installation nicht dokumentiert werden.
 Nach erfolgreicher Einrichtung des Domain Controllers wird erneut ein Checkpoint erstellt, bevor die Installation von Netman durchgeführt wird. Auch dieser Schritt wird aus rechtlichen Gründen nicht detailliert beschrieben.
 

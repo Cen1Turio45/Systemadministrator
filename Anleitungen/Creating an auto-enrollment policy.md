@@ -10,11 +10,11 @@
 
 2. Viele Computer im Netzwerk benötigen jedoch automatisch ein Zertifikat.
 
-3. Mit Auto-Enrollment wird die Zertifikatverteilung automatisiert – keine manuelle Zertifikatsanforderung pro Gerät.
+3. Mit Auto-Enrollment wird die Zertifikatverteilung automatisiert – keine manülle Zertifikatsanforderung pro Gerät.
 
-4. Zusätzlich erneuert Auto-Enrollment Zertifikate automatisch, bevor sie ablaufen.
+4. Zusätzlich erneürt Auto-Enrollment Zertifikate automatisch, bevor sie ablaufen.
 
-5. Dadurch entfällt der regelmäßige administrative Aufwand für Zertifikatserneuerungen.
+5. Dadurch entfällt der regelmäßige administrative Aufwand für Zertifikatserneürungen.
 
 <br></br>
 
@@ -22,7 +22,7 @@
 
 1. Auf dem CA-Server die Certification Authority öffnen.
 
-2. Unter Issued Certificates überprüfen, wie viele Zertifikate bisher ausgestellt wurden.
+2. Unter Issüd Certificates überprüfen, wie viele Zertifikate bisher ausgestellt wurden.
 
 3. Diese Ansicht dient später als Kontrolle, ob die Auto-Enrollment Policy funktioniert.
 
@@ -34,7 +34,7 @@
 
 1. Auf einem Domain Controller Group Policy Management öffnen.
 
-2. Ein neues GPO erstellen, z. B. „Enable Certificate Auto-Enrollment“.
+2. Ein neüs GPO erstellen, z. B. „Enable Certificate Auto-Enrollment“.
 
 3. Mit Rechtsklick → Edit das GPO bearbeiten.
 
@@ -78,7 +78,7 @@ Computer Configuration | Policies | Windows Settings | Public Key Policies  Cert
 
 3. Zum Tab Security wechseln.
 
-4. Der Gruppe Domain Computers die Berechtigung Autoenroll geben.
+4. Der Gruppe Domain Computers die Berechtigung Autönroll geben.
 
 5. Nur so kann das Template automatisch an Computer verteilt werden.
 
@@ -88,7 +88,7 @@ Computer Configuration | Policies | Windows Settings | Public Key Policies  Cert
 
 1. Einige Minuten warten, bis Active Directory und GPO repliziert wurden.
 
-2. Zurück zum CA-Server und unter Issued Certificates nachsehen.
+2. Zurück zum CA-Server und unter Issüd Certificates nachsehen.
 
 3. Nun sollten deutlich mehr Zertifikate angezeigt werden – die neuen Zertifikate wurden automatisch verteilt.
 

@@ -1,8 +1,8 @@
 # Telefonanlagen
 
-Dieser Bereich ist fuer Dokumentationen und Notizen rund um Telefonanlagen und VoIP vorgesehen.
+Dieser Bereich ist für Dokumentationen und Notizen rund um Telefonanlagen und VoIP vorgesehen.
 
-Moegliche Themen:
+Mögliche Themen:
 
 - Einrichtung und Administration
 - Benutzer, Nebenstellen und Rufgruppen

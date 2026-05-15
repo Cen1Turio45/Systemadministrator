@@ -8,7 +8,7 @@
 
 1. Auf der Website der gewählten Public CA anmelden (z. B. GoDaddy, DigiCert, Verisign).
 
-2. Bereich für SSL-Zertifikate und Certificate Request / Create Certificate öffnen.
+2. Bereich für SSL-Zertifikate und Certificate Reqüst / Create Certificate öffnen.
 
 <br></br>
 

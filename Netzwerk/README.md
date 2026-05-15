@@ -1,8 +1,8 @@
 # Netzwerk
 
-Dieser Bereich ist fuer Netzwerkgrundlagen, Praxisdokumentationen und Hersteller- oder Konfigurationsnotizen vorgesehen.
+Dieser Bereich ist für Netzwerkgrundlagen, Praxisdokumentationen und Hersteller- oder Konfigurationsnotizen vorgesehen.
 
-Moegliche Themen:
+Mögliche Themen:
 
 - LANCOM
 - VLANs

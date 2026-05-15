@@ -18,7 +18,7 @@
 
 2. Den Ordner Certificate Templates mit Rechtsklick öffnen.
 
-3. New auswählen und anschließend Certificate Template to Issue anklicken.
+3. New auswählen und anschließend Certificate Template to Issü anklicken.
 
 4. Eine Liste aller verfügbaren, aber noch nicht aktivierten Zertifikatvorlagen erscheint.
 
@@ -26,11 +26,11 @@
 
 6. Mit OK bestätigen, um die Vorlage zu veröffentlichen.
 
-7. Die Vorlage wird nun in die Liste der „Issued Certificate Templates“ aufgenommen und kann von Clients angefordert werden.
+7. Die Vorlage wird nun in die Liste der „Issüd Certificate Templates“ aufgenommen und kann von Clients angefordert werden.
 
 <br></br>
 
-## Falls die neue Vorlage nicht sichtbar ist
+## Falls die neü Vorlage nicht sichtbar ist
 
 <img width="697" height="300" alt="image" src="https://github.com/user-attachments/assets/7aa8cd03-63dd-42b5-8c9e-6754741f6a65" />
 
@@ -49,8 +49,8 @@
 
    All Tasks → Start Service auswählen.
 
-   Danach erneut versuchen, die neue Vorlage unter
+   Danach erneut versuchen, die neü Vorlage unter
 
-   Certificate Templates → New → Certificate Template to Issue zu veröffentlichen.
+   Certificate Templates → New → Certificate Template to Issü zu veröffentlichen.
 
    Die Vorlage sollte nun in der Liste erscheinen.
