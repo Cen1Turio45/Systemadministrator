@@ -22,3 +22,12 @@ Dieser Bereich enthält Schritt-für-Schritt-Dokumentationen für administrative
 | [Quick Server Rollouts](QuickServerRollouts.md) | Windows-Server-Master-Image mit Sysprep vorbereiten |
 | [Bootable USB-Stick](BootableUSB-Stick.md) | Installationsmedium per PowerShell vorbereiten |
 | [Windows Updates](WindowsUpdates.md) | Sinnvolle Windows-Update-Einstellungen aktivieren |
+
+## Weitere Bereiche
+
+| Bereich | Inhalt |
+| --- | --- |
+| [IT-Support](../IT-Support) | Ticketbearbeitung, Windows-11-Troubleshooting, Softwareverteilung und Onboarding |
+| [Microsoft 365](../Microsoft-365) | Administrative Grundlagen im Microsoft 365 Admin Center |
+| [Netzwerk](../Netzwerk) | Netzwerk- und Internet-Troubleshooting |
+| [Security](../Security) | Malware-Erstreaktion und Phishing |

@@ -9,8 +9,10 @@ Mein Profil verbindet zwei Bereiche: Systemadministration und kaufmännisches IT
 | Bereich | Inhalt |
 | --- | --- |
 | [Azure](Azure) | Kostenmonitoring, Reporting, Backup und Automatisierung |
+| [IT-Support](IT-Support) | Ticketbearbeitung, Troubleshooting, Onboarding und Softwareverteilung |
 | [Windows Server](Windows-Server) | Active Directory, DNS, DHCP, GPOs und Serverbetrieb |
 | [Netzwerk](Netzwerk) | pfSense, Hyper-V-Netze, Routing, NAT und Firewall-Regeln |
+| [Microsoft 365](Microsoft-365) | Admin Center, Benutzer, Gruppen, Service Health und Collaboration-Dienste |
 | [Labs](Labs) | Praktische Testumgebungen und dokumentierte Übungen |
 | [Anleitungen](Anleitungen) | Schritt-für-Schritt-Dokumentationen für administrative Aufgaben |
 | [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Angebote, Rechnungen, Abrechnung, Kundenkommunikation und Prozesse |
@@ -26,6 +28,7 @@ Mein Profil verbindet zwei Bereiche: Systemadministration und kaufmännisches IT
 
 - Kaufmann für IT-Systemmanagement mit praktischer Erfahrung in Systemadministration und IT-Service
 - Erfahrung mit Windows-Clientumgebungen, Rollouts, Softwareverteilung und Troubleshooting
+- Praxisnahe Support-Prozesse: Ticketaufnahme, Priorisierung, Eskalation und Benutzerkommunikation
 - Praxisprojekte mit Azure Functions, Azure Cost Management, Azure Storage, PowerShell und GitHub
 - Technisches und kaufmännisches Verständnis in einer Rolle
 - Interesse an Automatisierung, Monitoring, sauberer Dokumentation und strukturierten Betriebsprozessen
@@ -87,6 +90,8 @@ Pfad: [Azure/azures-storage](Azure/azures-storage)
 - Azure Functions, Azure Storage, Azure Cost Management, Azure Budgets
 - Managed Identity, Azure Communication Services
 - PowerShell, Azure CLI, JavaScript / Node.js Grundlagen
+- Microsoft 365 Admin Center Grundlagen
+- Ticketbearbeitung, ITIL-Grundlagen und Service-Requests
 - Git, GitHub und Windows Task Scheduler
 - Kaufmännische IT-Prozesse, Rechnungen und Abrechnung
 
