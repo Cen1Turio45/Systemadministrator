@@ -1,4 +1,4 @@
-# Outlook startet nicht: Profil und Anmeldedaten prüfen
+# Outlook öffnet sich nicht
 
 ## Ausgangslage
 
@@ -8,18 +8,11 @@ Outlook lädt beim Start Daten und das Benutzerprofil, öffnet sich danach aber 
 
 Outlook soll wieder normal starten, ohne dass direkt ein neues Windows-Profil oder eine komplette Office-Neuinstallation erforderlich ist.
 
-## Symptome
-
-- Outlook bleibt beim Laden hängen.
-- Outlook zeigt kurz das Profil oder den Startvorgang, öffnet sich aber nicht.
-- Der Benutzer kann nicht auf E-Mails, Kalender oder Kontakte zugreifen.
-- Das Problem kann durch beschädigte Add-ins, gespeicherte Anmeldedaten oder ein fehlerhaftes Outlook-Profil verursacht werden.
-
 ## Vorgehen
 
 ### 1. Outlook im abgesicherten Modus starten
 
-Zuerst wird geprüft, ob Outlook ohne Add-ins starten kann.
+Zuerst wird geprüft, ob Outlook im abgesicherten Modus startet.
 
 1. `Win + R` drücken.
 2. Folgenden Befehl ausführen:
@@ -29,12 +22,10 @@ outlook.exe /safe
 ```
 
 3. Prüfen, ob Outlook im abgesicherten Modus startet.
-4. Outlook wieder schließen.
-5. Outlook normal starten.
-6. Benutzer einmal abmelden und erneut anmelden.
-7. Outlook erneut normal testen.
+4. Outlook schließen, normal starten und testen.
+5. Benutzer abmelden, wieder anmelden und Outlook erneut testen.
 
-Wenn Outlook danach wieder funktioniert, lag das Problem wahrscheinlich an einem temporären Startproblem oder an einem Add-in.
+Wenn Outlook danach wieder funktioniert, lag wahrscheinlich ein temporäres Startproblem vor.
 
 ### 2. Gespeicherte Anmeldedaten prüfen
 
