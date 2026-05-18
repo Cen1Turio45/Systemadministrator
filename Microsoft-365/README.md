@@ -7,6 +7,7 @@ Dieser Bereich sammelt administrative Grundlagen zu Microsoft 365. Der Fokus lie
 | Anleitung | Inhalt |
 | --- | --- |
 | [Microsoft 365 Admin Center Grundlagen](Admin-Center-Grundlagen.md) | Benutzer, Gruppen, Domains, Service Health, Exchange, SharePoint, Teams und Räume |
+| [Outlook startet nicht: Profil und Anmeldedaten prüfen](Outlook-startet-nicht-Profil-und-Anmeldedaten-pruefen.md) | Outlook im abgesicherten Modus starten, Credentials prüfen und Mailprofil neu erstellen |
 
 ## Typische Aufgaben
 
@@ -15,6 +16,7 @@ Dieser Bereich sammelt administrative Grundlagen zu Microsoft 365. Der Fokus lie
 - Service Health prüfen
 - Microsoft-Support-Tickets vorbereiten
 - Exchange, SharePoint, OneDrive und Teams administrativ einordnen
+- Outlook-Startprobleme strukturiert analysieren
 
 ## Ziel
 
