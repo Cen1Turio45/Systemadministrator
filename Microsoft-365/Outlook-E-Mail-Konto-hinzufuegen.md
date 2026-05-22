@@ -1,0 +1,67 @@
+# Outlook: E-Mail-Konto hinzufügen
+
+## Ziel
+
+Ein zusätzliches E-Mail-Konto soll in Outlook eingerichtet werden.
+
+## Vorbereitung
+
+Vor der Einrichtung prüfen:
+
+- E-Mail-Adresse
+- Benutzername
+- Passwort
+- Kontotyp, z. B. Exchange, IMAP oder POP3
+- Posteingangsserver
+- Postausgangsserver
+- Ports und Verschlüsselung
+
+## Konto manuell hinzufügen
+
+1. Systemsteuerung öffnen.
+2. `Mail` öffnen.
+3. `E-Mail-Konten` auswählen.
+4. `Neu` auswählen.
+5. Manuelle Konfiguration auswählen.
+6. Kontotyp auswählen, z. B. `IMAP`.
+7. Serverdaten eintragen.
+8. Benutzername und Passwort eintragen.
+9. Weitere Einstellungen öffnen.
+10. Postausgangsserver-Authentifizierung aktivieren, falls erforderlich.
+11. Verschlüsselung und Ports setzen.
+12. Einrichtung testen.
+13. Outlook schließen und neu starten.
+
+## Beispielwerte
+
+Die Werte hängen vom Provider ab. Typische Beispiele:
+
+| Dienst | Server | Port | Verschlüsselung |
+| --- | --- | --- | --- |
+| IMAP | `imap.example.com` | `993` | SSL/TLS |
+| POP3 | `pop3.example.com` | `995` | SSL/TLS |
+| SMTP | `smtp.example.com` | `465` | SSL/TLS |
+
+## Exchange-Konto
+
+Bei Exchange oder Microsoft 365 reicht häufig die E-Mail-Adresse. Outlook ruft die weiteren Einstellungen automatisch ab, wenn Autodiscover korrekt funktioniert.
+
+## Nachkontrolle
+
+Prüfen:
+
+- Konto erscheint links in Outlook.
+- Senden funktioniert.
+- Empfangen funktioniert.
+- Ordner werden synchronisiert.
+- Benutzer kann Outlook nach Neustart normal öffnen.
+
+## Dokumentation im Ticket
+
+Festhalten:
+
+- Kontoart
+- Provider oder Exchange/Microsoft 365
+- Einrichtung erfolgreich
+- Senden/Empfangen getestet
+- Besonderheiten bei Ports oder Verschlüsselung

@@ -16,6 +16,8 @@ Dieser Bereich sammelt sicherheitsrelevante Dokumentationen für den administrat
 | Anleitung | Inhalt |
 | --- | --- |
 | [Malware-Erstreaktion und Phishing](Malware-Erstreaktion-und-Phishing.md) | Sofortmaßnahmen, Eindämmung, Benutzerkommunikation und Ticketdokumentation |
+| [Kaspersky Endpoint Security installieren](Kaspersky-Endpoint-Security-installieren.md) | Endpoint-Security installieren, alte Version prüfen und Schutzstatus kontrollieren |
+| [Daten mit Veeam wiederherstellen](Veeam-Daten-wiederherstellen.md) | Daten oder E-Mail-Elemente aus einem Veeam-Backup wiederherstellen |
 
 ## Verwandte Themen
 

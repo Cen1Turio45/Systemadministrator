@@ -15,6 +15,8 @@ Dieser Bereich sammelt Netzwerkgrundlagen, Lab-Dokumentationen und Konfiguration
 | Anleitung | Inhalt |
 | --- | --- |
 | [Netzwerk- und Internet-Troubleshooting](Netzwerk-und-Internet-Troubleshooting.md) | Vorgehen bei Client-, Standort- und Providerproblemen |
+| [LANCOM VPN-Verbindung erstellen](LANCOM-VPN-Verbindung-erstellen.md) | VPN-Profil und Client-Verbindung mit LANCOM-Komponenten anlegen |
+| [LANCOM VPN-Verbindung ändern](LANCOM-VPN-Verbindung-aendern.md) | bestehende VPN-Verbindung korrigieren oder neu einrichten |
 
 ## Labs
 

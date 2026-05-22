@@ -28,3 +28,9 @@ Typische Beispiele:
 - Beispielstruktur für ein IT-Angebot
 - Ablauf von Anfrage, Angebot, Umsetzung und Abrechnung
 - Notizen zu Orgamax und kaufmännischen IT-Prozessen
+
+## Anleitungen
+
+| Anleitung | Inhalt |
+| --- | --- |
+| [Drucker und Zubehör recherchieren](Drucker-und-Zubehoer-recherchieren.md) | Anforderungen aufnehmen, Zubehör prüfen und Beschaffung vorbereiten |
