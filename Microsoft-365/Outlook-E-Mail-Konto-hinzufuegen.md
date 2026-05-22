@@ -4,6 +4,10 @@
 
 Ein zusätzliches E-Mail-Konto soll in Outlook eingerichtet werden.
 
+## Ausgangslage
+
+Ein Benutzer benötigt ein weiteres Postfach oder ein externes E-Mail-Konto in Outlook. Je nach Anbieter wird das Konto automatisch über Exchange/Microsoft 365 erkannt oder manuell per IMAP/POP3 eingerichtet.
+
 ## Vorbereitung
 
 Vor der Einrichtung prüfen:
@@ -15,6 +19,8 @@ Vor der Einrichtung prüfen:
 - Posteingangsserver
 - Postausgangsserver
 - Ports und Verschlüsselung
+
+Zugangsdaten sollten nur über freigegebene und sichere Wege verwendet werden.
 
 ## Konto manuell hinzufügen
 
@@ -42,9 +48,22 @@ Die Werte hängen vom Provider ab. Typische Beispiele:
 | POP3 | `pop3.example.com` | `995` | SSL/TLS |
 | SMTP | `smtp.example.com` | `465` | SSL/TLS |
 
+Die tatsächlichen Werte müssen aus der Kundendokumentation oder vom Provider übernommen werden.
+
 ## Exchange-Konto
 
 Bei Exchange oder Microsoft 365 reicht häufig die E-Mail-Adresse. Outlook ruft die weiteren Einstellungen automatisch ab, wenn Autodiscover korrekt funktioniert.
+
+## Fehlerbehebung
+
+Wenn die Einrichtung nicht funktioniert:
+
+- Benutzername prüfen
+- Passwort prüfen
+- Kontotyp prüfen
+- Ports und Verschlüsselung prüfen
+- Postausgangsserver-Authentifizierung prüfen
+- Outlook neu starten
 
 ## Nachkontrolle
 

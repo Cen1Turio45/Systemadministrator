@@ -4,6 +4,10 @@
 
 Diese Anleitung beschreibt die grundlegende Installation einer Endpoint-Security-Lösung am Beispiel von Kaspersky Endpoint Security.
 
+## Ausgangslage
+
+Ein Arbeitsplatz soll mit einer Endpoint-Security-Lösung ausgestattet oder auf eine aktuelle Version gebracht werden. Vor der Installation muss geprüft werden, ob bereits eine alte Version installiert ist.
+
 ## Vorbereitung
 
 Vor der Installation prüfen:
@@ -30,6 +34,10 @@ Vor der Installation prüfen:
 4. Nicht benötigte Module nur entfernen, wenn dies dokumentiert und freigegeben ist.
 5. Installation abschließen.
 6. Gerät neu starten, falls erforderlich.
+
+## Module und Vorgaben
+
+Welche Schutzmodule installiert werden, hängt von der Unternehmensvorgabe ab. Module sollten nicht ohne Freigabe entfernt werden.
 
 ## Nachkontrolle
 

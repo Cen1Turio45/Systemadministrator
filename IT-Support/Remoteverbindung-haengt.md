@@ -4,15 +4,28 @@
 
 Diese Anleitung beschreibt ein einfaches Vorgehen, wenn eine Remoteverbindung hängt oder keine stabile Verbindung aufgebaut werden kann.
 
+## Ausgangslage
+
+Ein Benutzer meldet, dass eine Remoteverbindung nicht reagiert, sehr langsam ist oder keine stabile Verbindung aufbaut.
+
 ## Vorgehen
 
 1. Benutzer vom betroffenen Gerät abmelden und erneut anmelden lassen.
 2. Remoteverbindung erneut testen.
 3. Internetverbindung prüfen.
 4. Falls mehrere VPN-Standorte verfügbar sind, alternative Verbindung testen.
-5. Router nach Freigabe neu starten.
-6. Firewall nach Freigabe neu starten.
+5. Router nur nach Freigabe neu starten.
+6. Firewall nur nach Freigabe neu starten.
 7. Wenn keine Verbesserung eintritt, Provider- oder Netzwerkproblem vermuten und eskalieren.
+
+## Nachkontrolle
+
+Prüfen:
+
+- Verbindung wird aufgebaut
+- Sitzung reagiert wieder
+- Internetverbindung ist stabil
+- alternative VPN-Verbindung funktioniert oder zeigt dasselbe Verhalten
 
 ## Eskalation
 

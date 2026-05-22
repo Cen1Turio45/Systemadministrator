@@ -4,6 +4,10 @@
 
 Die Durchwahl eines Benutzers soll in der Telefonanlage und in der zugehörigen Telefonie-/Serververwaltung angepasst werden.
 
+## Ausgangslage
+
+Ein Benutzer soll eine andere Durchwahl erhalten oder eine bestehende Durchwahl soll einem anderen Benutzer zugewiesen werden. Die Änderung muss sowohl in der Telefonanlage als auch in der zugehörigen Telefonie- oder CTI-Verwaltung nachvollzogen werden.
+
 ## Vorbereitung
 
 Vor der Änderung prüfen:
@@ -23,7 +27,7 @@ Vor der Änderung prüfen:
 4. Neue Durchwahl zuweisen.
 5. Änderung speichern.
 
-## Änderung in der Telefonie-Verwaltung
+## Änderung in der Telefonie- oder CTI-Verwaltung
 
 1. Auf den zuständigen Server oder die Verwaltungsoberfläche zugreifen.
 2. Benutzerverwaltung öffnen.

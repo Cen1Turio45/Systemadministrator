@@ -4,6 +4,10 @@
 
 Diese Anleitung beschreibt eine strukturierte Datenübertragung von einem alten Datenträger auf einen neuen Datenträger mit SmartCopy.
 
+## Ausgangslage
+
+Ein bestehendes System soll auf einen neuen Datenträger übertragen werden, zum Beispiel beim Wechsel von einer SATA-SSD auf eine NVMe-SSD. Ziel ist, das bestehende Windows-System möglichst vollständig zu übernehmen und nach der Migration wieder startfähig zu machen.
+
 ## Vorbereitung
 
 Vor der Übertragung prüfen:
@@ -14,7 +18,7 @@ Vor der Übertragung prüfen:
 - Kann das Zielsystem nach der Übertragung von dem neuen Datenträger starten?
 - Sind wichtige Daten zusätzlich gesichert?
 
-Wenn ein System von SATA auf NVMe umgestellt wird, sollte vorher geprüft werden, ob Windows die benötigten NVMe-Treiber bereits kennt. In manchen Fällen ist es sinnvoll, die NVMe vorher im alten System einzubauen, damit Windows passende Treiber laden kann.
+Wenn ein System von SATA auf NVMe umgestellt wird, sollte vorher geprüft werden, ob Windows die benötigten NVMe-Treiber bereits kennt. In manchen Fällen kann es sinnvoll sein, die NVMe vorher im alten System einzubauen, damit Windows passende Treiber laden kann.
 
 ## Durchführung
 
@@ -22,23 +26,23 @@ Wenn ein System von SATA auf NVMe umgestellt wird, sollte vorher geprüft werden
 2. Ziel-SSD per USB anschließen.
 3. Quelle und Ziel eindeutig identifizieren.
 4. Vor dem Start erneut prüfen, dass Quelle und Ziel nicht vertauscht sind.
-5. In SmartCopy geeignete Optionen setzen:
+5. In SmartCopy geeignete Optionen setzen.
 
-- kopierte Daten verifizieren
-- falls möglich Ziellaufwerk zu GPT konvertieren
+   - kopierte Daten verifizieren
+   - falls möglich Ziellaufwerk zu GPT konvertieren
 
 6. Datenübertragung starten.
 7. Übertragung vollständig durchlaufen lassen.
 
 ## Nachkontrolle
 
-Nach der Übertragung:
-
 1. System mit dem neuen Datenträger starten.
 2. Geräte-Manager öffnen.
 3. Treiber prüfen.
 4. Fehlende oder fehlerhafte Treiber aktualisieren.
-5. Windows-Start, Anmeldung und wichtige Anwendungen testen.
+5. Windows-Start testen.
+6. Benutzeranmeldung testen.
+7. Wichtige Anwendungen prüfen.
 
 ## Wichtige Hinweise
 
@@ -46,6 +50,16 @@ Nach der Übertragung:
 - Vor produktiver Übergabe einen Neustart testen.
 - Bei Treiberproblemen nicht blind Treiber-Tools verwenden, sondern Herstellerquellen bevorzugen.
 - Vor der Übergabe prüfen, ob Benutzerdateien, Programmeinstellungen und wichtige Anwendungen vorhanden sind.
+
+## Eskalation
+
+Eskalieren oder genauer prüfen, wenn:
+
+- das System nach der Übertragung nicht startet
+- Quelle oder Ziel nicht eindeutig erkannt werden
+- SmartCopy Fehler bei der Verifikation meldet
+- Treiberprobleme nach der Migration auftreten
+- wichtige Benutzerdaten fehlen
 
 ## Dokumentation im Ticket
 

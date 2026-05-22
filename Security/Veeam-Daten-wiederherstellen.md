@@ -4,6 +4,10 @@
 
 Diese Anleitung beschreibt die Wiederherstellung einzelner Daten oder E-Mail-Elemente aus einem Veeam-Backup.
 
+## Ausgangslage
+
+Ein Benutzer benötigt eine Datei oder ein E-Mail-Element aus einem Backup. Vor der Wiederherstellung muss geklärt werden, welcher Stand benötigt wird und ob dieser innerhalb der Aufbewahrungszeit liegt.
+
 ## Vorbereitung
 
 Vor der Wiederherstellung prüfen:
@@ -24,6 +28,15 @@ Vor der Wiederherstellung prüfen:
 6. Gesuchte Datei oder E-Mail suchen.
 7. Wiederherstellung durchführen.
 8. Ergebnis prüfen.
+
+## Nachkontrolle
+
+Prüfen:
+
+- richtige Datei oder E-Mail wiederhergestellt
+- Wiederherstellung am richtigen Ziel durchgeführt
+- Benutzer kann auf die wiederhergestellten Daten zugreifen
+- keine bestehenden Daten versehentlich überschrieben
 
 ## Hinweis zur Aufbewahrung
 

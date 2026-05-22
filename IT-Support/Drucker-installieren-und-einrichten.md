@@ -2,7 +2,11 @@
 
 ## Ziel
 
-Diese Anleitung beschreibt die Einrichtung eines Netzwerkdruckers über die Druckverwaltung und die anschließende Verteilung an Clients.
+Diese Anleitung beschreibt die Einrichtung eines Netzwerkdruckers über die Druckverwaltung, die Grundkonfiguration am Gerät und die anschließende Verteilung an Clients.
+
+## Ausgangslage
+
+Ein Netzwerkdrucker soll zentral über einen Druckserver bereitgestellt werden. Zusätzlich können Druckoptionen, Papierfächer, Scan-to-Folder und Client-Zuweisung eingerichtet werden.
 
 ## Vorbereitung
 
@@ -14,6 +18,8 @@ Vor der Installation prüfen:
 - benötigter Treiber
 - bestehende Konfiguration eines alten Druckers
 - Freigabename und gewünschter Anzeigename
+
+Wenn ein alter Drucker ersetzt wird, sollten dessen Fach-, Treiber- und Freigabeeinstellungen vorher geprüft werden.
 
 ## Treiber vorbereiten
 
@@ -35,7 +41,7 @@ Vor der Installation prüfen:
 9. Druckername und Freigabename sinnvoll setzen.
 10. Testseite drucken.
 
-## Standardkonfiguration prüfen
+## Druckeinstellungen prüfen
 
 Typische Einstellungen:
 
@@ -45,6 +51,8 @@ Typische Einstellungen:
 - Papierformat
 - Fach 1 / Fach 2
 - Standarddrucker nach Bedarf
+
+Wenn Fach- oder Druckoptionen nicht sauber übernommen werden, sollte ein anderer Treiber getestet werden.
 
 ## Drucker-Webinterface
 
@@ -75,6 +83,19 @@ Dort prüfen:
 7. Dateiformat, z. B. PDF, festlegen.
 8. Scan-Ziel auf der Startseite des Druckers hinterlegen.
 
+## Geräteseite anpassen
+
+Je nach Gerät können häufig verwendete Funktionen auf der Startseite hinterlegt werden, zum Beispiel:
+
+- Kopieren
+- Fax
+- Status oder Material
+- Auftragswarteschlange
+- Kurzwahl
+- Ausweiskopie
+- Scan Center
+- Einstellungen
+
 ## Drucker auf Clients hinzufügen
 
 1. Systemsteuerung öffnen.
@@ -99,6 +120,17 @@ Wenn Fach- oder Treibereinstellungen nicht korrekt greifen:
 - alte Druckerwarteschlange entfernen
 - Druckserver neu prüfen
 - Drucker-Webinterface kontrollieren
+
+## Nachkontrolle
+
+Prüfen:
+
+- Testseite wird gedruckt
+- richtiger Treiber ist aktiv
+- Duplexdruck funktioniert
+- richtiges Fach wird verwendet
+- Scan-to-Folder funktioniert
+- Drucker kann vom Client hinzugefügt werden
 
 ## Dokumentation im Ticket
 

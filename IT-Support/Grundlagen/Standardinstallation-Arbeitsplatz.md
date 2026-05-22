@@ -1,26 +1,36 @@
-# Standardinstallation Arbeitsplatz
+# Standardinstallation eines Arbeitsplatzes
 
 ## Ziel
 
 Diese Checkliste beschreibt typische Schritte nach einer Windows-Grundinstallation oder Arbeitsplatzvorbereitung.
 
-## Ablauf
+## Vorbereitung
+
+Vor der Einrichtung prüfen:
+
+- Benutzer oder Einsatzzweck des Geräts
+- benötigte Standardsoftware
+- benötigte Sicherheitssoftware
+- Office-Lizenz oder Microsoft-365-Zuweisung
+- Drucker, Netzlaufwerke oder weitere kundenspezifische Anforderungen
+
+## Grundinstallation
 
 1. Windows starten und Benutzer anmelden.
 2. Nicht benötigte vorinstallierte Anwendungen entfernen, falls vorgesehen.
-3. Standardsoftware installieren:
+3. Windows Updates ausführen.
+4. Neustart durchführen.
+
+## Standardsoftware
+
+Typische Programme:
 
 - PDF-Reader
 - Browser
 - Microsoft Office
 - weitere kundenspezifische Anwendungen
 
-4. Office installieren und aktivieren.
-5. Sicherheitssoftware installieren und aktivieren.
-6. Standardprogramme wie Word, Excel und Outlook bei Bedarf auf dem Desktop oder in der Taskleiste bereitstellen.
-7. Windows Updates ausführen.
-8. Neustart durchführen.
-9. Funktionstest durchführen.
+Office installieren und aktivieren. Danach Standardprogramme wie Word, Excel und Outlook bei Bedarf auf dem Desktop oder in der Taskleiste bereitstellen.
 
 ## Sicherheitssoftware
 
@@ -36,6 +46,7 @@ Vor Übergabe prüfen:
 - Outlook ist vorbereitet oder kann eingerichtet werden.
 - Sicherheitssoftware ist aktiv.
 - Drucker oder Netzlaufwerke sind bei Bedarf eingerichtet.
+- Gerät wurde mindestens einmal neu gestartet.
 
 ## Dokumentation im Ticket
 
