@@ -1,21 +1,16 @@
-# Obtaining a public authority SSL certificate
-
-
-## Vorbereitung
-
-1. Ein öffentliches SSL-Zertifikat wird benötigt, um HTTPS auf dem Webserver zu aktivieren.
-
-2. Im Beispiel wird ein Windows Server 2025 Webserver mit IIS 10 verwendet.
-
+# Public SSL Certificate
 
 ## Ziel
 
-1. Ein SSL-Zertifikat einer öffentlichen Zertifizierungsstelle (Public CA) beziehen.
+Kurze Checkliste zum Beziehen eines öffentlichen SSL-Zertifikats.
 
-2. Der Prozess besteht aus drei Schritten:
+## Checkliste
 
-   Certificate Request (CSR) erstellen
-
-   CSR bei der Public CA einreichen
-
-   Zertifikat auf dem Server installieren
+- DNS-Name der Website klären.
+- CSR auf dem Webserver erstellen.
+- CSR bei einer Public CA einreichen.
+- Domain Ownership Validation durchführen.
+- Ausgestelltes Zertifikat herunterladen.
+- Zertifikat auf dem Webserver installieren.
+- HTTPS-Bindung in IIS prüfen.
+- Zertifikatlaufzeit und Zertifikatkette testen.

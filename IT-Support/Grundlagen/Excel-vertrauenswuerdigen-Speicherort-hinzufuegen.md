@@ -2,31 +2,16 @@
 
 ## Ziel
 
-Ein Netzlaufwerk oder Ordner soll in Excel als vertrauenswürdiger Speicherort hinterlegt werden.
+Kurze Checkliste zum Hinterlegen eines vertrauenswürdigen Speicherorts in Excel.
 
-## Vorgehen
+## Checkliste
 
-1. Excel öffnen.
-2. `Datei` öffnen.
-3. `Optionen` öffnen.
-4. `Trust Center` auswählen.
-5. `Einstellungen für das Trust Center` öffnen.
-6. `Vertrauenswürdige Speicherorte` auswählen.
-7. Falls es sich um ein Netzlaufwerk handelt, `Vertrauenswürdige Speicherorte im Netzwerk zulassen` aktivieren.
-8. `Neuen Speicherort hinzufügen` auswählen.
-9. Pfad eintragen.
-10. Einstellung übernehmen und Excel neu starten.
-
-## Hinweis
-
-Vertrauenswürdige Speicherorte sollten nur nach Vorgabe gesetzt werden. Diese Einstellung kann Sicherheitsrisiken erhöhen, wenn unsichere Pfade eingetragen werden.
-
-## Dokumentation im Ticket
-
-Festhalten:
-
-- betroffener Benutzer
-- Gerät
-- eingetragener Speicherort
-- Netzlaufwerk oder lokaler Pfad
-- Funktionstest erfolgreich
+- Speicherort nur nach Vorgabe hinzufügen.
+- Excel öffnen.
+- `Datei > Optionen > Trust Center` öffnen.
+- `Einstellungen für das Trust Center` öffnen.
+- `Vertrauenswürdige Speicherorte` auswählen.
+- Bei Netzlaufwerken `Vertrauenswürdige Speicherorte im Netzwerk zulassen` aktivieren.
+- `Neuen Speicherort hinzufügen` auswählen.
+- Pfad eintragen und übernehmen.
+- Excel neu starten und Datei aus dem Speicherort testen.

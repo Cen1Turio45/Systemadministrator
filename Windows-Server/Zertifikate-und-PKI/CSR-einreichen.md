@@ -1,46 +1,17 @@
-# Public CA Website aufrufen
+# CSR einreichen
 
-<img width="719" height="421" alt="image" src="https://github.com/user-attachments/assets/020f4f37-5d59-47fe-8a30-5b503348188b" />
+## Ziel
 
+Kurze Checkliste zum Einreichen eines CSR bei einer Public CA.
 
-## Public CA Website aufrufen
+## Checkliste
 
-1. Auf der Website der gewählten Public CA anmelden (z. B. GoDaddy, DigiCert, Verisign).
-
-2. Bereich für SSL-Zertifikate und Certificate Request / Create Certificate öffnen.
-
-
-## Erforderliche Angaben bereitstellen
-
-1. Validity Period
-
-   Zertifikatslaufzeit auswählen (meist 1 Jahr).
-
-2. Webserver Platform
-
-   IIS auswählen (bei Windows Server 2025).
-
-   Alternativen könnten Apache, Tomcat, NGINX, etc. sein.
-
-3. Domain Ownership Validation
-
-   E-Mail-Adresse zur Validierung auswählen.
-
-   Typische Optionen:
-
-   admin@contoso.com
-
-   administrator@contoso.com
-
-   webmaster@contoso.com
-
-   hostmaster@contoso.com
-
-4. Validierungs-E-Mail öffnen → Link anklicken oder Code eingeben.
-
-
-## CSR
-
-1. Formular absenden.
-
-2. CA verarbeitet den CSR und stellt das SSL-Zertifikat bereit.
+- Bei der Website der Public CA anmelden.
+- Bereich für SSL-Zertifikate oder Certificate Request öffnen.
+- Zertifikatslaufzeit auswählen.
+- Webserver-Plattform auswählen, z. B. IIS.
+- CSR-Inhalt einfügen oder CSR-Datei hochladen.
+- Domain-Validation-Methode auswählen.
+- Validierungs-E-Mail öffnen und bestätigen.
+- Antrag absenden.
+- Ausgestelltes Zertifikat herunterladen.

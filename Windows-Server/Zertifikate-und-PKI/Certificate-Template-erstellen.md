@@ -1,102 +1,20 @@
-# Creating a Certificate Template
+# Certificate Template erstellen
 
-<img width="905" height="518" alt="image" src="https://github.com/user-attachments/assets/b35b24fe-bc7c-40f3-a1ce-c66f3b5457b4" />
+## Ziel
 
-1. Ein Certificate Authority (CA) Server stellt Zertifikate aus.
+Kurze Checkliste zum Erstellen einer eigenen Zertifikatvorlage.
 
-2. Zertifikate basieren nicht direkt auf freien Einstellungen, sondern immer auf Zertifikatvorlagen (Templates).
+## Checkliste
 
-3. Diese Templates definieren alle Eigenschaften, die später im Zertifikat enthalten sind.
-
-4. Neue Zertifikate werden generiert, indem der CA-Server die ausgewählte Vorlage „nach Rezept“ nutzt.
-
-5. Obwohl Windows einige Standardvorlagen bereitstellt, ist es empfehlenswert, eigene Templates zu erstellen, um volle Kontrolle über alle Konfigurationen zu haben.
-
-
-## Zertifikatvorlagen-Konsole öffnen
-
-1. Server Manager öffnen.
-
-2. „Tools“ auswählen.
-
-3. „Certification Authority“ öffnen.
-
-4. In der linken Struktur die CA auswählen.
-
-5. Den Ordner Certificate Templates per Rechtsklick öffnen.
-
-6. „Manage“ auswählen, um die vollständige Template-Konsole zu öffnen.
-
-
-## Basisvorlage auswählen und duplizieren
-
-1. In der Template-Konsole wird eine erweiterte Liste aller verfügbaren Vorlagen angezeigt.
-
-2. Eine geeignete Vorlage aussuchen, die dem gewünschten Anwendungsfall ähnelt
-(z. B. „Computer“ für Maschinenzertifikate).
-
-3. Rechtsklick auf die ausgewählte Standardvorlage.
-
-4. „Duplicate Template“ auswählen, um eine neue Vorlage darauf basierend zu erstellen.
-
-
-## Allgemeine Eigenschaften anpassen
-
-<img width="905" height="518" alt="image" src="https://github.com/user-attachments/assets/a158080d-3f97-46ce-802a-964791a58ceb" />
-
-1. Die neue Vorlage öffnet sich im Eigenschaftenfenster.
-
-2. Einen eindeutigen Vorlagennamen vergeben.
-
-3. Einen passenden Anzeigenamen (Display Name) festlegen.
-
-4. Die gewünschte Gültigkeitsdauer einstellen (Beispiel aus dem Screenshot: 2 Jahre).
-
-5. Die Erneuerungsfrist konfigurieren (Beispiel: 6 Wochen).
-
-6. Optional: „Publish certificate in Active Directory“ aktivieren.
-
-
-## Subject Name konfigurieren
-
-<img width="523" height="552" alt="image" src="https://github.com/user-attachments/assets/9b100100-627c-4aa7-a290-b3cf098a59a4" />
-
-1. Tab Subject Name öffnen.
-
-2. Einstellung „Build from this Active Directory Information“ auswählen.
-
-3. „Common name“ als Format festlegen.
-
-4. Sicherstellen, dass DNS Name aktiviert ist.
-
-5. Optionale zusätzliche Attribute (E-Mail, UPN, SPN) nach Bedarf aktivieren oder deaktivieren.
-
-
-## Sicherheitseinstellungen definieren
-
-<img width="496" height="688" alt="image" src="https://github.com/user-attachments/assets/7de992f7-9114-4b04-a394-a5669e3af9c" />
-
-1. Tab Security öffnen.
-
-2. Berechtigungen so konfigurieren, dass nur die gewünschten Gruppen Zertifikate anfordern können.
-
-3. Für das Beispiel:
-   Gruppe Domain Computers auswählen.
-
-   Berechtigungen:
-   Read: aktiviert
-   Enroll: aktiviert
-   (optional) Autoenroll je nach Anforderung
-
-4. Ziel: Nur autorisierte Computer sollen Zertifikate auf Basis dieser Vorlage anfordern können.
-
-
-## Vorlage speichern
-
-1. Alle Einstellungen noch einmal prüfen.
-
-2. Mit „OK“ bestätigen.
-
-3. Die neue Vorlage erscheint nun in der Liste der verfügbaren Templates auf dem CA-Server.
-
-4. Diese Vorlage steht ab sofort für zukünftige Zertifikatsanforderungen zur Verfügung.
+- Certification Authority öffnen.
+- `Certificate Templates > Manage` öffnen.
+- Geeignete Standardvorlage auswählen, z. B. `Computer`.
+- Vorlage duplizieren.
+- Eindeutigen Template-Namen und Anzeigenamen vergeben.
+- Gültigkeitsdauer und Erneuerungsfrist setzen.
+- Subject Name nach Vorgabe konfigurieren.
+- Benötigte DNS-, UPN-, SPN- oder E-Mail-Attribute prüfen.
+- Im Tab `Security` nur berechtigte Gruppen eintragen.
+- Für berechtigte Gruppen `Read` und `Enroll` setzen.
+- `Autoenroll` nur setzen, wenn automatische Verteilung gewünscht ist.
+- Vorlage speichern.

@@ -2,47 +2,14 @@
 
 ## Ziel
 
-Diese Anleitung beschreibt ein einfaches Vorgehen, wenn eine Remoteverbindung hängt oder keine stabile Verbindung aufgebaut werden kann.
+Kurze Checkliste, wenn eine Remote- oder VPN-Verbindung hängt.
 
-## Ausgangslage
+## Checkliste
 
-Ein Benutzer meldet, dass eine Remoteverbindung nicht reagiert, sehr langsam ist oder keine stabile Verbindung aufbaut.
-
-## Vorgehen
-
-1. Benutzer vom betroffenen Gerät abmelden und erneut anmelden lassen.
-2. Remoteverbindung erneut testen.
-3. Internetverbindung prüfen.
-4. Falls mehrere VPN-Standorte verfügbar sind, alternative Verbindung testen.
-5. Router nur nach Freigabe neu starten.
-6. Firewall nur nach Freigabe neu starten.
-7. Wenn keine Verbesserung eintritt, Provider- oder Netzwerkproblem vermuten und eskalieren.
-
-## Nachkontrolle
-
-Prüfen:
-
-- Verbindung wird aufgebaut
-- Sitzung reagiert wieder
-- Internetverbindung ist stabil
-- alternative VPN-Verbindung funktioniert oder zeigt dasselbe Verhalten
-
-## Eskalation
-
-Eskalieren, wenn:
-
-- mehrere Benutzer betroffen sind
-- Standortverbindung instabil ist
-- Router oder Firewall Auffälligkeiten zeigen
-- Providerstörung vermutet wird
-
-## Dokumentation im Ticket
-
-Festhalten:
-
-- betroffener Benutzer
-- Standort
-- verwendete Remote- oder VPN-Verbindung
-- alternative Verbindung getestet
-- Router/Firewall neu gestartet: ja/nein
-- Ergebnis
+- Benutzer abmelden und erneut anmelden lassen.
+- Remoteverbindung neu starten und erneut testen.
+- Internetverbindung am Client prüfen.
+- Alternative VPN- oder Remoteverbindung testen, falls vorhanden.
+- Prüfen, ob mehrere Benutzer oder nur ein einzelner Benutzer betroffen sind.
+- Router oder Firewall nur nach Freigabe neu starten.
+- Bei Standort- oder Providerverdacht eskalieren.

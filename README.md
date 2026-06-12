@@ -2,7 +2,7 @@
 
 Dieses Repository ist mein technisches Portfolio für Systemadministration, IT-Support, Windows Server, Netzwerk, Microsoft 365, Azure und kaufmännisches IT-Systemmanagement.
 
-Der Fokus liegt auf nachvollziehbarer Praxis: dokumentierte Supportprozesse, Windows-Server-Aufgaben, Netzwerk-Labs, Azure-Automatisierung und administrative Checklisten. Ergänzend bringe ich kaufmännisches Verständnis mit, zum Beispiel für Angebote, Rechnungen, Abrechnungsvorgänge, Kundenkommunikation und die wirtschaftliche Bewertung von IT-Lösungen.
+Der Fokus liegt auf nachvollziehbarer Praxis: kurze administrative Checklisten, Windows-Server-Aufgaben, Netzwerk-Labs und Azure-Automatisierung. Ergänzend bringe ich kaufmännisches Verständnis mit, zum Beispiel für Angebote, Rechnungen, Abrechnungsvorgänge, Kundenkommunikation und die wirtschaftliche Bewertung von IT-Lösungen.
 
 ## Schnellstart
 
@@ -69,7 +69,7 @@ Der Fokus liegt auf nachvollziehbarer Praxis: dokumentierte Supportprozesse, Win
 | [Azure Cost Monitoring](Azure/azure-cost-monitoring) | Automatisierte Auswertung von Azure-Kosten nach Services, Ressourcengruppen und Kategorien |
 | [Azure Storage Backup](Azure/azures-storage) | Automatisierte Sicherung lokaler Dateien in Azure Blob Storage |
 | [Support-Prozess und Ticketbearbeitung](IT-Support/Support-Prozess-und-Ticketbearbeitung.md) | Strukturierter Ablauf für Aufnahme, Analyse, Priorisierung und Eskalation |
-| [Datenübertragung](IT-Support/Datenuebertragung-mit-SmartCopy.md) und [Standardinstallation](IT-Support/Grundlagen/Standardinstallation-Arbeitsplatz.md) | Strukturierte Datenträgerübertragung mit Nachkontrolle sowie Arbeitsplatzvorbereitung mit Standardsoftware |
+| [Datenübertragung](IT-Support/Datenuebertragung-mit-SmartCopy.md) und [Standardinstallation](IT-Support/Grundlagen/Standardinstallation-Arbeitsplatz.md) | Kurze Checklisten für Datenträgerübertragung und Arbeitsplatzvorbereitung |
 | [Active Directory: Benutzer, Gruppen und Domainbeitritt](Windows-Server/Active-Directory-Benutzer-Gruppen-und-Domainbeitritt.md) | Typische AD-Aufgaben aus dem IT-Support |
 | [Netzwerk- und Internet-Troubleshooting](Netzwerk/Netzwerk-und-Internet-Troubleshooting.md) | Vorgehen bei Client-, Standort- und Providerproblemen |
 | [Windows-Testumgebung mit pfSense-Firewall](Netzwerk/Labs/Windows-Testumgebung-mit-pfSense-Firewall.md) | Virtuelle Netzwerkumgebung mit pfSense, Windows Server, AD DS und DHCP |

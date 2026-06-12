@@ -1,6 +1,6 @@
 # IT-Support
 
-Dieser Bereich sammelt praxisnahe Support-Anleitungen und Prozesse. Der Fokus liegt auf strukturiertem Troubleshooting, guter Ticket-Dokumentation und sauberer Kommunikation mit Benutzern.
+Dieser Bereich sammelt kurze Support-Checklisten für typische Aufgaben im IT-Alltag.
 
 ## Anleitungen
 

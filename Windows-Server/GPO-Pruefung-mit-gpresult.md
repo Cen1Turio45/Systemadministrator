@@ -2,62 +2,23 @@
 
 ## Ziel
 
-Diese Anleitung beschreibt, wie aktive Gruppenrichtlinien geprüft und dokumentiert werden.
+Kurze Checkliste zum Prüfen angewendeter Gruppenrichtlinien.
 
-## GPOs in der Konsole prüfen
+## Checkliste
 
-1. `Group Policy Management` öffnen.
-2. Domäne auswählen.
-3. Relevante OU oder Policy öffnen.
-4. Tab `Settings` prüfen.
-5. Einstellungen und Verknüpfungen dokumentieren.
+- Betroffenen Benutzer, Computer und erwartete Einstellung klären.
+- In `Group Policy Management` relevante OU und verknüpfte GPOs prüfen.
+- Sicherheitsfilterung und WMI-Filter prüfen.
+- Auf dem Client administratives Terminal öffnen.
+- HTML-Bericht mit `gpresult /h C:\gpresult.html` erstellen.
+- Bericht öffnen und angewendete Benutzer- und Computer-GPOs prüfen.
+- Abgelehnte oder gefilterte GPOs beachten.
+- Bei Bedarf `gpupdate /force` ausführen.
+- Danach abmelden, neu anmelden oder Gerät neu starten, wenn die Policy es erfordert.
 
-## gpresult-Bericht erstellen
-
-Auf einem domänenverbundenen Client eine administrative Eingabeaufforderung öffnen:
+## Nützliche Befehle
 
 ```cmd
 gpresult /h C:\gpresult.html
-```
-
-Danach die Datei öffnen:
-
-```text
-C:\gpresult.html
-```
-
-## Wann gpresult hilfreich ist
-
-- Benutzer erhält eine Einstellung nicht.
-- Computer bekommt eine Policy nicht.
-- Mehrere GPOs überschneiden sich.
-- Loopback Processing ist aktiv.
-- Es ist unklar, welche Policy gewinnt.
-
-## Wichtige Prüfpunkte
-
-- angewendete Benutzer-GPOs
-- angewendete Computer-GPOs
-- gefilterte oder abgelehnte GPOs
-- Sicherheitsfilterung
-- WMI-Filter
-- OU-Pfad des Benutzers oder Computers
-
-## GPO aktualisieren
-
-```cmd
 gpupdate /force
 ```
-
-Danach je nach Policy abmelden, neu anmelden oder neu starten.
-
-## Dokumentation im Ticket
-
-Festhalten:
-
-- Gerät
-- Benutzer
-- betroffene Einstellung
-- erwartetes Verhalten
-- angewendete GPOs
-- Ergebnis von `gpresult`
