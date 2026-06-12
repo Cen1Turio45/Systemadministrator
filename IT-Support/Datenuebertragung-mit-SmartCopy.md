@@ -2,72 +2,22 @@
 
 ## Ziel
 
-Diese Anleitung beschreibt eine strukturierte Datenübertragung von einem alten Datenträger auf einen neuen Datenträger mit SmartCopy.
+Kurze Checkliste für die Datenübertragung von einem alten auf ein neues Gerät.
 
-## Ausgangslage
+## Checkliste
 
-Ein bestehendes System soll auf einen neuen Datenträger übertragen werden, zum Beispiel beim Wechsel von einer SATA-SSD auf eine NVMe-SSD. Ziel ist, das bestehende Windows-System möglichst vollständig zu übernehmen und nach der Migration wieder startfähig zu machen.
+- Immer eine Backup-Platte bereithalten. Wenn möglich zuerst SATA auf SATA klonen, bevor von SATA auf NVMe gewechselt wird.
+- Bei SATA auf NVMe prüfen, ob Windows die benötigten NVMe-Treiber hat. Ohne passenden NVMe-Treiber kann die neue Platte nach dem Klonen nicht booten.
+- Prüfen, ob ein Microsoft-Konto aktiv genutzt wird. Zur Sicherheit vor dem Klonen einen lokalen Admin erstellen und ein Passwort setzen, damit man den Microsoft-Konto-Login notfalls umgehen kann.
+- Prüfen, ob BitLocker aktiv ist. BitLocker vor der Datenübertragung deaktivieren, sonst kann es auf der neuen Platte zu Boot-Problemen kommen.
+- Hard Resets vermeiden, wenn die Festplatte in einen anderen Rechner eingebaut wurde. Das kann die Boot-Partition beschädigen und unnötige Probleme verursachen.
+- Quelle und Ziel vor dem Start eindeutig prüfen, damit nicht versehentlich die falsche Platte überschrieben wird.
 
-## Vorbereitung
+## Ticket-Dokumentation
 
-Vor der Übertragung prüfen:
-
-- Welcher Datenträger ist die Quelle?
-- Welcher Datenträger ist das Ziel?
-- Ist im neuen Gerät eine NVMe oder SATA-SSD verbaut?
-- Kann das Zielsystem nach der Übertragung von dem neuen Datenträger starten?
-- Sind wichtige Daten zusätzlich gesichert?
-
-Wenn ein System von SATA auf NVMe umgestellt wird, sollte vorher geprüft werden, ob Windows die benötigten NVMe-Treiber bereits kennt. In manchen Fällen kann es sinnvoll sein, die NVMe vorher im alten System einzubauen, damit Windows passende Treiber laden kann.
-
-## Durchführung
-
-1. Original-SSD als Quelle einbauen.
-2. Ziel-SSD per USB anschließen.
-3. Quelle und Ziel eindeutig identifizieren.
-4. Vor dem Start erneut prüfen, dass Quelle und Ziel nicht vertauscht sind.
-5. In SmartCopy geeignete Optionen setzen.
-
-   - kopierte Daten verifizieren
-   - falls möglich Ziellaufwerk zu GPT konvertieren
-
-6. Datenübertragung starten.
-7. Übertragung vollständig durchlaufen lassen.
-
-## Nachkontrolle
-
-1. System mit dem neuen Datenträger starten.
-2. Geräte-Manager öffnen.
-3. Treiber prüfen.
-4. Fehlende oder fehlerhafte Treiber aktualisieren.
-5. Windows-Start testen.
-6. Benutzeranmeldung testen.
-7. Wichtige Anwendungen prüfen.
-
-## Wichtige Hinweise
-
-- Quelle und Ziel immer doppelt prüfen.
-- Vor produktiver Übergabe einen Neustart testen.
-- Bei Treiberproblemen nicht blind Treiber-Tools verwenden, sondern Herstellerquellen bevorzugen.
-- Vor der Übergabe prüfen, ob Benutzerdateien, Programmeinstellungen und wichtige Anwendungen vorhanden sind.
-
-## Eskalation
-
-Eskalieren oder genauer prüfen, wenn:
-
-- das System nach der Übertragung nicht startet
-- Quelle oder Ziel nicht eindeutig erkannt werden
-- SmartCopy Fehler bei der Verifikation meldet
-- Treiberprobleme nach der Migration auftreten
-- wichtige Benutzerdaten fehlen
-
-## Dokumentation im Ticket
-
-Festhalten:
-
-- Quellgerät
-- Zielgerät
+- Quellgerät und Zielgerät
 - verwendete Datenträger
-- Ergebnis der Verifikation
-- Starttest erfolgreich: ja/nein
-- Treiberprüfung durchgeführt: ja/nein
+- Backup-Platte vorhanden: ja/nein
+- BitLocker deaktiviert: ja/nein
+- lokaler Admin vorhanden: ja/nein
+- Starttest nach der Übertragung erfolgreich: ja/nein
