@@ -35,6 +35,7 @@ Der Fokus liegt auf nachvollziehbarer Praxis: dokumentierte Supportprozesse, Win
 - strukturierte Ticketbearbeitung und Eskalation
 - Windows-11-Troubleshooting
 - Arbeitsplatz-Onboarding
+- Datenübertragung mit SmartCopy und Standardinstallation von Arbeitsplätzen
 - Softwareverteilung mit PDQ
 - Malware-Erstreaktion und Phishing-Sensibilisierung
 
@@ -68,6 +69,7 @@ Der Fokus liegt auf nachvollziehbarer Praxis: dokumentierte Supportprozesse, Win
 | [Azure Cost Monitoring](Azure/azure-cost-monitoring) | Automatisierte Auswertung von Azure-Kosten nach Services, Ressourcengruppen und Kategorien |
 | [Azure Storage Backup](Azure/azures-storage) | Automatisierte Sicherung lokaler Dateien in Azure Blob Storage |
 | [Support-Prozess und Ticketbearbeitung](IT-Support/Support-Prozess-und-Ticketbearbeitung.md) | Strukturierter Ablauf für Aufnahme, Analyse, Priorisierung und Eskalation |
+| [Datenübertragung](IT-Support/Datenuebertragung-mit-SmartCopy.md) und [Standardinstallation](IT-Support/Grundlagen/Standardinstallation-Arbeitsplatz.md) | Strukturierte Datenträgerübertragung mit Nachkontrolle sowie Arbeitsplatzvorbereitung mit Standardsoftware |
 | [Active Directory: Benutzer, Gruppen und Domainbeitritt](Windows-Server/Active-Directory-Benutzer-Gruppen-und-Domainbeitritt.md) | Typische AD-Aufgaben aus dem IT-Support |
 | [Netzwerk- und Internet-Troubleshooting](Netzwerk/Netzwerk-und-Internet-Troubleshooting.md) | Vorgehen bei Client-, Standort- und Providerproblemen |
 | [Windows-Testumgebung mit pfSense-Firewall](Netzwerk/Labs/Windows-Testumgebung-mit-pfSense-Firewall.md) | Virtuelle Netzwerkumgebung mit pfSense, Windows Server, AD DS und DHCP |
