@@ -6,9 +6,9 @@ Kurze Checkliste für die Datenübertragung von einem alten auf ein neues Gerät
 
 ## Checkliste
 
-- Immer eine Backup-Platte bereithalten. Wenn möglich zuerst SATA auf SATA klonen, bevor von SATA auf NVMe gewechselt wird.
-- Bei SATA auf NVMe prüfen, ob Windows die benötigten NVMe-Treiber hat. Ohne passenden NVMe-Treiber kann die neue Platte nach dem Klonen nicht booten.
-- Prüfen, ob ein Microsoft-Konto aktiv genutzt wird. Zur Sicherheit vor dem Klonen einen lokalen Admin erstellen und ein Passwort setzen, damit man den Microsoft-Konto-Login notfalls umgehen kann.
+- Immer eine Backup-Platte bereithalten. Wenn SATA Festplatte vorhanden, immer zuerst SATA auf SATA klonen, bevor von SATA auf NVMe gewechselt wird.
+- Bei SATA auf NVMe werden NVMe-Treiber benötigt, ohne passenden NVMe-Treiber kann die neue Platte nach dem Klonen nicht booten.
+- Prüfen, ob ein Microsoft-Konto aktiv genutzt wird. Zur Sicherheit vor dem Klonen einen lokalen Admin erstellen und ein Passwort setzen, damit man den Microsoft-Konto-Login Notfalls umgehen kann.
 - Prüfen, ob BitLocker aktiv ist. BitLocker vor der Datenübertragung deaktivieren, sonst kann es auf der neuen Platte zu Boot-Problemen kommen.
 - Hard Resets vermeiden, wenn die Festplatte in einen anderen Rechner eingebaut wurde. Das kann die Boot-Partition beschädigen und unnötige Probleme verursachen.
 - Quelle und Ziel vor dem Start eindeutig prüfen, damit nicht versehentlich die falsche Platte überschrieben wird.
