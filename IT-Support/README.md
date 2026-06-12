@@ -10,7 +10,8 @@ Dieser Bereich sammelt praxisnahe Support-Anleitungen und Prozesse. Der Fokus li
 | [Windows-11-Troubleshooting](Windows-11-Troubleshooting.md) | Häufige Client-Probleme wie Bluescreens, langsame Anwendungen, Drucker, Sound und Speicherplatz |
 | [Outlook öffnet sich nicht](../Microsoft-365/Outlook-öffnet-sich-nicht.md) | Outlook-Supportfall mit abgesichertem Modus, Anmeldeinformationen und Mailprofil |
 | [Drucker installieren und einrichten](Drucker-installieren-und-einrichten.md) | Netzwerkdrucker, Druckserver, Treiber, Scan-to-Folder und Client-Einrichtung |
-| [Datenübertragung mit SmartCopy](Datenuebertragung-mit-SmartCopy.md) | Datenträgerübertragung, Verifikation und Nachkontrolle |
+| [Datenübertragung mit SmartCopy](Datenuebertragung-mit-SmartCopy.md) | Kurze Checkliste für die Datenübertragung auf ein neues Gerät |
+| [Windows Update](Windows-Update.md) | Kurze Checkliste für Windows Updates auf Clients |
 | [Remoteverbindung hängt](Remoteverbindung-haengt.md) | Basisprüfung bei hängender Remote- oder VPN-Verbindung |
 | [Softwareverteilung mit PDQ](Softwareverteilung-mit-PDQ.md) | Manuelle Installation, Paketierung, Silent Install und Deployment-Test |
 | [Arbeitsplatz-Onboarding](Arbeitsplatz-Onboarding.md) | Einrichtung eines neuen Mitarbeiters als IT-Service-Request |
