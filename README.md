@@ -13,10 +13,11 @@ Der Fokus liegt auf kurzen Praxis-Checklisten und ausgewählten Projekten. Norma
 | [Windows Server](Windows-Server) | AD, GPOs, File-Shares, Sysprep und PKI |
 | [Netzwerk](Netzwerk) | Troubleshooting, LANCOM, pfSense und Hyper-V-Labs |
 | [Microsoft 365](Microsoft-365) | Admin Center, Outlook, Gruppen, Lizenzen und Service Health |
-| [Security](Security) | Malware-Erstreaktion, Endpoint Security und Restore |
-| [Monitoring](Monitoring) | Kosten, Logs, Statusinformationen und Reports |
+| [Security](Security) | Endpoint Security und Datenwiederherstellung |
+| [Monitoring](Monitoring) | Zabbix und Monitoring-Tools |
 | [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Beschaffung, Angebote und technische Einordnung |
 | [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen und Telefonie-Änderungen |
+| [PowerShell-Skripte](PowerShell-Skripte) | eigene Skripte und Hinweise zur Nutzung |
 
 ## Projekte
 
@@ -32,7 +33,7 @@ Der Fokus liegt auf kurzen Praxis-Checklisten und ausgewählten Projekten. Norma
 | Thema | Fokus |
 | --- | --- |
 | [Datenübertragung mit SmartCopy](IT-Support/Datenuebertragung-mit-SmartCopy.md) | Backup-Platte, NVMe-Treiber, BitLocker, lokaler Admin und Boot-Risiken |
-| [Standardinstallation Arbeitsplatz](IT-Support/Grundlagen/Standardinstallation-Arbeitsplatz.md) | Windows, Updates, Standardsoftware, Security und Übergabeprüfung |
+| [Standardinstallation](IT-Support/Standardinstallation.md) | Windows, Updates, Standardsoftware, Security und Übergabeprüfung |
 | [Windows-11-Troubleshooting](IT-Support/Windows-11-Troubleshooting.md) | typische Clientfehler schnell eingrenzen |
 | [Active Directory](Windows-Server/Active-Directory-Benutzer-Gruppen-und-Domainbeitritt.md) | Benutzer, Gruppen, Passwort, Accountstatus und Domainbeitritt |
 | [File-Shares](Windows-Server/File-Shares-und-Berechtigungen.md) | Share-/NTFS-Berechtigungen und Gruppenlogik |

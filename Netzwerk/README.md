@@ -9,6 +9,7 @@ Kurze Checklisten und Labs zu Netzwerkdiagnose, LANCOM und pfSense.
 | [Netzwerk- und Internet-Troubleshooting](Netzwerk-und-Internet-Troubleshooting.md) | Client, Standort, Gateway, DNS und Provider eingrenzen |
 | [LANCOM VPN-Verbindung erstellen](LANCOM-VPN-Verbindung-erstellen.md) | Profil, Gateway, Authentifizierung, Zielnetz und Verbindungstest |
 | [LANCOM VPN-Verbindung ändern](LANCOM-VPN-Verbindung-aendern.md) | altes Profil sichern, neue Daten setzen und interne Dienste testen |
+| [Wichtige Begriffe](Wichtige-Begriffe.md) | VPN-, Routing- und Netzwerkbegriffe kurz erklärt |
 
 ## Labs
 

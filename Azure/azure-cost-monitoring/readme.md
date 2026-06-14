@@ -13,6 +13,14 @@ Azure-Kosten sichtbar machen, Budgets setzen und automatisch einen Kostenbericht
 - Azure Communication Services für den E-Mail-Versand angebunden.
 - Kostenbericht als HTML- und Text-Mail erzeugt.
 
+## Projektdateien
+
+- [src/functions/Time_Trigger.js](src/functions/Time_Trigger.js): Timer Function, Kostenabfrage, Reportaufbau und E-Mail-Versand
+- [Codereview.md](Codereview.md): kurze Code- und Architekturprüfung
+- [package.json](package.json): Node.js-Abhängigkeiten und Testskripte
+- [host.json](host.json): Azure Functions Host-Konfiguration
+- `local.settings.json`: lokale Settings, nicht für GitHub gedacht
+
 ## Wichtige Azure-Dienste
 
 - Azure Cost Management

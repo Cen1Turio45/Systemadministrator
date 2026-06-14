@@ -11,17 +11,13 @@ Kurze Support-Checklisten für typische Aufgaben im IT-Alltag.
 | [Outlook öffnet sich nicht](../Microsoft-365/Outlook-öffnet-sich-nicht.md) | Outlook-Supportfall mit abgesichertem Modus, Anmeldeinformationen und Mailprofil |
 | [Drucker installieren und einrichten](Drucker-installieren-und-einrichten.md) | Netzwerkdrucker, Druckserver, Treiber, Scan-to-Folder und Client-Einrichtung |
 | [Datenübertragung mit SmartCopy](Datenuebertragung-mit-SmartCopy.md) | Kurze Checkliste für die Datenübertragung auf ein neues Gerät |
-| [Windows Update](Windows-Update.md) | Kurze Checkliste für Windows Updates auf Clients |
+| [Windows Update Vorbereitung](Windows-Update-Vorbereitung.md) | Windows Update vor Einrichtung oder Übergabe vorbereiten |
 | [Remoteverbindung hängt](Remoteverbindung-haengt.md) | Basisprüfung bei hängender Remote- oder VPN-Verbindung |
-| [Softwareverteilung mit PDQ](Softwareverteilung-mit-PDQ.md) | Manuelle Installation, Paketierung, Silent Install und Deployment-Test |
-| [Arbeitsplatz-Onboarding](Arbeitsplatz-Onboarding.md) | Einrichtung eines neuen Mitarbeiters als IT-Service-Request |
+| [Standardinstallation](Standardinstallation.md) | Standardinstallation eines Arbeitsplatzes |
 
-## Grundlagen
+## Sonstige Notizen
 
 | Anleitung | Inhalt |
 | --- | --- |
-| [Bootfähigen USB-Stick erstellen](Grundlagen/Bootfaehigen-USB-Stick-erstellen.md) | Installationsmedium per PowerShell vorbereiten |
-| [Standardinstallation Arbeitsplatz](Grundlagen/Standardinstallation-Arbeitsplatz.md) | Checkliste für Arbeitsplatzvorbereitung und Standardsoftware |
-| [Excel: Vertrauenswürdigen Speicherort hinzufügen](Grundlagen/Excel-vertrauenswuerdigen-Speicherort-hinzufuegen.md) | Excel Trust Center und vertrauenswürdige Speicherorte |
-| [Windows-Update-Einstellungen](Grundlagen/Windows-Updates-Einstellungen.md) | Sinnvolle Windows-Update-Optionen aktivieren |
-| [Splunk-Grundlage](Grundlagen/Splunk-Grundlage.md) | Einstieg in Splunk als Monitoring- und Log-Plattform |
+| [Excel: Vertrauenswürdigen Speicherort hinzufügen](Sonstige%20Notizen/Excel-vertrauenswuerdigen-Speicherort-hinzufuegen.md) | Excel Trust Center und vertrauenswürdige Speicherorte |
+| [Windows-Update-Einstellungen](Sonstige%20Notizen/Windows-Updates-Einstellungen.md) | Sinnvolle Windows-Update-Optionen aktivieren |

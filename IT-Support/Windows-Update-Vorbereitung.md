@@ -1,11 +1,15 @@
-# Windows Update
+# Windows Update Vorbereitung
 
 ## Ziel
 
-Kurze Checkliste für Windows Updates auf einem Client.
+Kurze Checkliste, bevor Windows Updates bei einem Client gestartet werden.
 
 ## Checkliste
 
+- Prüfen, ob der Benutzer gerade arbeiten muss oder ein Neustart möglich ist.
+- Wichtige Daten schließen oder speichern lassen.
+- Netzteil anschließen, wenn es ein Notebook ist.
+- Genügend freien Speicherplatz prüfen.
 - Windows Update öffnen und nach Updates suchen.
 - Option für Updates anderer Microsoft-Produkte aktivieren.
 - Option für Neustartbenachrichtigung aktivieren.

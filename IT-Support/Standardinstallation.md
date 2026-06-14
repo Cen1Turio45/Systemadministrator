@@ -1,4 +1,4 @@
-# Standardinstallation eines Arbeitsplatzes
+# Standardinstallation
 
 ## Ziel
 
