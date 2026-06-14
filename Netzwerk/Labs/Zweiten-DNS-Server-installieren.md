@@ -4,25 +4,25 @@
 
 ## Ziel
 
-PLABDM01 soll als zusätzlicher DNS-Server eingerichtet werden. Anschließend wird ein Testeintrag erstellt und die DNS-Konfiguration per DHCP verteilt.
+`PLABDM01` als zusätzlichen DNS-Server einrichten und per DHCP verteilen.
 
-## Schritte
+## Checkliste
 
-1. Auf `PLABDM01` die Rolle `DNS-Server` installieren.
-2. Auf `PLABDC01` den DNS-Manager öffnen.
-3. In der Zone `Plab.de` die Zonentransfers aktivieren.
-4. `PLABDM01` als erlaubten Server für Zonentransfers eintragen.
-5. Auf `PLABDM01` eine neue sekundäre Forward-Lookup-Zone erstellen.
-6. Als Zonenname `Plab.de` eintragen.
-7. Als Masterserver die IP-Adresse von `PLABDC01` hinterlegen.
-8. Im DHCP-Manager die Option `006 DNS Servers` anpassen und den zusätzlichen DNS-Server eintragen.
+- Auf `PLABDM01` Rolle `DNS-Server` installieren.
+- Auf `PLABDC01` im DNS-Manager Zonentransfers für `Plab.de` aktivieren.
+- `PLABDM01` als erlaubten Server für Zonentransfers eintragen.
+- Auf `PLABDM01` sekundäre Forward-Lookup-Zone `Plab.de` erstellen.
+- `PLABDC01` als Masterserver hinterlegen.
+- DHCP-Option `006 DNS Servers` um den zweiten DNS-Server ergänzen.
+- DNS-Auflösung auf einem Client testen.
+- Test-A-Record anlegen und Replikation prüfen.
 
-## Test
+## Worauf man achten muss
 
-- DNS-Auflösung auf einem Client prüfen.
-- Testweise einen A-Record, z. B. `webserver.plab.de`, anlegen.
-- Prüfen, ob der Eintrag auf dem zweiten DNS-Server sichtbar ist.
+- Zonentransfer nur für erlaubte DNS-Server aktivieren.
+- DHCP verteilt DNS-Server erst nach Lease-Erneuerung oder Client-Neustart.
+- Clients müssen weiterhin den Domain-DNS nutzen, nicht externe Resolver.
 
 ## Ergebnis
 
-Der zweite DNS-Server ist eingerichtet und kann als zusätzlicher Resolver im Netzwerk verwendet werden.
+Der zweite DNS-Server kann als zusätzlicher Resolver im Lab verwendet werden.

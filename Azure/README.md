@@ -1,10 +1,17 @@
 # Azure
 
-Dieser Bereich enthält meine praktischen Azure-Projekte. Die Projekte wurden aus dem bestehenden Azure-Repository kopiert, damit sie im zentralen Systemadministrator-Repository sichtbar sind.
+Praktische Azure-Projekte mit Fokus auf Kosten, Automatisierung und Backup.
 
 ## Projekte
 
-- [azure-cost-monitoring](azure-cost-monitoring): Automatisiertes Kostenmonitoring und Reporting für Azure-Kosten.
-- [azures-storage](azures-storage): Automatisierte Dateisicherung nach Azure Blob Storage.
+| Projekt | Fokus |
+| --- | --- |
+| [azure-cost-monitoring](azure-cost-monitoring) | Budgets, Cost Management, Azure Function und E-Mail-Report |
+| [azures-storage](azures-storage) | Blob Storage, Versioning, Soft Delete, Task Scheduler und Function-Benachrichtigung |
 
-Das ursprüngliche Azure-Repository bleibt unverändert bestehen.
+## Worauf man achten muss
+
+- Ressourcen eindeutig benennen und alte Testressourcen aufräumen.
+- Rollen und Managed Identities bewusst setzen.
+- Secrets nicht in GitHub ablegen.
+- Kostenkontrolle direkt mitdenken, nicht erst am Ende.

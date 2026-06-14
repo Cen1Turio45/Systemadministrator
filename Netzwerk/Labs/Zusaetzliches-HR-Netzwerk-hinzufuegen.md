@@ -4,15 +4,15 @@
 
 ## Ziel
 
-Ein zusätzliches Netzwerk `HR` soll in Hyper-V und pfSense eingerichtet werden. PLABDM01 wird in das neue Netz verschoben und die Firewall-Regeln werden angepasst.
+Ein zusätzliches internes Netz `HR` in Hyper-V und pfSense einbinden.
 
 ## Netzbereiche
 
 | Netz | Zweck | IP-Bereich |
 | --- | --- | --- |
-| WAN | Externes Netz | `10.71.31.0/24` |
-| LAN | Internes Basisnetz | `192.168.0.0/24` |
-| HR | Neues internes Netz | `192.168.2.0/24` |
+| WAN | externes Netz | `10.71.31.0/24` |
+| LAN | internes Basisnetz | `192.168.0.0/24` |
+| HR | neues internes Netz | `192.168.2.0/24` |
 
 ## pfSense Interfaces
 
@@ -22,73 +22,25 @@ Ein zusätzliches Netzwerk `HR` soll in Hyper-V und pfSense eingerichtet werden.
 | LAN | `hn1` | `192.168.0.1/24` | keines |
 | HR | `hn2` | `192.168.2.1/24` | keines |
 
-## Hyper-V vorbereiten
+## Checkliste
 
-1. pfSense herunterfahren.
-2. Im virtuellen Switch-Manager einen privaten Switch `HR` erstellen.
-3. Der pfSense-VM einen zusätzlichen Netzwerkadapter mit dem Switch `HR` hinzufügen.
-4. pfSense starten und das neue Interface zuweisen.
+- pfSense herunterfahren.
+- Privaten Hyper-V-Switch `HR` erstellen.
+- pfSense-VM um dritten Netzwerkadapter für `HR` erweitern.
+- Interface in pfSense zuweisen, aktivieren und in `HR` umbenennen.
+- HR-IP statisch setzen: `192.168.2.1/24`.
+- Outbound NAT für `LAN` und `HR` prüfen.
+- Firewall-Regel für `HR` bewusst setzen.
+- Testserver in den HR-Switch verschieben.
+- IP-Konfiguration, Gateway, DNS und Erreichbarkeit prüfen.
 
-## pfSense im Webinterface konfigurieren
+## Worauf man achten muss
 
-1. pfSense-Webinterface öffnen.
-2. `Interfaces > OPT1` aufrufen.
-3. Interface aktivieren und in `HR` umbenennen.
-4. IPv4-Konfiguration statisch setzen:
-
-```text
-IP:    192.168.2.1
-Maske: /24
-```
-
-## NAT-Regeln
-
-Pfad: `Firewall > NAT > Outbound`
-
-1. Modus auf `Hybrid Outbound NAT` setzen.
-2. NAT-Regel für `LAN` erstellen:
-
-```text
-Interface:   WAN
-Source:      192.168.0.0/24
-Translation: WAN address
-```
-
-3. NAT-Regel für `HR` erstellen:
-
-```text
-Interface:   WAN
-Source:      192.168.2.0/24
-Translation: WAN address
-```
-
-## Firewall-Regeln
-
-### LAN
-
-Pfad: `Firewall > Rules > LAN`
-
-- Action: `Pass`
-- Protocol: `any`
-- Source: `LAN subnets`
-- Destination: `any`
-
-### HR
-
-Pfad: `Firewall > Rules > HR`
-
-- Action: `Pass`
-- Protocol: `any`
-- Source: `HR subnets`
-- Destination: `any`
-
-## PLABDM01 verschieben
-
-1. PLABDM01 herunterfahren.
-2. Netzwerkadapter auf den Hyper-V-Switch `HR` umstellen.
-3. VM starten.
-4. IP-Konfiguration und Erreichbarkeit prüfen.
+- Neues Interface braucht eigene Firewall-Regeln, sonst ist es blockiert.
+- NAT-Regeln müssen das neue Netz berücksichtigen.
+- Gateway bleibt auf pfSense, nicht auf einem internen Server.
+- Nach Netzwechsel DNS und Domänenkommunikation testen.
 
 ## Ergebnis
 
-Das zusätzliche HR-Netz ist eingebunden. pfSense routet zwischen den Netzen und stellt über NAT den Internetzugang bereit.
+Das HR-Netz ist logisch getrennt und über pfSense kontrollierbar.

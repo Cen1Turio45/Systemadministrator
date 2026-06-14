@@ -1,30 +1,18 @@
 # Security
 
-Dieser Bereich sammelt sicherheitsrelevante Dokumentationen für den administrativen Alltag.
+Kurze Checklisten für sicherheitsrelevante Aufgaben im administrativen Alltag.
 
-## Schwerpunkte
+## Checklisten
 
-- Malware-Erstreaktion und Phishing
-- Systemhärtung
-- Backup- und Wiederherstellungskonzepte
-- Patch- und Updateprozesse
-- Zertifikate und PKI
-- Log-Auswertung und Angriffserkennung
-
-## Anleitungen
-
-| Anleitung | Inhalt |
+| Thema | Fokus |
 | --- | --- |
-| [Malware-Erstreaktion und Phishing](Malware-Erstreaktion-und-Phishing.md) | Sofortmaßnahmen, Eindämmung, Benutzerkommunikation und Ticketdokumentation |
-| [Kaspersky Endpoint Security installieren](Kaspersky-Endpoint-Security-installieren.md) | Endpoint-Security installieren, alte Version prüfen und Schutzstatus kontrollieren |
-| [Daten mit Veeam wiederherstellen](Veeam-Daten-wiederherstellen.md) | Daten oder E-Mail-Elemente aus einem Veeam-Backup wiederherstellen |
+| [Malware-Erstreaktion und Phishing](Malware-Erstreaktion-und-Phishing.md) | Eindämmung, Benutzerbefragung, Security-Info und Credential-Risiko |
+| [Kaspersky Endpoint Security installieren](Kaspersky-Endpoint-Security-installieren.md) | alte Version, Installationspaket, Module, Lizenz und Schutzstatus |
+| [Daten mit Veeam wiederherstellen](Veeam-Daten-wiederherstellen.md) | Restore-Punkt, Freigabe, Ziel und Überschreibschutz |
 
-## Verwandte Themen
+## Worauf man achten muss
 
-- [Zertifikate und PKI](../Windows-Server/Zertifikate-und-PKI)
-- [Windows-Update-Einstellungen](../IT-Support/Grundlagen/Windows-Updates-Einstellungen.md)
-- [Azure Storage Backup](../Azure/azures-storage)
-
-## Ziel
-
-Security-Themen sollen hier praxisnah dokumentiert werden: verständlich, nachvollziehbar und mit klarem Bezug zu Betrieb, Support und Systemadministration.
+- Bei Security-Verdacht erst eindämmen, dann analysieren.
+- Nichts vorschnell löschen, wenn spätere Analyse möglich sein soll.
+- Restore ist erst wertvoll, wenn der Zugriff danach getestet wurde.
+- Secrets, Lizenzpfade und interne Servernamen nicht öffentlich dokumentieren.

@@ -1,26 +1,20 @@
-# Lab 5 - Splunk-Grundlage
+# Splunk-Grundlage
 
 ## Ziel
 
-Splunk Enterprise soll als Grundlage für Monitoring und Log-Auswertung getestet werden.
+Kurze Checkliste für den ersten Einstieg in Splunk Enterprise.
 
-## Notizen
+## Checkliste
 
 - Splunk Enterprise Free Trial verwenden.
-- Webinterface einrichten und anmelden.
+- Webinterface einrichten.
 - Testweise Windows-Logs oder Systemereignisse anbinden.
-- Erste Dashboards und Suchabfragen vorbereiten.
+- Erste Suchabfragen erstellen.
+- Ein einfaches Dashboard vorbereiten.
+- Splunk Forwarder als nächsten Schritt prüfen.
 
-## Testzugang
+## Worauf man achten muss
 
-```text
-Benutzer: admin
-Passwort: 1!demo!1
-```
-
-## Nächste Schritte
-
-- Splunk Forwarder installieren
-- Logquelle anbinden
-- Suchabfragen dokumentieren
-- Beispiel-Dashboard erstellen
+- Keine echten Zugangsdaten im Repository dokumentieren.
+- Logquellen bewusst auswählen, sonst wird die Auswertung schnell unübersichtlich.
+- Erst Suchabfragen verstehen, dann Dashboards bauen.

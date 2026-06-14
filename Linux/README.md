@@ -1,15 +1,11 @@
 # Linux
 
-Dieser Bereich ist für Linux-Grundlagen und administrative Notizen vorgesehen.
+Platzhalter für kurze Linux-Checklisten.
 
-## Themen
+## Sinnvolle nächste Themen
 
-- Benutzer- und Rechteverwaltung
-- Dienste und Logs
-- Netzwerkdiagnose
-- Paketverwaltung
-- Automatisierung mit Shell-Skripten
-
-## Ziel
-
-Die Inhalte sollen Linux-Basiswissen für Administration, Troubleshooting und einfache Automatisierung dokumentieren.
+- SSH-Zugriff prüfen.
+- Dienste mit `systemctl` prüfen.
+- Logs mit `journalctl` auswerten.
+- Speicherplatz und Mounts prüfen.
+- Benutzer und Berechtigungen kontrollieren.

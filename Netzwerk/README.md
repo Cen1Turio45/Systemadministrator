@@ -1,32 +1,26 @@
 # Netzwerk
 
-Dieser Bereich sammelt Netzwerkgrundlagen, Lab-Dokumentationen und Konfigurationsnotizen.
+Kurze Checklisten und Labs zu Netzwerkdiagnose, LANCOM und pfSense.
 
-## Themen
+## Checklisten
 
-- LANCOM
-- VLANs
-- Routing und Switching
-- pfSense und Firewall-Regeln
-- NAT, DNS, DHCP und Netzwerkdiagnose
-
-## Anleitungen
-
-| Anleitung | Inhalt |
+| Thema | Fokus |
 | --- | --- |
-| [Netzwerk- und Internet-Troubleshooting](Netzwerk-und-Internet-Troubleshooting.md) | Vorgehen bei Client-, Standort- und Providerproblemen |
-| [LANCOM VPN-Verbindung erstellen](LANCOM-VPN-Verbindung-erstellen.md) | VPN-Profil und Client-Verbindung mit LANCOM-Komponenten anlegen |
-| [LANCOM VPN-Verbindung ändern](LANCOM-VPN-Verbindung-aendern.md) | bestehende VPN-Verbindung korrigieren oder neu einrichten |
+| [Netzwerk- und Internet-Troubleshooting](Netzwerk-und-Internet-Troubleshooting.md) | Client, Standort, Gateway, DNS und Provider eingrenzen |
+| [LANCOM VPN-Verbindung erstellen](LANCOM-VPN-Verbindung-erstellen.md) | Profil, Gateway, Authentifizierung, Zielnetz und Verbindungstest |
+| [LANCOM VPN-Verbindung ändern](LANCOM-VPN-Verbindung-aendern.md) | altes Profil sichern, neue Daten setzen und interne Dienste testen |
 
 ## Labs
 
-| Lab | Inhalt |
+| Lab | Fokus |
 | --- | --- |
-| [Windows-Testumgebung mit pfSense-Firewall](Labs/Windows-Testumgebung-mit-pfSense-Firewall.md) | Grundumgebung mit pfSense, Windows Server, AD DS und DHCP |
-| [Zweiten DNS-Server installieren](Labs/Zweiten-DNS-Server-installieren.md) | DNS-Rolle, Zonentransfer und DHCP-Optionen |
-| [Zusätzliches HR-Netzwerk hinzufügen](Labs/Zusaetzliches-HR-Netzwerk-hinzufuegen.md) | Virtueller Switch, pfSense-Interface, NAT und Firewall-Regeln |
-| [Foundation: Netzwerkaufbau mit pfSense und Hyper-V](Labs/Foundation-Netzwerkaufbau-mit-pfSense-und-Hyper-V.md) | WAN, LAN, DMZ und Best Practices |
+| [Foundation: Netzwerkaufbau mit pfSense und Hyper-V](Labs/Foundation-Netzwerkaufbau-mit-pfSense-und-Hyper-V.md) | WAN, LAN, DMZ und Hyper-V-Switches |
+| [Windows-Testumgebung mit pfSense-Firewall](Labs/Windows-Testumgebung-mit-pfSense-Firewall.md) | pfSense, AD DS, DNS, DHCP und Windows-Client |
+| [Zweiten DNS-Server installieren](Labs/Zweiten-DNS-Server-installieren.md) | sekundärer DNS, Zonentransfer und DHCP-Option |
+| [Zusätzliches HR-Netzwerk hinzufügen](Labs/Zusaetzliches-HR-Netzwerk-hinzufuegen.md) | neues Netz, NAT, Firewall-Regeln und Erreichbarkeit |
 
-## Ziel
+## Worauf man achten muss
 
-Die Inhalte sollen zeigen, wie Netzwerke geplant, aufgebaut, dokumentiert und bei Fehlern systematisch analysiert werden.
+- DNS-Fehler wirken oft wie Internet- oder Anwendungsfehler.
+- Gateway, DNS und Firewall-Regeln immer getrennt prüfen.
+- Neue Netze brauchen Routing, NAT und Firewall-Regeln.

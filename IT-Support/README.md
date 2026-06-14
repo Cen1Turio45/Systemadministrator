@@ -1,6 +1,6 @@
 # IT-Support
 
-Dieser Bereich sammelt kurze Support-Checklisten für typische Aufgaben im IT-Alltag.
+Kurze Support-Checklisten für typische Aufgaben im IT-Alltag.
 
 ## Anleitungen
 

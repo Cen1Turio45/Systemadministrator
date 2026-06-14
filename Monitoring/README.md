@@ -1,26 +1,19 @@
 # Monitoring
 
-Dieser Bereich bündelt Themen zur Überwachung, Auswertung und Dokumentation technischer Betriebsdaten.
+Kurze Übersicht zu Monitoring, Statusinformationen und Reports.
 
-## Schwerpunkte
+## Inhalte
 
-- System- und Serviceüberwachung
-- Kosten- und Ressourcenmonitoring
-- Benachrichtigungen und Eskalationen
-- Fehleranalyse mit Logs und Statusinformationen
-- Reports und Dashboards
+| Thema | Fokus |
+| --- | --- |
+| [Azure Cost Monitoring](../Azure/azure-cost-monitoring) | Budgets, Kostenanalyse und automatischer Kostenbericht |
+| [Azure Storage Backup](../Azure/azures-storage) | Statusdateien, Fehlerstatus und Warnung bei ausbleibendem Lauf |
+| [Splunk-Grundlage](../IT-Support/Grundlagen/Splunk-Grundlage.md) | erster Einstieg in Logauswertung |
+| [Netzwerk-Troubleshooting](../Netzwerk/Netzwerk-und-Internet-Troubleshooting.md) | Gateway, DNS, Standort und Provider eingrenzen |
 
-## Praxisbezug
+## Worauf man achten muss
 
-Monitoring ist mehr als eine Anzeige, ob ein System gerade erreichbar ist. Gute Überwachung hilft dabei, Probleme früh zu erkennen, Auswirkungen zu bewerten und Entscheidungen nachvollziehbar zu treffen.
-
-Passende Inhalte im Repository:
-
-- [Azure Cost Monitoring](../Azure/azure-cost-monitoring)
-- [Azure Storage Backup](../Azure/azures-storage)
-- [Splunk-Grundlage](../IT-Support/Grundlagen/Splunk-Grundlage.md)
-- [Netzwerk- und Internet-Troubleshooting](../Netzwerk/Netzwerk-und-Internet-Troubleshooting.md)
-
-## Ziel
-
-Langfristig sollen hier weitere Inhalte zu Dashboards, Alerting, Log-Auswertung und Betriebsreports entstehen.
+- Monitoring muss eine klare Folgeaktion haben.
+- Warnungen ohne Zuständigkeit werden ignoriert.
+- Kostenmonitoring braucht Budgets und verständliche Empfänger.
+- Backup-Monitoring muss auch ausbleibende Läufe erkennen.

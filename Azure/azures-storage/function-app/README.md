@@ -1,27 +1,17 @@
 # Azure Function App - Backup Notifications
 
-Diese Function App verschickt E-Mail-Benachrichtigungen für Projekt 2.
+## Ziel
 
-Azure-Ziel:
+Statusdateien aus dem Backup-Projekt auswerten und E-Mail-Benachrichtigungen verschicken.
 
-- Function App: `azure-storage`
-- Resource Group: `azurestorage50t`
+## Functions
 
-## Funktionen
+- `backup_status_blob_trigger`: reagiert auf `status/backup-status.json`.
+- `backup_warning_timer_trigger`: prüft täglich, ob seit 72 Stunden kein Backup lief.
+- `send_test_email`: manueller E-Mail-Test.
+- `check_warning`: manueller Test der Warnlogik.
 
-- `backup_status_blob_trigger`
-  Reagiert auf `status/backup-status.json` und sendet sofort eine E-Mail mit dem Backup-Status.
-
-- `backup_warning_timer_trigger`
-  Prüft täglich um 08:00 Uhr den Zeitstempel aus `backup-status.json`. Wenn seit mindestens 72 Stunden kein Backup-Lauf stattgefunden hat, wird eine Warnung verschickt.
-
-- `send_test_email`
-  Manüller HTTP-Test für den E-Mail-Versand.
-
-- `check_warning`
-  Manüller HTTP-Test für die 72-Stunden-Warnung. Mit `force=trü` kann eine Warn-Mail ohne Wartezeit getestet werden.
-
-## Benötigte App Settings
+## App Settings
 
 - `AzureWebJobsStorage`
 - `BackupStorageConnection`
@@ -34,55 +24,35 @@ Azure-Ziel:
 - `MAIL_TO`
 - `WEBSITE_TIME_ZONE`
 
-## Zeitplan
+## Worauf man achten muss
 
-Der Timer verwendet:
+- `AzureWebJobsStorage` ist für die Function Runtime.
+- `BackupStorageConnection` zeigt auf den Storage Account mit dem Container `status`.
+- Connection Strings und ACS-Zugangsdaten sind Secrets.
+- `WEBSITE_TIME_ZONE=W. Europe Standard Time` setzen, wenn der Timer nach deutscher Zeit laufen soll.
+- Blob Trigger nur auf die aktuelle Statusdatei legen, nicht auf die rotierende Historie.
 
-```text
-0 0 8 * * *
-```
+## Befehle
 
-Damit die Uhrzeit in Deutschland als 08:00 Uhr interpretiert wird, sollte in der Azure Function App zusätzlich dieses App Setting gesetzt werden:
-
-```text
-WEBSITE_TIME_ZONE=W. Europe Standard Time
-```
-
-## Lokaler Test
-
-Kopiere `local.settings.example.json` zu `local.settings.json` und trage die echten Werte ein.
-
-Dann:
+Lokal starten:
 
 ```powershell
 func start
 ```
 
-## Nächster Schritt
-
-Die Function App muss in Azure mit den App Settings konfiguriert und danach veröffentlicht werden.
-
-## Deployment aus VS Code / Terminal
-
-Wenn die App Settings in Azure gesetzt sind:
+Deployment:
 
 ```powershell
 .\deploy-function-app.ps1
 ```
 
-Die Datei `app-settings.sample.json` zeigt, welche Einstellungen du brauchst. Die Werte `BackupStorageConnection` und `COMMUNICATION_SERVICES_CONNECTION_STRING` sind Secrets und sollten nur als Azure App Settings gespeichert werden.
-
-Wichtig: `AzureWebJobsStorage` ist der Runtime-Storage der Function App. `BackupStorageConnection` muss auf den Storage Account `azurestorage50t` zeigen, weil dort der Container `status` liegt.
-
-## App Settings setzen
-
-Nutze dafür:
+App Settings setzen:
 
 ```powershell
 .\configure-function-app-settings.ps1 `
   -ResourceGroupName "<RESOURCE_GROUP>" `
-  -BackupStorageConnection "<AZURESTORAGE50T_CONNECTION_STRING>" `
+  -BackupStorageConnection "<STORAGE_CONNECTION_STRING>" `
   -CommunicationServicesConnectionString "<ACS_CONNECTION_STRING>" `
   -AcsEmailSender "<ABSENDER_ADRESSE>" `
-  -MailTo "<DEINE_EMAIL>"
+  -MailTo "<EMAIL>"
 ```

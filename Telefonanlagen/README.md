@@ -1,21 +1,15 @@
 # Telefonanlagen
 
-Dieser Bereich ist für Dokumentationen rund um Telefonanlagen und VoIP vorgesehen.
+Kurze Checklisten für VoIP- und Telefonanlagen-Aufgaben.
 
-## Themen
+## Checklisten
 
-- Einrichtung und Administration
-- Benutzer, Nebenstellen und Rufgruppen
-- SIP, VoIP und Provider-Anbindung
-- Fehleranalyse
-- Dokumentation von Änderungen
-
-## Anleitungen
-
-| Anleitung | Inhalt |
+| Thema | Fokus |
 | --- | --- |
-| [Durchwahl eines Benutzers ändern](Durchwahl-eines-Benutzers-aendern.md) | Rufnummer in Telefonanlage und Telefonie-Verwaltung anpassen |
+| [Durchwahl eines Benutzers ändern](Durchwahl-eines-Benutzers-aendern.md) | Freigabe, alte/neue Durchwahl, Telefonanlage, CTI und Funktionstest |
 
-## Ziel
+## Sinnvolle nächste Themen
 
-Hier sollen später praxisnahe Notizen entstehen, die Einrichtung, Betrieb und Fehleranalyse von Telefonanlagen nachvollziehbar machen.
+- 3CX selbst gehostet: VM, DNS, Firewall, SIP-Trunk und Backup.
+- SIP-Trunk Grundcheck: Registrierung, Rufnummern, ausgehend/eingehend, Notruf.
+- Telefonie-Störung: Anbieter, Firewall, Endgeräte, DECT und Rufgruppen eingrenzen.

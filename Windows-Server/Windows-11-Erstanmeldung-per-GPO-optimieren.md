@@ -4,57 +4,27 @@
 
 ## Ziel
 
-Eine Gruppenrichtlinie soll die Windows-11-Erstanmeldung vereinfachen und störende Assistenten oder Hinweise reduzieren.
+Windows-11-Erstanmeldung ruhiger und reproduzierbarer machen.
 
-## GPO erstellen
+## Checkliste
 
-1. Auf dem Domain Controller die `Group Policy Management Console` öffnen.
-2. Unter der Domäne ein neues GPO erstellen.
-3. GPO sinnvoll benennen, z. B. `Windows 11 - Optimierte Erstanmeldung`.
-4. GPO bearbeiten.
+- Neues GPO in der passenden OU erstellen.
+- Loopback-Verarbeitung nur aktivieren, wenn sie wirklich gebraucht wird.
+- Willkommensseite für Erste Schritte deaktivieren.
+- OOBE- und Cloud-Hinweise nach Umgebungsvorgabe reduzieren.
+- Consumer-Features und unnötige Hinweise deaktivieren.
+- Cortana oder Suchfunktionen nach Vorgabe steuern.
+- OneDrive-Verhalten bewusst setzen, nicht zufällig blockieren.
+- Microsoft-Edge-Ersteinrichtung und Anmeldeeinstellungen prüfen.
+- GPO mit Testbenutzer und Testgerät prüfen.
 
-## Einstellungen
+## Worauf man achten muss
 
-### Loopback-Verarbeitung
-
-Pfad: `Computer Configuration > Policies > Administrative Templates > System > Group Policy`
-
-- `Configure user Group Policy loopback processing mode` aktivieren
-- Modus: `Merge`
-
-### Anmeldung
-
-Pfad: `Computer Configuration > Administrative Templates > System > Logon`
-
-- `Willkommensseite für Erste Schritte bei der Anmeldung nicht anzeigen` aktivieren
-
-### OOBE und Cloud-Inhalte
-
-Pfad: `Computer Configuration > Administrative Templates > Windows Components > OOBE`
-
-- OOBE-bezogene Hinweise deaktivieren, soweit in der Umgebung sinnvoll
-
-Pfad: `Computer Configuration > Administrative Templates > Windows Components > Cloud Content`
-
-- Unnötige Consumer- und Cloud-Hinweise deaktivieren
-
-### Suche und OneDrive
-
-Pfad: `Computer Configuration > Administrative Templates > Windows Components > Search`
-
-- `Cortana zulassen` deaktivieren
-
-Pfad: `Computer Configuration > Administrative Templates > Windows Components > OneDrive`
-
-- OneDrive-Synchronisierung nach Bedarf steuern
-
-### Microsoft Edge
-
-Pfad: `Computer Configuration > Administrative Templates > Microsoft Edge`
-
-- Ersteinrichtungsdialoge reduzieren
-- Browser-Anmeldeeinstellungen nach Vorgabe der Umgebung setzen
+- Loopback-Verarbeitung kann unerwartet Benutzer-GPOs beeinflussen.
+- OneDrive- und Edge-Einstellungen können produktive Benutzer stören.
+- GPO erst an Test-OU verlinken, nicht direkt breit ausrollen.
+- Ergebnis mit `gpresult` prüfen.
 
 ## Ergebnis
 
-Die Windows-11-Erstanmeldung wird ruhiger und reproduzierbarer. Das ist besonders hilfreich bei Rollouts, Schulungsumgebungen und standardisierten Client-Setups.
+Die erste Anmeldung ist weniger störend und besser für Rollouts oder Schulungsumgebungen geeignet.

@@ -2,96 +2,60 @@
 
 Dieses Repository ist mein technisches Portfolio für Systemadministration, IT-Support, Windows Server, Netzwerk, Microsoft 365, Azure und kaufmännisches IT-Systemmanagement.
 
-Der Fokus liegt auf nachvollziehbarer Praxis: kurze administrative Checklisten, Windows-Server-Aufgaben, Netzwerk-Labs und Azure-Automatisierung. Ergänzend bringe ich kaufmännisches Verständnis mit, zum Beispiel für Angebote, Rechnungen, Abrechnungsvorgänge, Kundenkommunikation und die wirtschaftliche Bewertung von IT-Lösungen.
+Der Fokus liegt auf kurzen Praxis-Checklisten und ausgewählten Projekten. Normale Admin-Themen sollen schnell zeigen, worauf man achten muss und welche Fehler teuer werden können. Projekte dürfen ausführlicher sein, wenn sie eine eigene Umsetzung oder ein Lab dokumentieren.
 
 ## Schnellstart
 
 | Bereich | Inhalt |
 | --- | --- |
-| [Azure](Azure) | Azure Cost Monitoring, Azure Storage Backup und Automatisierung |
-| [IT-Support](IT-Support) | Ticketbearbeitung, Troubleshooting, Onboarding und Softwareverteilung |
-| [Windows Server](Windows-Server) | Active Directory, GPOs, File-Shares, PKI, Sysprep und Serverbetrieb |
-| [Netzwerk](Netzwerk) | pfSense, Hyper-V-Netze, Routing, NAT, Firewall-Regeln und Netzwerk-Labs |
-| [Microsoft 365](Microsoft-365) | Admin Center, Benutzer, Gruppen, Service Health, Exchange, SharePoint und Teams |
-| [Security](Security) | Malware-Erstreaktion, Phishing, Härtung, Backup und sicherheitsrelevante Prozesse |
-| [Monitoring](Monitoring) | Überwachung, Reporting, Kosten- und Betriebsdatenauswertung |
-| [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Angebote, Rechnungen, Abrechnung, Kundenprozesse und wirtschaftliches Denken |
-| [Linux](Linux) | Linux-Grundlagen und administrative Notizen |
-| [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen, Rufgruppen und Fehleranalyse |
-| [Zertifikate](Zertifikate) | Zertifikate und Nachweise |
+| [Azure](Azure) | Azure Cost Monitoring und Azure Storage Backup |
+| [IT-Support](IT-Support) | kurze Checklisten für typische Supportaufgaben |
+| [Windows Server](Windows-Server) | AD, GPOs, File-Shares, Sysprep und PKI |
+| [Netzwerk](Netzwerk) | Troubleshooting, LANCOM, pfSense und Hyper-V-Labs |
+| [Microsoft 365](Microsoft-365) | Admin Center, Outlook, Gruppen, Lizenzen und Service Health |
+| [Security](Security) | Malware-Erstreaktion, Endpoint Security und Restore |
+| [Monitoring](Monitoring) | Kosten, Logs, Statusinformationen und Reports |
+| [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Beschaffung, Angebote und technische Einordnung |
+| [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen und Telefonie-Änderungen |
+
+## Projekte
+
+| Projekt | Kurzbeschreibung |
+| --- | --- |
+| [Azure Cost Monitoring](Azure/azure-cost-monitoring) | Kostenanalyse, Budgets und automatischer Kostenbericht per Azure Function |
+| [Azure Storage Backup](Azure/azures-storage) | Lokales Datei-Backup nach Azure Blob Storage mit Statusdateien und Benachrichtigung |
+| [pfSense Windows-Testumgebung](Netzwerk/Labs/Windows-Testumgebung-mit-pfSense-Firewall.md) | Virtuelles Netzwerk mit pfSense, Windows Server, AD DS, DHCP und Client |
+| [Zusätzliches HR-Netzwerk](Netzwerk/Labs/Zusaetzliches-HR-Netzwerk-hinzufuegen.md) | Erweiterung eines pfSense-Labs um ein getrenntes internes Netz |
+
+## Praxis-Checklisten
+
+| Thema | Fokus |
+| --- | --- |
+| [Datenübertragung mit SmartCopy](IT-Support/Datenuebertragung-mit-SmartCopy.md) | Backup-Platte, NVMe-Treiber, BitLocker, lokaler Admin und Boot-Risiken |
+| [Standardinstallation Arbeitsplatz](IT-Support/Grundlagen/Standardinstallation-Arbeitsplatz.md) | Windows, Updates, Standardsoftware, Security und Übergabeprüfung |
+| [Windows-11-Troubleshooting](IT-Support/Windows-11-Troubleshooting.md) | typische Clientfehler schnell eingrenzen |
+| [Active Directory](Windows-Server/Active-Directory-Benutzer-Gruppen-und-Domainbeitritt.md) | Benutzer, Gruppen, Passwort, Accountstatus und Domainbeitritt |
+| [File-Shares](Windows-Server/File-Shares-und-Berechtigungen.md) | Share-/NTFS-Berechtigungen und Gruppenlogik |
+| [Netzwerk-Troubleshooting](Netzwerk/Netzwerk-und-Internet-Troubleshooting.md) | Client, Standort, DNS, Gateway und Provider eingrenzen |
 
 ## Profil
 
 - Kaufmann für IT-Systemmanagement mit praktischer Erfahrung in Systemadministration und IT-Service
 - Erfahrung mit Windows-Clientumgebungen, Rollouts, Softwareverteilung und Troubleshooting
-- Praxisnahe Supportprozesse: Ticketaufnahme, Priorisierung, Eskalation und Benutzerkommunikation
-- Praktische Azure-Projekte mit Functions, Cost Management, Storage, PowerShell und GitHub
-- Verbindung aus Technik und kaufmännischem Verständnis
-
-## Portfolio-Schwerpunkte
-
-### IT-Support und Betrieb
-
-- strukturierte Ticketbearbeitung und Eskalation
-- Windows-11-Troubleshooting
-- Arbeitsplatz-Onboarding
-- Datenübertragung mit SmartCopy und Standardinstallation von Arbeitsplätzen
-- Softwareverteilung mit PDQ
-- Malware-Erstreaktion und Phishing-Sensibilisierung
-
-### Windows Server und Netzwerk
-
-- Active Directory, Benutzer, Gruppen und Domainbeitritt
-- File-Shares und Berechtigungen
-- Gruppenrichtlinien und `gpresult`
-- pfSense-Labs mit WAN, LAN, DMZ, NAT und Firewall-Regeln
-- DNS, DHCP und Hyper-V-Testumgebungen
-
-### Cloud, Monitoring und Automatisierung
-
-- Azure-Kostenmonitoring auf Subscription-Ebene
-- automatisierte Kostenreports per E-Mail
-- Backup lokaler Dateien nach Azure Blob Storage
-- Statusdateien, Versionierung, Soft Delete und Task Scheduler
-- Grundlage für Reporting, Monitoring und Betriebsdatenauswertung
-
-### Kaufmännisches IT-Systemmanagement
-
-- Verständnis für Angebote, Rechnungen und Abrechnung
-- Kundenkommunikation und Schnittstelle zwischen Technik und Verwaltung
-- wirtschaftliche Bewertung von IT-Lösungen, Lizenzen und laufenden Kosten
-- Bearbeitung kaufmännischer Vorgänge mit Orgamax
-
-## Ausgewählte Projekte
-
-| Projekt | Kurzbeschreibung |
-| --- | --- |
-| [Azure Cost Monitoring](Azure/azure-cost-monitoring) | Automatisierte Auswertung von Azure-Kosten nach Services, Ressourcengruppen und Kategorien |
-| [Azure Storage Backup](Azure/azures-storage) | Automatisierte Sicherung lokaler Dateien in Azure Blob Storage |
-| [Support-Prozess und Ticketbearbeitung](IT-Support/Support-Prozess-und-Ticketbearbeitung.md) | Strukturierter Ablauf für Aufnahme, Analyse, Priorisierung und Eskalation |
-| [Datenübertragung](IT-Support/Datenuebertragung-mit-SmartCopy.md) und [Standardinstallation](IT-Support/Grundlagen/Standardinstallation-Arbeitsplatz.md) | Kurze Checklisten für Datenträgerübertragung und Arbeitsplatzvorbereitung |
-| [Active Directory: Benutzer, Gruppen und Domainbeitritt](Windows-Server/Active-Directory-Benutzer-Gruppen-und-Domainbeitritt.md) | Typische AD-Aufgaben aus dem IT-Support |
-| [Netzwerk- und Internet-Troubleshooting](Netzwerk/Netzwerk-und-Internet-Troubleshooting.md) | Vorgehen bei Client-, Standort- und Providerproblemen |
-| [Windows-Testumgebung mit pfSense-Firewall](Netzwerk/Labs/Windows-Testumgebung-mit-pfSense-Firewall.md) | Virtuelle Netzwerkumgebung mit pfSense, Windows Server, AD DS und DHCP |
+- Praxisnaher Blick auf Supportprozesse, Eskalation und Benutzerkommunikation
+- Azure-Projekte mit Functions, Cost Management, Storage, PowerShell und GitHub
+- Verbindung aus Technik, Betrieb und kaufmännischem Verständnis
 
 ## Kenntnisse
 
 - Windows Server, Windows 10 / 11
 - Active Directory, Gruppenrichtlinien, DNS, DHCP
-- MDT, OPSI, FileWave, Client-Rollouts und Softwareverteilung
-- pfSense, Hyper-V, Routing, NAT und Firewall-Grundlagen
 - Microsoft 365 Admin Center Grundlagen
-- Azure Functions, Azure Storage, Azure Cost Management, Azure Budgets
-- Managed Identity, Azure Communication Services
+- Azure Functions, Azure Storage, Azure Cost Management
 - PowerShell, Azure CLI, JavaScript / Node.js Grundlagen
-- Git, GitHub und Windows Task Scheduler
+- pfSense, Hyper-V, Routing, NAT und Firewall-Grundlagen
 - Ticketbearbeitung, ITIL-Grundlagen und Service-Requests
-- kaufmännische IT-Prozesse, Rechnungen und Abrechnung
 
 ## Zertifikate
 
 - CompTIA Network+ bestanden
-
-## Ziel des Repositories
-
-Das Repository soll einen schnellen und professionellen Einblick in meine praktische Arbeit geben. Im Vordergrund stehen saubere Dokumentation, nachvollziehbare technische Umsetzung und die Verbindung aus IT-Betrieb und kaufmännischem Denken.

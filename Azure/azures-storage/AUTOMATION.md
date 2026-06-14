@@ -1,133 +1,61 @@
-# Automated Upload To Azure Blob Storage
-
-Dieses Setup erstellt ein kleines vollautomatisiertes Backup für ausgewählte Dateien.
-
-## Quelle
-
-- [Test](Test)
+# Automatisierter Upload nach Azure Blob Storage
 
 ## Ziel
 
+PowerShell-Skript und Task Scheduler laden lokale Dateien automatisch nach Azure Blob Storage hoch.
+
+## Zielstruktur
+
 - Storage Account: `azurestorage50t`
-- Container: `documents`
+- Backup-Container: `documents`
 - Backup-Prefix: `backup-files/`
 - Status-Container: `status`
 
-## Projektdateien
+## Dateien
 
 - [backup-settings.json](backup-settings.json)
 - [backup-to-azure.ps1](backup-to-azure.ps1)
 - [register-backup-task.ps1](register-backup-task.ps1)
+- [function-app](function-app)
 
-## Authentifizierungswege
+## Authentifizierung
 
-Es gibt drei mögliche Modi:
+| Modus | Einsatz |
+| --- | --- |
+| `servicePrincipal` | beste Wahl für automatische Läufe |
+| `azcli` | gut für manuelle Tests mit angemeldetem Konto |
+| `sas` | schneller Test, aber nicht als Dauerlösung |
 
-- `sas`
-  Gut für einen schnellen, stabilen Start
-- `azcli`
-  Gut, wenn du die Azure CLI sauber mit deinem Konto nutzen willst
-- `servicePrincipal`
-  Gut für tägliche automatische Läufe ohne SAS und ohne interaktiven Login
-
-Den Modus stellst du in [backup-settings.json](backup-settings.json) über `authMode` ein.
-
-## Empfohlener Azure-Weg ohne SAS: Service Principal
-
-Lege in Microsoft Entra ID eine App-Registrierung oder einen Service Principal an und gib ihm auf dem Storage Account mindestens die Rolle:
-
-- `Storage Blob Data Contributor`
-
-Setze dann diese Benutzervariablen auf deinem Rechner:
+Für `servicePrincipal` werden benötigt:
 
 - `AZURE_TENANT_ID`
 - `AZURE_CLIENT_ID`
 - `AZURE_CLIENT_SECRET`
+- Rolle `Storage Blob Data Contributor` auf dem Storage Account
 
-Danach testest du:
+## Test
 
 ```powershell
 .\backup-to-azure.ps1
 ```
 
-Der Login erfolgt dann über die Azure CLI automatisch per Service Principal.
-
-## Alternative: SAS
-
-Erstelle im Container `documents` einen `SAS`-Link mit mindestens:
-
-- `Read`
-- `Write`
-- `Create`
-- optional `List`
-
-Lege das Token dann als Benutzervariable `AZURE_STORAGE_SAS_TOKEN` an oder übergib es direkt an das Skript.
-
-## Lokaler Test
-
-```powershell
-$env:AZURE_STORAGE_SAS_TOKEN = "<DEIN_SAS_TOKEN>"
-.\backup-to-azure.ps1
-```
-
-## Azure-CLI-Modus
-
-Wenn `az login` bei dir sauber funktioniert, stelle in [backup-settings.json](backup-settings.json) ein:
-
-```json
-"authMode": "azcli"
-```
-
-Dann testest du:
-
-```powershell
-az login
-.\backup-to-azure.ps1 -UseAzCli
-```
-
-## Tägliche Automatisierung
-
-Die tägliche Windows-Aufgabe kannst du direkt per Skript anlegen:
+Task Scheduler registrieren:
 
 ```powershell
 .\register-backup-task.ps1
 ```
 
-Optional mit anderer Uhrzeit:
+Andere Uhrzeit:
 
 ```powershell
 .\register-backup-task.ps1 -RunTime "07:30"
 ```
 
-## Was das jetzt leistet
+## Worauf man achten muss
 
-- täglicher Upload aller Dateien aus dem Testordner
-- Ablage der Backup-Dateien unter `documents/backup-files/`
-- Unterordner werden mit übernommen
-- Logdateien werden lokal gespeichert
-- ein Scheduler kann automatisch eingerichtet werden
-
-## Logdateien
-
-Die Logs landen unter:
-
-- `C:\Users\lucas\OneDrive\Desktop\Azure\azure-storage\logs`
-
-## Nächster Ausbau
-
-- mehrere Quellordner
-- Upload in mehrere Container
-- tägliche Status-Mail
-- Fehlerpfad mit Benachrichtigung
-
-## Azure Function App
-
-Die Function App liegt unter:
-
-- [function-app](function-app)
-
-Sie enthält:
-
-- Blob Trigger für `status/backup-status.json`
-- Timer Trigger für die 72-Stunden-Warnung
-- SMTP-basierten E-Mail-Versand über App Settings
+- Secrets nicht in `backup-settings.json` speichern.
+- Statusdateien getrennt von Backup-Dateien ablegen.
+- Logs lokal halten und nicht ins Repository committen.
+- Uploadfehler müssen einen `failed`-Status schreiben.
+- Task Scheduler muss verpasste Läufe nachholen können.
+- Function App wertet Status aus, startet aber keine lokalen Backups.
