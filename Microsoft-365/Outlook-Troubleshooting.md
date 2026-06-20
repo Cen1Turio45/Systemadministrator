@@ -6,9 +6,11 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 
 - [Outlook lässt sich nicht starten oder bleibt bei „Profil wird geladen“ hängen](#outlook-startet)
 - [Outlook fordert ständig zur Anmeldung auf oder meldet eine fehlende Lizenz](#anmeldung-lizenz)
+- [Das Microsoft-365-Anmeldefenster erscheint bei jedem Outlook-Start erneut](#microsoft-365-anmeldung-registry)
 - [E-Mails bleiben im Postausgang oder neue Nachrichten kommen nicht an](#senden-empfangen)
 - [Outlook findet die PST-Datei nicht, kann sie nicht öffnen oder sie ist zu groß](#pst-datei)
 - [Outlook reagiert sehr langsam, friert ein oder zeigt Darstellungsfehler](#outlook-langsam)
+- [Wichtige Sicherheitsregeln](#sicherheitsregeln)
 
 <a id="outlook-startet"></a>
 ## Outlook lässt sich nicht starten oder bleibt bei „Profil wird geladen“ hängen
@@ -39,6 +41,26 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 
 3. Im Microsoft 365 Admin Center prüfen, ob dem Benutzer eine passende Lizenz zugewiesen ist.
 4. Bei einer Anmeldeschleife veraltete Office-Einträge unter `Systemsteuerung > Anmeldeinformationsverwaltung > Windows-Anmeldeinformationen` entfernen und neu anmelden.
+
+<a id="microsoft-365-anmeldung-registry"></a>
+## Das Microsoft-365-Anmeldefenster erscheint bei jedem Outlook-Start erneut
+
+### Zuerst prüfen
+
+1. Die vorherige Anleitung zu Anmeldung und Lizenz vollständig durchführen.
+2. Sicherstellen, dass Benutzername, Passwort und MFA verfügbar sind. Danach Outlook und alle Office-Programme schließen.
+
+### Falls das nicht hilft
+
+3. `Win + R` drücken, `regedit` öffnen und zu folgendem Schlüssel wechseln:
+
+```text
+HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\Identity
+```
+
+4. Den Schlüssel `Identity` zuerst über `Datei > Exportieren` sichern und danach löschen. Windows neu starten, Outlook öffnen und erneut bei Microsoft 365 anmelden.
+
+Das Löschen setzt die gespeicherte Office-Identität zurück und kann den Benutzer auch aus anderen Office-Apps abmelden. Die Registry nur mit Sicherung bearbeiten. Bei verwalteten oder gemeinsam genutzten Geräten den Schritt durch einen Administrator durchführen lassen. Grundlage: [Microsoft-Anleitung zum Zurücksetzen des Aktivierungszustands](https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/activation/reset-office-365-proplus-activation-state).
 
 <a id="senden-empfangen"></a>
 ## E-Mails bleiben im Postausgang oder neue Nachrichten kommen nicht an
@@ -85,9 +107,11 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 3. Bei Exchange den Cache-Modus prüfen und den Offlinezeitraum passend zu Gerät und Postfachgröße einstellen.
 4. Outlook neu starten und nur Einstellungen beibehalten, die tatsächlich helfen.
 
+<a id="sicherheitsregeln"></a>
 ## Wichtige Sicherheitsregeln
 
 - Ein altes Profil erst löschen, wenn alle lokalen Daten gesichert und das neue Profil vollständig getestet wurde.
 - Bei POP die PST-Datei immer sichern; lokale Nachrichten werden nicht automatisch vom Server wiederhergestellt.
 - PST-Reparaturen nur an einer Kopie durchführen und dafür den Windows Defender nicht deaktivieren.
 - Passwörter und MFA-Codes niemals im Ticket dokumentieren.
+- Registry-Schlüssel vor Änderungen exportieren und nur dokumentierte Einträge bearbeiten.
