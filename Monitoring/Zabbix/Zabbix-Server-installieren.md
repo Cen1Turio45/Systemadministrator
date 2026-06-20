@@ -10,6 +10,8 @@ Installation von Zabbix Server 7.0 LTS auf Ubuntu Server 24.04 LTS mit PostgreSQ
 - Datenbank: PostgreSQL
 - Webserver: Nginx
 
+![Zabbix-Paketauswahl für Ubuntu, PostgreSQL und Nginx](images/zabbix-download-options.png)
+
 [Zabbix-Paketauswahl öffnen](https://www.zabbix.com/download?zabbix=7.0&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent_2&db=pgsql&ws=nginx)
 
 [Ubuntu Server 24.04 LTS herunterladen](https://ubuntu.com/download/server/thank-you?version=24.04.4&architecture=amd64&lts=true)
@@ -18,6 +20,9 @@ Installation von Zabbix Server 7.0 LTS auf Ubuntu Server 24.04 LTS mit PostgreSQ
 
 1. Ubuntu Server 24.04 LTS mit mindestens 2 CPUs, 4 GB RAM, 40 GB Speicher und einer statischen IP-Adresse bereitstellen.
 2. Secure Boot deaktivieren und die Installation starten.
+
+![Ubuntu Server im Bootmenü starten](images/ubuntu-boot-menu.png)
+
 3. Sprache `Deutsch` auswählen und auf den neuesten Installer aktualisieren.
 4. `Ubuntu Server` auswählen.
 5. Zunächst eine IP-Adresse per DHCP zuweisen und die Standardeinstellungen verwenden.
@@ -25,6 +30,9 @@ Installation von Zabbix Server 7.0 LTS auf Ubuntu Server 24.04 LTS mit PostgreSQ
    - Benutzername: `user`
    - Kennwort: `<SICHERES_UBUNTU_PASSWORT>`
 7. `Install OpenSSH server` aktivieren.
+
+![OpenSSH Server während der Ubuntu-Installation auswählen](images/openssh-server.png)
+
 8. Die weiteren Standardeinstellungen durchgehen und die Serverinstallation starten.
 9. Nach der Installation den USB-Stick entfernen und `Reboot Now` auswählen.
 10. Mit `user` und dem festgelegten Kennwort anmelden.
@@ -90,6 +98,9 @@ sudo nano /etc/zabbix/zabbix_server.conf
 ```
 
 1. Mit `Strg + W` nach `DBPassword` suchen.
+
+![DBPassword in der Zabbix-Server-Konfiguration suchen](images/zabbix-database-password-config.png)
+
 2. Folgenden Wert setzen:
 
 ```text
@@ -119,6 +130,8 @@ durch diese Werte ersetzen:
 listen 80;
 server_name _;
 ```
+
+![Nginx-Konfiguration für das Zabbix-Frontend](images/zabbix-nginx-config.png)
 
 Mit `Strg + O`, `Enter` und `Strg + X` speichern und schließen. Die Konfiguration auf Fehler prüfen, bevor die nächsten Schritte ausgeführt werden.
 
@@ -152,6 +165,9 @@ ip a
 
 1. `http://<ZABBIX_SERVER_IP>` im Browser öffnen.
 2. Im Zabbix-Webinstaller die Sprache auswählen.
+
+![Startseite des Zabbix-Webinstallers](images/zabbix-webinstaller.png)
+
 3. Für die Datenbankverbindung folgende Werte verwenden:
    - Datenbank-Typ: `PostgreSQL`
    - Datenbank-Host: `localhost`
@@ -159,13 +175,21 @@ ip a
    - Datenbank-Name: `zabbix`
    - Benutzer: `zabbix`
    - Kennwort: `<SICHERES_DATENBANKPASSWORT>`
+
+![Datenbankverbindung im Zabbix-Webinstaller konfigurieren](images/zabbix-database-connection.png)
+
 4. Auf der nächsten Seite die Zeitzone `Europe/Berlin` auswählen.
 5. Bei Bedarf einen Namen für den Zabbix-Server vergeben. Dieser kann später im Profil geändert werden.
 6. Die Installation abschließen.
 7. Mit den Standarddaten anmelden:
    - Benutzername: `Admin`
    - Kennwort: `zabbix`
+
+![Anmeldung an der Zabbix-Oberfläche](images/zabbix-login.png)
+
 8. Direkt danach unter `Benutzereinstellungen > Profil` das Standardkennwort in `<SICHERES_ZABBIX_ADMINPASSWORT>` ändern.
+
+![Benutzerprofil in Zabbix öffnen und Kennwort ändern](images/zabbix-user-profile.png)
 
 ## Zeitzone einstellen
 

@@ -15,6 +15,8 @@ Den Link im Browser öffnen und den Download von Zabbix Agent 2 starten.
 3. `Add agent location to the PATH` aktivieren.
 4. Die Installation abschließen.
 
+![Zabbix Agent 2 mit Serveradresse und PATH-Option konfigurieren](images/zabbix-agent-setup.png)
+
 ## Windows-Host im Zabbix-Server anlegen
 
 1. In der Zabbix-Oberfläche `Datenerfassung > Hosts` öffnen.
@@ -24,6 +26,8 @@ Den Link im Browser öffnen und den Download von Zabbix Agent 2 starten.
 5. IP-Adresse des Windows-Hosts und Port `10050` eintragen.
 6. Den neuen Host hinzufügen.
 7. Unter `Vorlagen` folgende Vorlage auswählen:
+
+![Windows-Host mit Agent-Schnittstelle und aktiver Vorlage konfigurieren](images/zabbix-host-config.png)
 
 ```text
 Templates > Windows by Zabbix agent active
