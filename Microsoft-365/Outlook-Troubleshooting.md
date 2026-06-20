@@ -2,38 +2,21 @@
 
 Kurzanleitungen für das klassische Outlook unter Windows. Das passende Problem auswählen und die Schritte der Reihe nach durchführen. Sobald Outlook wieder funktioniert, keine weiteren Änderungen vornehmen.
 
-## Outlook-Konto hinzufügen
+## Microsoft 365 oder Exchange-Konto in Outlook hinzufügen
 
-### Anleitung: Microsoft 365 oder Exchange
+### Anleitung
 
-1. In Outlook `Datei > Konto hinzufügen` öffnen.
-2. E-Mail-Adresse eingeben und `Verbinden` auswählen.
-3. Mit dem Geschäfts- oder Schulkonto anmelden und MFA bestätigen.
-4. Outlook neu starten.
-5. Testnachricht senden sowie Empfang und Ordnersynchronisierung prüfen.
-
-### Was bringt das?
-
-Outlook ruft die benötigten Microsoft-365- oder Exchange-Einstellungen automatisch ab. Dadurch müssen keine Server, Ports oder Verschlüsselungsmethoden von Hand eingetragen werden.
-
-### Wie geht es weiter?
-
-Funktioniert die Einrichtung nicht, E-Mail-Adresse, Internetverbindung, Lizenz und Microsoft-365-Anmeldung prüfen. Keine IMAP-Daten eintragen, solange für das Konto die automatische Exchange-Einrichtung vorgesehen ist.
+1. In Outlook `Datei > Konto hinzufügen` öffnen und die E-Mail-Adresse eingeben.
+2. `Verbinden` auswählen, mit dem Geschäfts- oder Schulkonto anmelden und MFA bestätigen.
+3. Outlook neu starten, eine Testnachricht senden sowie Empfang und Ordnersynchronisierung prüfen.
 
 ## IMAP-Konto hinzufügen
 
 ### Anleitung
 
-1. Servernamen, Ports und Verschlüsselung aus der Provider- oder Kundendokumentation bereithalten.
-2. `Datei > Konto hinzufügen > Erweiterte Optionen` öffnen.
-3. `Ich möchte mein Konto manuell einrichten` und danach `IMAP` auswählen.
-4. Posteingangs- und Postausgangsserver exakt nach Providerangabe eintragen.
-5. Falls gefordert, SMTP-Authentifizierung mit denselben Zugangsdaten aktivieren.
-6. Senden und Empfangen testen.
-
-### Was bringt das?
-
-Die manuelle Einrichtung verbindet Outlook mit einem Konto, das nicht automatisch über Microsoft 365 oder Exchange erkannt wird.
+1. Serverdaten aus der Providerdokumentation bereithalten und `Datei > Konto hinzufügen > Erweiterte Optionen` öffnen.
+2. `Ich möchte mein Konto manuell einrichten` und `IMAP` auswählen; danach Server, Ports, Verschlüsselung und gegebenenfalls SMTP-Authentifizierung eintragen.
+3. Einrichtung abschließen und Senden sowie Empfangen testen.
 
 ### Wie geht es weiter?
 
@@ -263,23 +246,3 @@ Die Änderungen reduzieren mögliche Belastungen durch Erweiterungen, Grafikdars
 ### Wie geht es weiter?
 
 Nur wirksame Änderungen beibehalten und benötigte Add-ins wieder aktivieren. Das automatische Herunterladen externer Bilder nicht pauschal einschalten, da die Sperre vor Tracking schützt. Bleibt Outlook langsam, Größe der Datendateien, Systemleistung und Netzwerkverbindung prüfen.
-
-## Wann eskalieren?
-
-Eskalieren, wenn Outlook auch mit leerem Testprofil und nach der Office-Reparatur nicht startet, mehrere Benutzer betroffen sind, Microsoft 365 eine Störung meldet, eine PST-Datei fehlt oder beschädigt ist, oder unbekannte Registry-Änderungen beziehungsweise Spezialwerkzeuge erforderlich wären.
-
-## Kurze Ticketnotiz
-
-```text
-Problem:
-Outlook hängt beim Laden des Profils.
-
-Durchgeführt:
-- Laufende Outlook-Prozesse beendet.
-- Abgesicherten Modus getestet.
-- Add-ins geprüft.
-- Leeres Testprofil gestartet.
-
-Ergebnis:
-Outlook startet mit dem Testprofil. Neues Benutzerprofil wird eingerichtet.
-```
