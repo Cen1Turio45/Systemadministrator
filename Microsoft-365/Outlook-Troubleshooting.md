@@ -1,248 +1,122 @@
 # Outlook Troubleshooting
 
-Kurzanleitungen für das klassische Outlook unter Windows. Das passende Problem auswählen und die Schritte der Reihe nach durchführen. Sobald Outlook wieder funktioniert, keine weiteren Änderungen vornehmen.
+Schnellhilfe für das klassische Outlook unter Windows. Das passende Problem auswählen und nach jedem Schritt testen. Sobald Outlook wieder funktioniert, keine weiteren Änderungen vornehmen.
 
-## Microsoft 365 oder Exchange-Konto in Outlook hinzufügen
+## Schnellübersicht
 
-### Anleitung
+| Problem | Zuerst prüfen | Danach |
+| --- | --- | --- |
+| Konto hinzufügen | Automatische Microsoft-365-Einrichtung verwenden | Bei Fremdanbietern IMAP-Daten prüfen |
+| Outlook startet nicht oder hängt | Prozesse beenden und abgesicherten Modus testen | Testprofil erstellen, dann Office reparieren |
+| Anmeldung oder Lizenz fehlerhaft | Office-Konto und Aktivierung prüfen | Anmeldedaten bereinigen und Lizenz kontrollieren |
+| Kein Versand oder Empfang | Internet, Offline-Modus und Postausgang prüfen | Konto- und Serverdaten kontrollieren |
+| PST-Datei fehlerhaft | Datei suchen und Original sichern | Kopie reparieren oder Archiv anlegen |
+| Outlook langsam oder fehlerhafte Anzeige | Add-ins deaktivieren | Grafik, Cache und Datendateigröße prüfen |
 
-1. In Outlook `Datei > Konto hinzufügen` öffnen und die E-Mail-Adresse eingeben.
-2. `Verbinden` auswählen, mit dem Geschäfts- oder Schulkonto anmelden und MFA bestätigen.
-3. Outlook neu starten, eine Testnachricht senden sowie Empfang und Ordnersynchronisierung prüfen.
+## Konto hinzufügen
 
-## IMAP-Konto hinzufügen
+### Microsoft 365 oder Exchange
 
-### Anleitung
+1. `Datei > Konto hinzufügen` öffnen und die E-Mail-Adresse eingeben.
+2. `Verbinden` auswählen, anmelden und MFA bestätigen.
+3. Outlook neu starten und Senden, Empfangen sowie Ordnersynchronisierung testen.
 
-1. Serverdaten aus der Providerdokumentation bereithalten und `Datei > Konto hinzufügen > Erweiterte Optionen` öffnen.
-2. `Ich möchte mein Konto manuell einrichten` und `IMAP` auswählen; danach Server, Ports, Verschlüsselung und gegebenenfalls SMTP-Authentifizierung eintragen.
+### IMAP
+
+1. Providerdaten bereithalten und `Datei > Konto hinzufügen > Erweiterte Optionen` öffnen.
+2. `Ich möchte mein Konto manuell einrichten > IMAP` auswählen und Server, Ports, Verschlüsselung sowie SMTP-Authentifizierung eintragen.
 3. Einrichtung abschließen und Senden sowie Empfangen testen.
 
-### Wie geht es weiter?
+**Wie geht es weiter?** Einstellungen mit der Providerdokumentation vergleichen. Häufig: IMAP `993` mit SSL/TLS sowie SMTP `465` mit SSL/TLS oder `587` mit STARTTLS.
 
-Schlägt der Test fehl, Servernamen, Benutzername, Ports, Verschlüsselung und SMTP-Authentifizierung erneut vergleichen. Häufig werden IMAP `993` mit SSL/TLS sowie SMTP `465` mit SSL/TLS oder `587` mit STARTTLS verwendet. Die Providerangaben haben immer Vorrang.
-
-## Outlook startet nicht
+## Outlook startet nicht oder hängt beim Profil
 
 ### Anleitung
 
-1. Computer neu starten und Outlook erneut öffnen.
-2. Falls Outlook weiterhin nicht startet, mit `Strg + Umschalt + Esc` den Task-Manager öffnen.
-3. Unter `Details` alle Prozesse `OUTLOOK.EXE` beenden.
-4. Outlook erneut starten.
+1. PC neu starten. Danach im Task-Manager alle Prozesse `OUTLOOK.EXE` beenden und erneut testen.
+2. Mit `Win + R` und `outlook.exe /safe` abgesichert starten. Funktioniert das, unter `Datei > Optionen > Add-Ins` Drittanbieter-Add-ins deaktivieren.
+3. Startet Outlook nicht, unter `Systemsteuerung > Mail (Microsoft Outlook) > Profile anzeigen` ein leeres Profil `Test` anlegen und damit starten.
+4. Scheitert das Testprofil, unter `Einstellungen > Apps > Microsoft 365 > Ändern` erst die Schnell- und danach die Onlinereparatur ausführen.
 
 ### Was bringt das?
 
-Der Neustart beendet festhängende Outlook- und Office-Prozesse. Das manuelle Beenden hilft, wenn Outlook unsichtbar im Hintergrund läuft und deshalb nicht noch einmal geöffnet werden kann.
+Die Reihenfolge prüft Prozesse, Add-ins, Outlook-Profil und Office-Installation.
 
 ### Wie geht es weiter?
 
-Startet Outlook weiterhin nicht, als Nächstes den abgesicherten Modus testen. Erscheint eine konkrete Fehlermeldung, diese vor weiteren Änderungen im Ticket festhalten.
+Startet das Testprofil, ein neues Profil mit dem echten Konto erstellen. Hilft auch die Onlinereparatur nicht, Fehler dokumentieren und eskalieren.
 
-## Outlook im abgesicherten Modus testen
+## Anmeldung oder Lizenz fehlerhaft
 
 ### Anleitung
 
-1. `Win + R` drücken.
-2. Folgenden Befehl ausführen:
-
-```text
-outlook.exe /safe
-```
-
-3. Startet Outlook, `Datei > Optionen > Add-Ins` öffnen.
-4. Bei `Verwalten: COM-Add-Ins` auf `Los` klicken.
-5. Drittanbieter-Add-ins deaktivieren und Outlook normal neu starten.
-6. Benötigte Add-ins einzeln wieder aktivieren, bis der Verursacher gefunden ist.
+1. In Outlook oder einer anderen Office-App `Datei > Konto` öffnen und angemeldetes Konto sowie Aktivierungsstatus prüfen.
+2. Mit dem lizenzierten Geschäfts- oder Schulkonto neu anmelden und MFA bestätigen.
+3. Im Microsoft 365 Admin Center prüfen, ob dem Benutzer eine passende Lizenz zugewiesen ist.
+4. Bei einer Anmeldeschleife veraltete Office-Einträge unter `Systemsteuerung > Anmeldeinformationsverwaltung > Windows-Anmeldeinformationen` entfernen und neu anmelden.
 
 ### Was bringt das?
 
-Im abgesicherten Modus startet Outlook ohne die meisten Erweiterungen und individuellen Einstellungen. Startet es dort, verursacht wahrscheinlich ein Add-in oder eine angepasste Einstellung das Problem.
+Damit werden falsches Konto, fehlende Lizenz und veraltete Anmeldedaten ausgeschlossen.
 
 ### Wie geht es weiter?
 
-Das fehlerhafte Add-in deaktiviert lassen und bei Bedarf aktualisieren oder deinstallieren. Besprechungs-, Fernwartungs- und Antiviren-Add-ins sind mögliche Ursachen. Das Microsoft-Exchange-Add-in nicht pauschal deaktivieren. Startet auch der abgesicherte Modus nicht, das Outlook-Profil testen.
-
-## Outlook hängt bei „Profil wird geladen“
-
-### Anleitung
-
-1. Outlook schließen.
-2. `Systemsteuerung > Mail (Microsoft Outlook) > Profile anzeigen` öffnen.
-3. Prüfen, ob unnötige oder doppelte Profile vorhanden sind, aber noch nichts löschen.
-4. `Hinzufügen` wählen und ein leeres Profil mit dem Namen `Test` erstellen.
-5. Die Kontoeinrichtung abbrechen und, falls angeboten, Outlook ohne E-Mail-Konto verwenden.
-6. Bei `Zu verwendendes Profil bestätigen` das Profil `Test` auswählen.
-7. Outlook starten.
-
-### Was bringt das?
-
-Das leere Testprofil trennt einen Outlook-Programmfehler von einem beschädigten Benutzerprofil. Startet Outlook damit, funktionieren die Anwendung und die grundlegende Office-Installation noch.
-
-### Wie geht es weiter?
-
-Startet das Testprofil, ein neues Profil mit dem echten Konto erstellen und vollständig prüfen. Das alte Profil erst entfernen, wenn alle benötigten E-Mails und Datendateien vorhanden oder gesichert sind. Eine OST- oder PST-Datei mit 20–30 GB ist allein kein Löschgrund. Startet auch das Testprofil nicht, Microsoft 365 reparieren.
-
-## Microsoft-365-Anmeldung erscheint immer wieder
-
-### Anleitung
-
-1. Outlook und alle anderen Office-Programme schließen.
-2. In einer funktionierenden Office-App unter `Datei > Konto` prüfen, ob das richtige Konto angemeldet und Microsoft 365 aktiviert ist.
-3. `Systemsteuerung > Anmeldeinformationsverwaltung > Windows-Anmeldeinformationen` öffnen.
-4. Veraltete Einträge zu Outlook, Office oder Microsoft 365 nur entfernen, wenn Benutzername, Passwort und MFA verfügbar sind.
-5. Outlook öffnen und neu anmelden.
-
-### Was bringt das?
-
-Damit werden falsche oder veraltete Anmeldedaten ausgeschlossen. Outlook fordert beim nächsten Start aktuelle Zugangsdaten an und kann ein neues Anmeldetoken erstellen.
-
-### Wie geht es weiter?
-
-Bleibt die Anmeldeschleife bestehen, Lizenz, MFA, Kontostatus und Microsoft 365 Service Health prüfen. Keine unbekannten Registry-Einträge auf Verdacht ändern; notwendige Registry-Arbeiten eskalieren.
-
-## Outlook-Lizenz ist nicht aktiviert
-
-### Anleitung
-
-1. In Outlook oder einer anderen Office-App `Datei > Konto` öffnen.
-2. Unter `Produktinformationen` den Aktivierungsstatus prüfen.
-3. Abmelden und mit dem lizenzierten Geschäfts- oder Schulkonto erneut anmelden.
-4. Im Microsoft 365 Admin Center kontrollieren, ob dem Benutzer eine passende Lizenz zugewiesen ist.
-5. Office-App neu starten und die Aktivierung erneut prüfen.
-
-### Was bringt das?
-
-Die Prüfung zeigt, ob Outlook wegen einer fehlenden, falschen oder nicht aktivierten Microsoft-365-Lizenz eingeschränkt ist.
-
-### Wie geht es weiter?
-
-Fehlt die Lizenz, muss sie durch einen Administrator zugewiesen werden. Ist sie vorhanden, aber Office bleibt inaktiv, Anmeldung und Internetverbindung prüfen und danach Microsoft 365 reparieren.
+Bleibt der Fehler, Kontostatus, MFA und Service Health prüfen. Registry nicht auf Verdacht verändern.
 
 ## E-Mails werden nicht gesendet oder empfangen
 
 ### Anleitung
 
-1. Internetverbindung und Microsoft 365 Service Health beziehungsweise Providerstatus prüfen.
-2. In Outlook kontrollieren, ob `Offline arbeiten` aktiviert ist und ob Nachrichten im Postausgang hängen.
-3. `Systemsteuerung > Mail (Microsoft Outlook) > E-Mail-Konten` öffnen.
-4. Betroffenes Konto auswählen und E-Mail-Adresse, Benutzername und Serverdaten prüfen.
-5. Unter `Weitere Einstellungen > Erweitert` Ports und Verschlüsselung mit der Providerdokumentation vergleichen.
-6. SMTP-Authentifizierung prüfen und anschließend Senden sowie Empfangen testen.
+1. Internetverbindung, Microsoft 365 Service Health beziehungsweise Providerstatus prüfen.
+2. Kontrollieren, ob `Offline arbeiten` aktiv ist oder Nachrichten im Postausgang hängen.
+3. Unter `Systemsteuerung > Mail (Microsoft Outlook) > E-Mail-Konten` das betroffene Konto und die Anmeldedaten prüfen.
+4. Bei IMAP unter `Weitere Einstellungen > Erweitert` Ports, Verschlüsselung und SMTP-Authentifizierung mit den Providerangaben vergleichen.
 
 ### Was bringt das?
 
-Die Schritte grenzen Verbindungs-, Server- und Konfigurationsfehler voneinander ab. Der Test zeigt außerdem, ob nur der Versand, nur der Empfang oder das gesamte Konto betroffen ist.
+Die Prüfung grenzt Verbindungs-, Server-, Anmelde- und Konfigurationsfehler ein.
 
 ### Wie geht es weiter?
 
-Bei Microsoft 365 oder Exchange zusätzlich Lizenz, Anmeldung und Postfachstatus prüfen. Bei einem Providerkonto die bestätigten Serverdaten verwenden. Bleibt der Fehler bestehen, Fehlermeldung und Testzeitpunkt dokumentieren und an den Provider oder Microsoft-365-Administrator eskalieren.
+Erneut testen. Bleibt der Fehler, Meldung und Zeitpunkt dokumentieren und an Provider oder Administrator eskalieren.
 
-## Outlook-Profil neu erstellen
+## PST-Datei fehlt, ist beschädigt oder zu groß
 
 ### Anleitung
 
-1. Outlook schließen und `Systemsteuerung > Mail (Microsoft Outlook) > Profile anzeigen` öffnen.
-2. Prüfen, ob POP-Konten oder PST-Dateien verwendet werden, und lokale Daten zuerst sichern.
-3. `Hinzufügen` wählen und ein neues Profil erstellen.
-4. E-Mail-Konto einrichten und Outlook mit dem neuen Profil starten.
-5. Senden, Empfangen, Kalender, Kontakte und benötigte Ordner prüfen.
-6. Nach erfolgreichem Test das neue Profil als Standard festlegen.
-7. Altes Profil nur entfernen, wenn alle lokalen Daten gesichert wurden.
+1. Outlook schließen, Speicherort prüfen und die gefundene PST-Datei sichern. Bei POP kann sie die einzige Kopie der E-Mails enthalten.
+2. Wurde sie nur verschoben, über `Datei > Öffnen und exportieren > Outlook-Datendatei öffnen` erneut einbinden.
+3. Ist sie beschädigt, eine Kopie mit `SCANPST.EXE` reparieren. Das Original unverändert lassen.
+4. Ist sie zu groß, über `Kontoeinstellungen > Datendateien > Hinzufügen` eine Archiv-PST erstellen und ältere E-Mails in kleinen Blöcken verschieben.
 
 ### Was bringt das?
 
-Ein neues Profil ersetzt beschädigte lokale Konto- und Profileinstellungen, ohne Outlook oder das gesamte Windows-Benutzerprofil neu installieren zu müssen.
+Die Datei wird eingebunden, auf einer Kopie repariert oder durch ein Archiv entlastet.
 
 ### Wie geht es weiter?
 
-Bei Exchange und IMAP die vollständige Serversynchronisierung abwarten. Lokale POP-Nachrichten und PST-Inhalte werden nicht automatisch wiederhergestellt und müssen gesichert beziehungsweise eingebunden werden. Hilft das neue Profil nicht, Microsoft 365 reparieren.
+Inhalte prüfen und PST-Dateien sichern. Fehlt die Datei oder scheitert die Reparatur, Datenrettung eskalieren.
 
-## Microsoft 365 reparieren
+## Outlook ist langsam oder zeigt Darstellungsfehler
 
 ### Anleitung
 
-1. `Einstellungen > Apps > Installierte Apps > Microsoft 365 > Ändern` öffnen.
-2. `Schnellreparatur` ausführen und Outlook testen.
-3. Falls der Fehler bleibt, `Onlinereparatur` ausführen.
-4. Danach Office gegebenenfalls erneut aktivieren und Outlook testen.
+1. Unter `Datei > Optionen > Add-Ins` nicht benötigte Drittanbieter-Add-ins testweise deaktivieren.
+2. Bei Darstellungsfehlern unter `Datei > Optionen > Erweitert > Anzeige` Hardwaregrafikbeschleunigung und Animationen testweise ausschalten, sofern verfügbar.
+3. Bei Exchange den Cache-Modus prüfen und den Offlinezeitraum passend zu Gerät und Postfachgröße einstellen.
+4. Outlook neu starten und nur Einstellungen beibehalten, die tatsächlich helfen.
 
 ### Was bringt das?
 
-Die Schnellreparatur ersetzt beschädigte lokale Office-Dateien. Die Onlinereparatur installiert die Office-Komponenten umfassender neu und behebt dadurch tiefere Installationsfehler.
+Die Schritte reduzieren Belastungen durch Add-ins, Grafik und große lokale Postfachkopien.
 
 ### Wie geht es weiter?
 
-Für die Onlinereparatur Internetzugang und Zeit einplanen. Startet Outlook danach auch mit einem leeren Testprofil nicht, Fehlermeldungen dokumentieren und eskalieren.
+Bleibt Outlook langsam, OST-/PST-Größe, Systemleistung und Netzwerk prüfen. Externe Bilder nicht pauschal automatisch laden.
 
-## PST-Datei wurde verschoben oder nicht gefunden
+## Wichtige Sicherheitsregeln
 
-### Anleitung
-
-1. Fehlermeldung und erwarteten Dateipfad notieren.
-2. Prüfen, ob die PST-Datei verschoben, umbenannt oder gelöscht wurde.
-3. Eine gefundene PST-Datei zuerst sichern.
-4. Danach `Datei > Öffnen und exportieren > Outlook-Datendatei öffnen` auswählen und die PST-Datei einbinden.
-5. Outlook neu starten und die enthaltenen Ordner prüfen.
-
-### Was bringt das?
-
-Outlook erhält wieder den korrekten Verweis auf die lokale Datendatei. Durch die Sicherung bleibt vor weiteren Änderungen eine unveränderte Kopie erhalten.
-
-### Wie geht es weiter?
-
-Bei IMAP oder Exchange kann ein neues Profil erstellt und der Serverbestand neu synchronisiert werden. Bei POP nicht vorschnell das Profil löschen, weil die PST-Datei die einzige Kopie der E-Mails enthalten kann. Ist sie gelöscht und nicht gesichert, Datenrettung eskalieren und möglichst nichts mehr auf das betroffene Laufwerk schreiben.
-
-## Beschädigte PST-Datei reparieren
-
-### Anleitung
-
-1. Outlook schließen.
-2. Eine Kopie der PST-Datei erstellen und das Original unverändert sichern.
-3. `SCANPST.EXE` über die Windows-Suche oder im Microsoft-Office-Installationsordner öffnen.
-4. Ausschließlich die Arbeitskopie auswählen und prüfen beziehungsweise reparieren.
-5. Die reparierte Kopie in Outlook öffnen und den Inhalt kontrollieren.
-
-### Was bringt das?
-
-`SCANPST.EXE` prüft die interne Struktur der Outlook-Datendatei und versucht beschädigte Ordner und Verweise wiederherzustellen. Das Original bleibt als Rückfallebene erhalten.
-
-### Wie geht es weiter?
-
-Fehlende oder beschädigte Elemente dokumentieren. Scheitert die Reparatur oder fehlen wichtige Daten, eskalieren. Nicht am einzigen Original arbeiten und den Windows Defender für die Reparatur nicht deaktivieren.
-
-## PST-Datei ist zu groß: Archiv anlegen
-
-### Anleitung
-
-1. Vor Änderungen eine Datensicherung erstellen.
-2. In Outlook `Datei > Kontoeinstellungen > Kontoeinstellungen > Datendateien` öffnen.
-3. `Hinzufügen` wählen und beispielsweise `Archiv-2026.pst` erstellen.
-4. Im Archiv passende Ordner wie `Posteingang` und `Gesendet` anlegen.
-5. Ältere E-Mails in kleinen Blöcken verschieben und zwischendurch kontrollieren.
-
-### Was bringt das?
-
-Ältere Nachrichten werden aus der stark belegten Hauptdatei ausgelagert. Dadurch kann Outlook übersichtlicher und bei sehr großen Datendateien stabiler arbeiten.
-
-### Wie geht es weiter?
-
-Das Verschieben großer Datenmengen vollständig abwarten und Stichproben durchführen. Die Archiv-PST in die reguläre Datensicherung aufnehmen und ihren Speicherort dokumentieren.
-
-## Outlook läuft langsam oder zeigt Darstellungsfehler
-
-### Anleitung
-
-1. Nicht benötigte Drittanbieter-Add-ins über `Datei > Optionen > Add-Ins` deaktivieren.
-2. Bei Darstellungsfehlern unter `Datei > Optionen > Erweitert > Anzeige` die Hardwaregrafikbeschleunigung testweise deaktivieren, sofern die Option vorhanden ist.
-3. Nicht benötigte Animationen testweise ausschalten.
-4. Bei Exchange unter `Datei > Kontoeinstellungen` prüfen, ob der Exchange-Cache-Modus aktiviert ist.
-5. Den Offlinezeitraum passend zu Gerät, Postfachgröße und Unternehmensvorgabe einstellen und Outlook neu starten.
-
-### Was bringt das?
-
-Die Änderungen reduzieren mögliche Belastungen durch Erweiterungen, Grafikdarstellung und sehr große lokale Postfachkopien. Durch einzelne Tests lässt sich erkennen, welche Einstellung tatsächlich hilft.
-
-### Wie geht es weiter?
-
-Nur wirksame Änderungen beibehalten und benötigte Add-ins wieder aktivieren. Das automatische Herunterladen externer Bilder nicht pauschal einschalten, da die Sperre vor Tracking schützt. Bleibt Outlook langsam, Größe der Datendateien, Systemleistung und Netzwerkverbindung prüfen.
+- Ein altes Profil erst löschen, wenn alle lokalen Daten gesichert und das neue Profil vollständig getestet wurde.
+- Bei POP die PST-Datei immer sichern; lokale Nachrichten werden nicht automatisch vom Server wiederhergestellt.
+- PST-Reparaturen nur an einer Kopie durchführen und dafür den Windows Defender nicht deaktivieren.
+- Passwörter und MFA-Codes niemals im Ticket dokumentieren.
