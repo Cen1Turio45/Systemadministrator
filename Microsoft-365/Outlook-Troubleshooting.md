@@ -1,101 +1,91 @@
 # Outlook Troubleshooting
 
-Schnellhilfe für das klassische Outlook unter Windows. Das passende Problem auswählen und nach jedem Schritt testen. Sobald Outlook wieder funktioniert, keine weiteren Änderungen vornehmen.
+Schnellhilfe für das klassische Outlook unter Windows. In der Tabelle auf das Problem oder den gewünschten Prüfschritt klicken. Nach jedem Schritt testen und aufhören, sobald Outlook wieder funktioniert.
 
 ## Schnellübersicht
 
 | Problem | Zuerst prüfen | Danach |
 | --- | --- | --- |
-| Outlook startet nicht oder hängt | Prozesse beenden und abgesicherten Modus testen | Testprofil erstellen, dann Office reparieren |
-| Anmeldung oder Lizenz fehlerhaft | Office-Konto und Aktivierung prüfen | Anmeldedaten bereinigen und Lizenz kontrollieren |
-| Kein Versand oder Empfang | Internet, Offline-Modus und Postausgang prüfen | Konto- und Serverdaten kontrollieren |
-| PST-Datei fehlerhaft | Datei suchen und Original sichern | Kopie reparieren oder Archiv anlegen |
-| Outlook langsam oder fehlerhafte Anzeige | Add-ins deaktivieren | Grafik, Cache und Datendateigröße prüfen |
+| [Outlook startet nicht oder hängt](#outlook-startet) | [Prozesse und abgesicherter Modus](#outlook-startet-zuerst) | [Testprofil und Office-Reparatur](#outlook-startet-danach) |
+| [Anmeldung oder Lizenz fehlerhaft](#anmeldung-lizenz) | [Office-Konto und Aktivierung](#anmeldung-lizenz-zuerst) | [Lizenz und Anmeldedaten](#anmeldung-lizenz-danach) |
+| [Kein Versand oder Empfang](#senden-empfangen) | [Verbindung und Offline-Modus](#senden-empfangen-zuerst) | [Konto- und Serverdaten](#senden-empfangen-danach) |
+| [PST-Datei fehlerhaft](#pst-datei) | [Datei suchen und sichern](#pst-datei-zuerst) | [Einbinden, reparieren oder archivieren](#pst-datei-danach) |
+| [Outlook langsam oder fehlerhafte Anzeige](#outlook-langsam) | [Add-ins und Anzeige](#outlook-langsam-zuerst) | [Cache und Neustart](#outlook-langsam-danach) |
 
+<a id="outlook-startet"></a>
 ## Outlook startet nicht oder hängt beim Profil
 
-### Anleitung
+<a id="outlook-startet-zuerst"></a>
+### Zuerst prüfen
 
 1. PC neu starten. Danach im Task-Manager alle Prozesse `OUTLOOK.EXE` beenden und erneut testen.
 2. Mit `Win + R` und `outlook.exe /safe` abgesichert starten. Funktioniert das, unter `Datei > Optionen > Add-Ins` Drittanbieter-Add-ins deaktivieren.
-3. Startet Outlook nicht, unter `Systemsteuerung > Mail (Microsoft Outlook) > Profile anzeigen` ein leeres Profil `Test` anlegen und damit starten.
+
+<a id="outlook-startet-danach"></a>
+### Falls das nicht hilft
+
+3. Unter `Systemsteuerung > Mail (Microsoft Outlook) > Profile anzeigen` ein leeres Profil `Test` anlegen und damit starten.
 4. Scheitert das Testprofil, unter `Einstellungen > Apps > Microsoft 365 > Ändern` erst die Schnell- und danach die Onlinereparatur ausführen.
 
-### Was bringt das?
-
-Die Reihenfolge prüft Prozesse, Add-ins, Outlook-Profil und Office-Installation.
-
-### Wie geht es weiter?
-
-Startet das Testprofil, ein neues Profil mit dem echten Konto erstellen. Hilft auch die Onlinereparatur nicht, Fehler dokumentieren und eskalieren.
-
+<a id="anmeldung-lizenz"></a>
 ## Anmeldung oder Lizenz fehlerhaft
 
-### Anleitung
+<a id="anmeldung-lizenz-zuerst"></a>
+### Zuerst prüfen
 
 1. In Outlook oder einer anderen Office-App `Datei > Konto` öffnen und angemeldetes Konto sowie Aktivierungsstatus prüfen.
 2. Mit dem lizenzierten Geschäfts- oder Schulkonto neu anmelden und MFA bestätigen.
+
+<a id="anmeldung-lizenz-danach"></a>
+### Falls das nicht hilft
+
 3. Im Microsoft 365 Admin Center prüfen, ob dem Benutzer eine passende Lizenz zugewiesen ist.
 4. Bei einer Anmeldeschleife veraltete Office-Einträge unter `Systemsteuerung > Anmeldeinformationsverwaltung > Windows-Anmeldeinformationen` entfernen und neu anmelden.
 
-### Was bringt das?
-
-Damit werden falsches Konto, fehlende Lizenz und veraltete Anmeldedaten ausgeschlossen.
-
-### Wie geht es weiter?
-
-Bleibt der Fehler, Kontostatus, MFA und Service Health prüfen. Registry nicht auf Verdacht verändern.
-
+<a id="senden-empfangen"></a>
 ## E-Mails werden nicht gesendet oder empfangen
 
-### Anleitung
+<a id="senden-empfangen-zuerst"></a>
+### Zuerst prüfen
 
 1. Internetverbindung, Microsoft 365 Service Health beziehungsweise Providerstatus prüfen.
 2. Kontrollieren, ob `Offline arbeiten` aktiv ist oder Nachrichten im Postausgang hängen.
+
+<a id="senden-empfangen-danach"></a>
+### Falls das nicht hilft
+
 3. Unter `Systemsteuerung > Mail (Microsoft Outlook) > E-Mail-Konten` das betroffene Konto und die Anmeldedaten prüfen.
 4. Bei IMAP unter `Weitere Einstellungen > Erweitert` Ports, Verschlüsselung und SMTP-Authentifizierung mit den Providerangaben vergleichen.
 
-### Was bringt das?
-
-Die Prüfung grenzt Verbindungs-, Server-, Anmelde- und Konfigurationsfehler ein.
-
-### Wie geht es weiter?
-
-Erneut testen. Bleibt der Fehler, Meldung und Zeitpunkt dokumentieren und an Provider oder Administrator eskalieren.
-
+<a id="pst-datei"></a>
 ## PST-Datei fehlt, ist beschädigt oder zu groß
 
-### Anleitung
+<a id="pst-datei-zuerst"></a>
+### Zuerst prüfen
 
 1. Outlook schließen, Speicherort prüfen und die gefundene PST-Datei sichern. Bei POP kann sie die einzige Kopie der E-Mails enthalten.
-2. Wurde sie nur verschoben, über `Datei > Öffnen und exportieren > Outlook-Datendatei öffnen` erneut einbinden.
-3. Ist sie beschädigt, eine Kopie mit `SCANPST.EXE` reparieren. Das Original unverändert lassen.
-4. Ist sie zu groß, über `Kontoeinstellungen > Datendateien > Hinzufügen` eine Archiv-PST erstellen und ältere E-Mails in kleinen Blöcken verschieben.
 
-### Was bringt das?
+<a id="pst-datei-danach"></a>
+### Passende Maßnahme
 
-Die Datei wird eingebunden, auf einer Kopie repariert oder durch ein Archiv entlastet.
+2. **Verschoben:** Über `Datei > Öffnen und exportieren > Outlook-Datendatei öffnen` erneut einbinden.
+3. **Beschädigt:** Eine Kopie mit `SCANPST.EXE` reparieren und das Original unverändert lassen.
+4. **Zu groß:** Über `Kontoeinstellungen > Datendateien > Hinzufügen` eine Archiv-PST erstellen und ältere E-Mails in kleinen Blöcken verschieben.
 
-### Wie geht es weiter?
-
-Inhalte prüfen und PST-Dateien sichern. Fehlt die Datei oder scheitert die Reparatur, Datenrettung eskalieren.
-
+<a id="outlook-langsam"></a>
 ## Outlook ist langsam oder zeigt Darstellungsfehler
 
-### Anleitung
+<a id="outlook-langsam-zuerst"></a>
+### Zuerst prüfen
 
 1. Unter `Datei > Optionen > Add-Ins` nicht benötigte Drittanbieter-Add-ins testweise deaktivieren.
 2. Bei Darstellungsfehlern unter `Datei > Optionen > Erweitert > Anzeige` Hardwaregrafikbeschleunigung und Animationen testweise ausschalten, sofern verfügbar.
+
+<a id="outlook-langsam-danach"></a>
+### Falls das nicht hilft
+
 3. Bei Exchange den Cache-Modus prüfen und den Offlinezeitraum passend zu Gerät und Postfachgröße einstellen.
 4. Outlook neu starten und nur Einstellungen beibehalten, die tatsächlich helfen.
-
-### Was bringt das?
-
-Die Schritte reduzieren Belastungen durch Add-ins, Grafik und große lokale Postfachkopien.
-
-### Wie geht es weiter?
-
-Bleibt Outlook langsam, OST-/PST-Größe, Systemleistung und Netzwerk prüfen. Externe Bilder nicht pauschal automatisch laden.
 
 ## Wichtige Sicherheitsregeln
 
