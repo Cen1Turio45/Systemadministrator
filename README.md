@@ -13,7 +13,8 @@ Der Fokus liegt auf kurzen Praxis-Checklisten und ausgewählten Projekten. Norma
 | [Windows Server](Windows-Server) | AD, GPOs, File-Shares, Sysprep und PKI |
 | [Netzwerk](Netzwerk) | Troubleshooting, LANCOM, pfSense und Hyper-V-Labs |
 | [Microsoft 365](Microsoft-365) | Admin Center, Outlook, Gruppen, Lizenzen und Service Health |
-| [Security](Security) | Endpoint Security und Datenwiederherstellung |
+| [Kaspersky Virenschutz](Kaspersky-Virenschutz) | Kaspersky Endpoint Security installieren und prüfen |
+| [Backup Veeam](Backup-Veeam) | Dateien oder E-Mail-Elemente aus einem Veeam-Backup wiederherstellen |
 | [Monitoring](Monitoring) | Zabbix und Monitoring-Tools |
 | [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen und Telefonie-Änderungen |
 | [PowerShell-Skripte](PowerShell-Skripte) | eigene Skripte und Hinweise zur Nutzung |
