@@ -1,24 +1,19 @@
 # Microsoft 365
 
-Dieser Bereich sammelt administrative Grundlagen zu Microsoft 365. Der Fokus liegt auf typischen Aufgaben im Admin Center und auf sauberer Support-Dokumentation.
+Dieser Bereich enthält kurze Anleitungen für typische Microsoft-365-Aufgaben und Supportfälle.
 
-## Anleitungen
+## Outlook
 
-| Anleitung | Inhalt |
-| --- | --- |
-| [Microsoft 365 Admin Center Grundlagen](Admin-Center-Grundlagen.md) | Benutzer, Gruppen, Domains, Service Health, Exchange, SharePoint, Teams und Räume |
-| [Outlook: E-Mail-Konto hinzufügen](Outlook-E-Mail-Konto-hinzufuegen.md) | IMAP/POP3/Exchange-Konto in Outlook einrichten |
-| [Outlook öffnet sich nicht](Outlook-öffnet-sich-nicht.md) | Outlook im abgesicherten Modus starten, Anmeldeinformationen prüfen und Mailprofil neu erstellen |
+### [Outlook Troubleshooting](Outlook-Troubleshooting.md)
 
-## Typische Aufgaben
+Kurzanleitungen nach Problem: Konto einrichten, Startfehler, Add-ins, hängendes Profil, Anmeldung, Lizenz, Senden und Empfangen, Office-Reparatur sowie PST-Dateien.
 
-- Benutzer und Lizenzen verwalten
-- Gruppen und Verteiler pflegen
-- Service Health prüfen
-- Microsoft-Support-Tickets vorbereiten
-- Exchange, SharePoint, OneDrive und Teams administrativ einordnen
-- Outlook-Startprobleme strukturiert analysieren
+## Administration
 
-## Ziel
+### [Microsoft 365 Admin Center Grundlagen](Admin-Center-Grundlagen.md)
 
-Die Dokumentation soll zeigen, dass Microsoft 365 nicht nur aus Benutzeranlage besteht, sondern auch aus Lizenzverständnis, Service Health, Gruppenlogik und sauberer Kommunikation bei Störungen.
+Benutzer, Gruppen, Domains, Service Health sowie die wichtigsten Verwaltungsbereiche einordnen.
+
+## Grundregel für Supportfälle
+
+Nach jedem erfolgreichen Schritt das Ergebnis testen und nicht unnötig weiter verändern. Fehlermeldungen und durchgeführte Maßnahmen im Ticket dokumentieren; Passwörter und MFA-Codes niemals eintragen.
