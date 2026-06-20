@@ -4,4 +4,4 @@
 
 | Tool | Inhalt |
 | --- | --- |
-| [Zabbix](Zabbix/Installationsanleitung-Zabbix.md) | Installationsanleitung für Zabbix |
+| [Zabbix](Zabbix/README.md) | Zabbix-Server unter Ubuntu und Zabbix Agent 2 unter Windows installieren |
