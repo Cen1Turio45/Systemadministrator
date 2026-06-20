@@ -1,6 +1,6 @@
 # Lucas Wessner - Systemadministration und IT-Systemmanagement
 
-Dieses Repository ist mein technisches Portfolio für Systemadministration, IT-Support, Windows Server, Netzwerk, Microsoft 365, Azure und kaufmännisches IT-Systemmanagement.
+Dieses Repository ist mein technisches Portfolio für Systemadministration, IT-Support, Windows Server, Netzwerk, Microsoft 365 und Azure.
 
 Der Fokus liegt auf kurzen Praxis-Checklisten und ausgewählten Projekten. Normale Admin-Themen sollen schnell zeigen, worauf man achten muss und welche Fehler teuer werden können. Projekte dürfen ausführlicher sein, wenn sie eine eigene Umsetzung oder ein Lab dokumentieren.
 
@@ -15,7 +15,6 @@ Der Fokus liegt auf kurzen Praxis-Checklisten und ausgewählten Projekten. Norma
 | [Microsoft 365](Microsoft-365) | Admin Center, Outlook, Gruppen, Lizenzen und Service Health |
 | [Security](Security) | Endpoint Security und Datenwiederherstellung |
 | [Monitoring](Monitoring) | Zabbix und Monitoring-Tools |
-| [Kaufmännisches IT-Systemmanagement](Kaufmännisches-IT-Systemmanagement) | Beschaffung, Angebote und technische Einordnung |
 | [Telefonanlagen](Telefonanlagen) | VoIP, Nebenstellen und Telefonie-Änderungen |
 | [PowerShell-Skripte](PowerShell-Skripte) | eigene Skripte und Hinweise zur Nutzung |
 
