@@ -1,16 +1,14 @@
 # Outlook Troubleshooting
 
-Schnellhilfe für das klassische Outlook unter Windows. In der Tabelle auf das Problem oder den gewünschten Prüfschritt klicken. Nach jedem Schritt testen und aufhören, sobald Outlook wieder funktioniert.
+Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf das passende Problem klicken. Nach jedem Schritt testen und aufhören, sobald Outlook wieder funktioniert.
 
 ## Schnellübersicht
 
-| Problem | Zuerst prüfen | Danach |
-| --- | --- | --- |
-| [Outlook startet nicht oder hängt](#outlook-startet) | [Prozesse und abgesicherter Modus](#outlook-startet-zuerst) | [Testprofil und Office-Reparatur](#outlook-startet-danach) |
-| [Anmeldung oder Lizenz fehlerhaft](#anmeldung-lizenz) | [Office-Konto und Aktivierung](#anmeldung-lizenz-zuerst) | [Lizenz und Anmeldedaten](#anmeldung-lizenz-danach) |
-| [Kein Versand oder Empfang](#senden-empfangen) | [Verbindung und Offline-Modus](#senden-empfangen-zuerst) | [Konto- und Serverdaten](#senden-empfangen-danach) |
-| [PST-Datei fehlerhaft](#pst-datei) | [Datei suchen und sichern](#pst-datei-zuerst) | [Einbinden, reparieren oder archivieren](#pst-datei-danach) |
-| [Outlook langsam oder fehlerhafte Anzeige](#outlook-langsam) | [Add-ins und Anzeige](#outlook-langsam-zuerst) | [Cache und Neustart](#outlook-langsam-danach) |
+- [Outlook startet nicht oder hängt](#outlook-startet)
+- [Anmeldung oder Lizenz fehlerhaft](#anmeldung-lizenz)
+- [Kein Versand oder Empfang](#senden-empfangen)
+- [PST-Datei fehlerhaft](#pst-datei)
+- [Outlook langsam oder fehlerhafte Anzeige](#outlook-langsam)
 
 <a id="outlook-startet"></a>
 ## Outlook startet nicht oder hängt beim Profil
