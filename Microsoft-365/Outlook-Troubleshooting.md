@@ -6,28 +6,11 @@ Schnellhilfe für das klassische Outlook unter Windows. Das passende Problem aus
 
 | Problem | Zuerst prüfen | Danach |
 | --- | --- | --- |
-| Konto hinzufügen | Automatische Microsoft-365-Einrichtung verwenden | Bei Fremdanbietern IMAP-Daten prüfen |
 | Outlook startet nicht oder hängt | Prozesse beenden und abgesicherten Modus testen | Testprofil erstellen, dann Office reparieren |
 | Anmeldung oder Lizenz fehlerhaft | Office-Konto und Aktivierung prüfen | Anmeldedaten bereinigen und Lizenz kontrollieren |
 | Kein Versand oder Empfang | Internet, Offline-Modus und Postausgang prüfen | Konto- und Serverdaten kontrollieren |
 | PST-Datei fehlerhaft | Datei suchen und Original sichern | Kopie reparieren oder Archiv anlegen |
 | Outlook langsam oder fehlerhafte Anzeige | Add-ins deaktivieren | Grafik, Cache und Datendateigröße prüfen |
-
-## Konto hinzufügen
-
-### Microsoft 365 oder Exchange
-
-1. `Datei > Konto hinzufügen` öffnen und die E-Mail-Adresse eingeben.
-2. `Verbinden` auswählen, anmelden und MFA bestätigen.
-3. Outlook neu starten und Senden, Empfangen sowie Ordnersynchronisierung testen.
-
-### IMAP
-
-1. Providerdaten bereithalten und `Datei > Konto hinzufügen > Erweiterte Optionen` öffnen.
-2. `Ich möchte mein Konto manuell einrichten > IMAP` auswählen und Server, Ports, Verschlüsselung sowie SMTP-Authentifizierung eintragen.
-3. Einrichtung abschließen und Senden sowie Empfangen testen.
-
-**Wie geht es weiter?** Einstellungen mit der Providerdokumentation vergleichen. Häufig: IMAP `993` mit SSL/TLS sowie SMTP `465` mit SSL/TLS oder `587` mit STARTTLS.
 
 ## Outlook startet nicht oder hängt beim Profil
 

@@ -6,7 +6,7 @@ Dieser Bereich enthält kurze Anleitungen für typische Microsoft-365-Aufgaben u
 
 ### [Outlook Troubleshooting](Outlook-Troubleshooting.md)
 
-Kurzanleitungen nach Problem: Konto einrichten, Startfehler, Add-ins, hängendes Profil, Anmeldung, Lizenz, Senden und Empfangen, Office-Reparatur sowie PST-Dateien.
+Kurzanleitungen zu Startfehlern, Add-ins, hängenden Profilen, Anmeldung, Lizenz, Senden und Empfangen, Office-Reparatur sowie PST-Dateien.
 
 ## Administration
 

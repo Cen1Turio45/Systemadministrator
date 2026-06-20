@@ -8,7 +8,7 @@ Kurze Support-Checklisten für typische Aufgaben im IT-Alltag.
 | --- | --- |
 | [Support-Prozess und Ticketbearbeitung](Support-Prozess-und-Ticketbearbeitung.md) | Vorgehen bei Störungen, Dokumentation, Priorisierung und Eskalation |
 | [Windows-11-Troubleshooting](Windows-11-Troubleshooting.md) | Häufige Client-Probleme wie Bluescreens, langsame Anwendungen, Drucker, Sound und Speicherplatz |
-| [Outlook Troubleshooting](../Microsoft-365/Outlook-Troubleshooting.md) | Kurzanleitungen zu Einrichtung, Startfehlern, Profilen, Add-ins, Anmeldung und PST-Dateien |
+| [Outlook Troubleshooting](../Microsoft-365/Outlook-Troubleshooting.md) | Kurzanleitungen zu Startfehlern, Profilen, Add-ins, Anmeldung, Versand und PST-Dateien |
 | [Drucker installieren und einrichten](Drucker-installieren-und-einrichten.md) | Netzwerkdrucker, Druckserver, Treiber, Scan-to-Folder und Client-Einrichtung |
 | [Datenübertragung mit SmartCopy](Datenuebertragung-mit-SmartCopy.md) | Kurze Checkliste für die Datenübertragung auf ein neues Gerät |
 | [Windows Update Vorbereitung](Windows-Update-Vorbereitung.md) | Windows Update vor Einrichtung oder Übergabe vorbereiten |
