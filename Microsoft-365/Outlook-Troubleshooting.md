@@ -4,14 +4,14 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 
 ## Schnellübersicht
 
-- [Outlook startet nicht oder hängt](#outlook-startet)
-- [Anmeldung oder Lizenz fehlerhaft](#anmeldung-lizenz)
-- [Kein Versand oder Empfang](#senden-empfangen)
-- [PST-Datei fehlerhaft](#pst-datei)
-- [Outlook langsam oder fehlerhafte Anzeige](#outlook-langsam)
+- [Outlook lässt sich nicht starten oder bleibt bei „Profil wird geladen“ hängen](#outlook-startet)
+- [Outlook fordert ständig zur Anmeldung auf oder meldet eine fehlende Lizenz](#anmeldung-lizenz)
+- [E-Mails bleiben im Postausgang oder neue Nachrichten kommen nicht an](#senden-empfangen)
+- [Outlook findet die PST-Datei nicht, kann sie nicht öffnen oder sie ist zu groß](#pst-datei)
+- [Outlook reagiert sehr langsam, friert ein oder zeigt Darstellungsfehler](#outlook-langsam)
 
 <a id="outlook-startet"></a>
-## Outlook startet nicht oder hängt beim Profil
+## Outlook lässt sich nicht starten oder bleibt bei „Profil wird geladen“ hängen
 
 <a id="outlook-startet-zuerst"></a>
 ### Zuerst prüfen
@@ -26,7 +26,7 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 4. Scheitert das Testprofil, unter `Einstellungen > Apps > Microsoft 365 > Ändern` erst die Schnell- und danach die Onlinereparatur ausführen.
 
 <a id="anmeldung-lizenz"></a>
-## Anmeldung oder Lizenz fehlerhaft
+## Outlook fordert ständig zur Anmeldung auf oder meldet eine fehlende Lizenz
 
 <a id="anmeldung-lizenz-zuerst"></a>
 ### Zuerst prüfen
@@ -41,7 +41,7 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 4. Bei einer Anmeldeschleife veraltete Office-Einträge unter `Systemsteuerung > Anmeldeinformationsverwaltung > Windows-Anmeldeinformationen` entfernen und neu anmelden.
 
 <a id="senden-empfangen"></a>
-## E-Mails werden nicht gesendet oder empfangen
+## E-Mails bleiben im Postausgang oder neue Nachrichten kommen nicht an
 
 <a id="senden-empfangen-zuerst"></a>
 ### Zuerst prüfen
@@ -56,7 +56,7 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 4. Bei IMAP unter `Weitere Einstellungen > Erweitert` Ports, Verschlüsselung und SMTP-Authentifizierung mit den Providerangaben vergleichen.
 
 <a id="pst-datei"></a>
-## PST-Datei fehlt, ist beschädigt oder zu groß
+## Outlook findet die PST-Datei nicht, kann sie nicht öffnen oder sie ist zu groß
 
 <a id="pst-datei-zuerst"></a>
 ### Zuerst prüfen
@@ -71,7 +71,7 @@ Schnellhilfe für das klassische Outlook unter Windows. In der Übersicht auf da
 4. **Zu groß:** Über `Kontoeinstellungen > Datendateien > Hinzufügen` eine Archiv-PST erstellen und ältere E-Mails in kleinen Blöcken verschieben.
 
 <a id="outlook-langsam"></a>
-## Outlook ist langsam oder zeigt Darstellungsfehler
+## Outlook reagiert sehr langsam, friert ein oder zeigt Darstellungsfehler
 
 <a id="outlook-langsam-zuerst"></a>
 ### Zuerst prüfen
